@@ -73,16 +73,15 @@
   letter-spacing: 0.04em;
 }
 
-.br video {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1440 / 900;
-}
-
 /* Scroll-driven reveals (browsers that support them) */
 
 @supports (animation-timeline: scroll()) {
+  @keyframes hintout {
+    to {
+      opacity: 0;
+    }
+  }
+
   .br-hint {
     animation: hintout linear both;
     animation-timeline: scroll(nearest);

@@ -859,15 +859,24 @@ import page from '../../styles/projects/nuru.css?url';
         <span class="br-u">www.nuru.com</span>
         <span style="width: 44px"></span>
       </div>
-      <video
-        src="/media/nuru/website-scroll.mp4"
-        poster="/media/nuru/website-scroll-poster.webp"
-        autoplay
-        muted
-        loop
-        playsinline
-        aria-label="Scrolling through the nuru homepage: hero, why nuru, who it’s for tabs, services, sample meal plan, app, how it works, dietitians, tips and questions"
-      ></video>
+      <div
+        class="br-sc"
+        tabindex="0"
+        role="region"
+        aria-label="The nuru homepage. Scroll inside the frame to explore it from the header to the footer."
+      >
+        <img
+          src="/media/nuru/homepage-full.webp"
+          alt="The nuru homepage, full length: hero, why nuru, who it’s for tabs, services, sample meal plan, app, how it works, dietitians, tips, questions and the footer"
+          width="1440"
+          height="9101"
+          loading="lazy"
+          draggable="false"
+        />
+        <div class="br-hint" aria-hidden="true">
+          <span>Scroll to explore ↓</span>
+        </div>
+      </div>
     </figure>
     <div class="notes3">
       <div class="rv">
