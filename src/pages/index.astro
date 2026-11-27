@@ -2,6 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '@fontsource/ibm-plex-mono/400.css';
 import home from '../styles/pages/home.css?url';
+
+// The name and the role are typed in letter by letter: every letter gets its place in --i.
+const name = 'İklima İkbal Türköz';
+const roleLines = ['Interaction &', 'UI/UX Designer'];
+const letters = (text: string, from = 0) =>
+  [...text].map((char, i) => ({ char: char === ' ' ? '\u00a0' : char, i: from + i }));
+const nameLetters = letters(name);
+const roleFirst = letters(roleLines[0]);
+const roleSecond = letters(roleLines[1], roleFirst.length);
 ---
 
 <BaseLayout
@@ -127,56 +136,76 @@ import home from '../styles/pages/home.css?url';
 
       <div class="cap" data-cap="0" aria-hidden="true">
         <span class="cap-name">Breathment</span>
-        <button class="cap-go ul" type="button" data-go="0" tabindex="-1">
+        <a class="cap-go ul" href="/projects/breathment" data-go tabindex="-1">
           View project <span aria-hidden="true">↗</span>
-        </button>
+        </a>
       </div>
       <div class="cap" data-cap="1" aria-hidden="true">
         <span class="cap-name">nuru</span>
-        <button class="cap-go ul" type="button" data-go="1" tabindex="-1">
+        <a class="cap-go ul" href="/projects/nuru" data-go tabindex="-1">
           View project <span aria-hidden="true">↗</span>
-        </button>
+        </a>
       </div>
       <div class="cap" data-cap="2" aria-hidden="true">
         <span class="cap-name">AviateReady</span>
-        <button class="cap-go ul" type="button" data-go="2" tabindex="-1">
+        <a class="cap-go ul" href="/projects/aviateready" data-go tabindex="-1">
           View project <span aria-hidden="true">↗</span>
-        </button>
+        </a>
       </div>
       <div class="cap" data-cap="3" aria-hidden="true">
         <span class="cap-name">Echo</span>
-        <button class="cap-go ul" type="button" data-go="3" tabindex="-1">
+        <a class="cap-go ul" href="/projects/echo" data-go tabindex="-1">
           View project <span aria-hidden="true">↗</span>
-        </button>
+        </a>
       </div>
       <div class="cap" data-cap="4" aria-hidden="true">
         <span class="cap-name">Arkitera</span>
-        <button class="cap-go ul" type="button" data-go="4" tabindex="-1">
+        <a class="cap-go ul" href="/projects/arkitera" data-go tabindex="-1">
           View project <span aria-hidden="true">↗</span>
-        </button>
+        </a>
       </div>
       <div class="cap" data-cap="5" aria-hidden="true">
         <span class="cap-name">City Dialogue</span>
-        <button class="cap-go ul" type="button" data-go="5" tabindex="-1">
+        <a class="cap-go ul" href="/projects/city-dialogue" data-go tabindex="-1">
           View project <span aria-hidden="true">↗</span>
-        </button>
+        </a>
       </div>
       <div class="cap" data-cap="6" aria-hidden="true">
         <span class="cap-name">Serica</span>
-        <button class="cap-go ul" type="button" data-go="6" tabindex="-1">
+        <a class="cap-go ul" href="/projects/serica" data-go tabindex="-1">
           View project <span aria-hidden="true">↗</span>
-        </button>
+        </a>
       </div>
     </section>
 
-    <div class="hd-id" data-id style="top: 80px">
-      <h1 class="nm">İklima İkbal Türköz</h1>
+    <div class="hd-id">
+      <h1 class="nm">
+        <span class="sr">{name}</span>
+        <span aria-hidden="true">
+          {nameLetters.map((l) => (
+            <span class="ch" style={`--i: ${l.i}`}>
+              {l.char}
+            </span>
+          ))}
+        </span>
+      </h1>
       <div class="role-w">
         <span class="role-b" aria-hidden="true"></span>
         <p class="role" style='font-family: "Hanken Grotesk"'>
-          Interaction &amp;
-          <br />
-          UI/UX Designer
+          <span class="sr">{roleLines.join(' ')}</span>
+          <span aria-hidden="true">
+            {roleFirst.map((l) => (
+              <span class="ch" style={`--i: ${l.i}`}>
+                {l.char}
+              </span>
+            ))}
+            <br />
+            {roleSecond.map((l) => (
+              <span class="ch" style={`--i: ${l.i}`}>
+                {l.char}
+              </span>
+            ))}
+          </span>
         </p>
         <span class="role-x" aria-hidden="true"></span>
         <span class="role-l" aria-hidden="true"></span>
@@ -192,7 +221,6 @@ import home from '../styles/pages/home.css?url';
           interaction
         </p>
       </div>
-      <canvas class="idp" data-idp aria-hidden="true"></canvas>
     </div>
 
     <nav class="nav" aria-label="Main">
@@ -219,75 +247,6 @@ import home from '../styles/pages/home.css?url';
         </span>
       </span>
     </a>
-
-    <div class="detail" data-detail aria-hidden="true">
-      <button class="back ul" type="button" data-back>
-        ← Back to projects
-      </button>
-      <article class="dt" data-dt="0">
-        <p class="dt-k">Selected work · 2025</p>
-        <h2 class="dt-t serif">Breathment</h2>
-        <p class="dt-c">Digital health UI &amp; illustration</p>
-        <p class="dt-p">UI/UX, illustration and a character for respiratory care.</p>
-        <a class="dt-go ul" href="/projects/breathment">
-          Read the case study ↗
-        </a>
-      </article>
-      <article class="dt" data-dt="1">
-        <p class="dt-k">Selected work · 2026</p>
-        <h2 class="dt-t serif">nuru</h2>
-        <p class="dt-c">UX case study &amp; brand identity</p>
-        <p class="dt-p">A website, app and brand for food guidance from licensed dietitians.</p>
-        <a class="dt-go ul" href="/projects/nuru">
-          Read the case study ↗
-        </a>
-      </article>
-      <article class="dt" data-dt="2">
-        <p class="dt-k">Selected work · 2026</p>
-        <h2 class="dt-t serif">AviateReady</h2>
-        <p class="dt-c">iOS app design</p>
-        <p class="dt-p">Interview prep for airline pilots, live on the App Store.</p>
-        <a class="dt-go ul" href="/projects/aviateready">
-          Read the case study ↗
-        </a>
-      </article>
-      <article class="dt" data-dt="3">
-        <p class="dt-k">Selected work · 2026</p>
-        <h2 class="dt-t serif">Echo</h2>
-        <p class="dt-c">Inclusive game &amp; interaction design</p>
-        <p class="dt-p">A shared forest where children with ADHD and their peers find each other.</p>
-        <a class="dt-go ul" href="/projects/echo">
-          Read the case study ↗
-        </a>
-      </article>
-      <article class="dt" data-dt="4">
-        <p class="dt-k">Selected work · 2026</p>
-        <h2 class="dt-t serif">Arkitera</h2>
-        <p class="dt-c">Editorial web redesign</p>
-        <p class="dt-p">Rethinking how readers move through architecture news.</p>
-        <a class="dt-go ul" href="/projects/arkitera">
-          Read the case study ↗
-        </a>
-      </article>
-      <article class="dt" data-dt="5">
-        <p class="dt-k">Selected work · 2024</p>
-        <h2 class="dt-t serif">City Dialogue</h2>
-        <p class="dt-c">Knowledge-sharing web platform</p>
-        <p class="dt-p">A knowledge exchange hub for climate-neutral cities.</p>
-        <a class="dt-go ul" href="/projects/city-dialogue">
-          Read the case study ↗
-        </a>
-      </article>
-      <article class="dt" data-dt="6">
-        <p class="dt-k">Selected work · 2024</p>
-        <h2 class="dt-t serif">Serica</h2>
-        <p class="dt-c">Cultural heritage app &amp; identity</p>
-        <p class="dt-p">Itineraries through Como’s silk heritage, with an app, website and brand.</p>
-        <a class="dt-go ul" href="/projects/serica">
-          Read the case study ↗
-        </a>
-      </article>
-    </div>
 
     <div class="ft-c" data-hint aria-hidden="true">
       <span class="hr"></span>
