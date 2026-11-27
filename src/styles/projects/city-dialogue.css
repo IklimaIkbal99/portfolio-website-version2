@@ -1,0 +1,214 @@
+/* City Dialogue case study: styles used only on this page. */
+
+.film video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 848 / 478;
+  background-color: #101838;
+}
+
+.notes4 {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px 28px;
+}
+
+/* Information architecture: pages on a line, each with its tree */
+
+.ia {
+  margin-top: 48px;
+  overflow-x: auto;
+  padding: 4px 4px 8px;
+}
+
+.ia-pref {
+  position: relative;
+  width: 25%;
+  min-width: 200px;
+}
+
+.ia-pref > .mk,
+.ia-col > .mk {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 5px;
+}
+
+.ia-st {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 12px 0 24px;
+  background-color: #f8f7f4;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.ia-pref::before,
+.ia-col::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 17px;
+  height: 20px;
+  width: 4px;
+  background-image: radial-gradient(circle at center, #8c8881 0 0.65px, transparent 1.1px);
+  background-size: 4px 5.3px;
+  background-repeat: repeat-y;
+}
+
+.ia-in {
+  position: relative;
+  display: block;
+  height: 30px;
+}
+
+.ia-in .vd {
+  left: 4px;
+  top: 0;
+  bottom: 6px;
+}
+
+.ia-in .ah {
+  left: 2px;
+  bottom: 0;
+}
+
+.ia-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(176px, 1fr));
+  min-width: 720px;
+}
+
+.ia-trk {
+  left: 6px;
+  right: calc(25% - 6px);
+  top: 9px;
+}
+
+.ia-col {
+  position: relative;
+  padding-right: 12px;
+}
+
+.tree {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.tree li {
+  position: relative;
+  padding: 4px 0 4px 38px;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--body);
+}
+
+.tree li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-image: radial-gradient(circle at center, #8c8881 0 0.65px, transparent 1.1px);
+  background-size: 4px 5.3px;
+  background-repeat: repeat-y;
+}
+
+.tree li:last-child::before {
+  bottom: auto;
+  height: 15px;
+}
+
+.tree.open li:last-child::before {
+  bottom: 0;
+  height: auto;
+}
+
+.tree li::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 11px;
+  width: 9px;
+  height: 4px;
+  background-image: radial-gradient(circle at center, #8c8881 0 0.65px, transparent 1.1px);
+  background-size: 5.3px 4px;
+  background-repeat: repeat-x;
+}
+
+.tree li > .mk {
+  position: absolute;
+  left: 18px;
+  top: 9px;
+}
+
+.tree li > .mk.pg.sm {
+  top: 9px;
+}
+
+.tree li.pgi {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.tree .tree {
+  margin: 2px 0 0 -21.5px;
+}
+
+.tree .tree li {
+  font-weight: 400;
+  color: var(--body);
+}
+
+@media (max-width: 1023px) {
+  .notes4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .ia {
+    overflow: visible;
+  }
+
+  .ia-pref {
+    width: auto;
+  }
+
+  .ia-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-width: 0;
+    row-gap: 36px;
+  }
+
+  .ia-trk {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .ia-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .notes4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Sidebar: project title and previous / next links */
+
+.ttl {
+  font-size: clamp(30px, 2.9vw, 48px);
+}

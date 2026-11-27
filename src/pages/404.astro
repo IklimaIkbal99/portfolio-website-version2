@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page not found — İklima İkbal Türköz" description="This page does not exist.">
+  <main class="pp nf">
+    <p>This page does not exist.</p>
+    <a class="ul" href="/">
+      Back to the homepage
+    </a>
+  </main>
+</BaseLayout>
+
+<style>
+  .nf {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 16px;
+    text-align: center;
+    font-family: var(--font);
+    color: var(--ink);
+    font-size: 18px;
+  }
+  .nf p {
+    margin: 0;
+  }
+</style>

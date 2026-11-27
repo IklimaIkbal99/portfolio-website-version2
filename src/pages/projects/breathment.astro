@@ -1,0 +1,341 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import diagram from '../../styles/components/diagram.css?url';
+import film from '../../styles/components/film.css?url';
+import marquee from '../../styles/components/marquee.css?url';
+import page from '../../styles/projects/breathment.css?url';
+---
+
+<ProjectLayout slug="breathment" styles={[diagram, film, marquee, page]}>
+  <div class="cover">
+    <figure class="cv-img">
+      <img
+        src="/media/breathment/cover.webp"
+        alt="The Breathment website on a desktop screen, with paths for COPD, asthma and lung cancer, beside the app’s My Day and Progress screens on two phones"
+      />
+    </figure>
+    <div class="cv-deco" aria-hidden="true">
+      <span class="cv-ring"></span>
+      <svg class="cv-ln" viewBox="0 0 106 30">
+        <polyline class="cl" points="4.3,1.2 105.4,29.5"></polyline>
+      </svg>
+      <span class="x cv-x1"></span>
+      <span class="x cv-x2"></span>
+    </div>
+  </div>
+
+  <section class="sec first" id="s-overview" data-sec aria-labelledby="h-overview">
+    <div class="sh">
+      <h2 class="sh-t" id="h-overview">
+        Overview
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split">
+      <div class="split-a">
+        <p class="lead">From the patient app to internal tools.</p>
+        <p class="tx">
+          Breathment advances digital therapies for people with chronic respiratory conditions using AI-supported health
+          solutions. I joined as UI/UX Designer and worked across the full product, from the patient-facing app to
+          internal admin tools and communication systems.
+        </p>
+        <p class="tx">
+          As the only designer on the team, I worked on both the website and the app, and took on other roles along the
+          way, from graphic design to marketing.
+        </p>
+      </div>
+      <div class="split-b">
+        <span class="vl" aria-hidden="true"></span>
+        <dl class="facts">
+          <div>
+            <dt>Status</dt>
+            <dd>Delivered</dd>
+          </div>
+          <div>
+            <dt>Tools</dt>
+            <dd>Figma, ProtoPie, Illustrator, After Effects, Blender</dd>
+          </div>
+          <div>
+            <dt>Live</dt>
+            <dd>
+              <a class="ul" href="https://breathment.com/en/" target="_blank" rel="noopener">
+                Visit breathment.com <span aria-hidden="true">↗</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div
+      class="roles rv"
+      role="group"
+      aria-label="One designer across three areas: product, with the patient app, the website and internal tools; visuals, with illustrations and the character; and communication, with graphic design and marketing"
+    >
+      <div class="ro-top">
+        <span class="mk navy" aria-hidden="true"></span>
+        <b>Sole designer</b>
+        <small>one person across the whole product</small>
+      </div>
+      <div class="ro-bus" aria-hidden="true">
+        <span class="hd"></span>
+        <span class="ro-bc"></span>
+        <span class="ro-bc up"></span>
+        <span class="ro-bc"></span>
+      </div>
+      <div class="ro-g">
+        <span class="mk navy" aria-hidden="true"></span>
+        <span class="ulabel">Product</span>
+        <ul>
+          <li>Patient app</li>
+          <li>Website</li>
+          <li>Admin tools and communication systems</li>
+        </ul>
+      </div>
+      <div class="ro-g">
+        <span class="mk mint" aria-hidden="true"></span>
+        <span class="ulabel">Visuals</span>
+        <ul>
+          <li>24 illustrations</li>
+          <li>Character and expressions</li>
+        </ul>
+      </div>
+      <div class="ro-g">
+        <span class="mk ring" aria-hidden="true"></span>
+        <span class="ulabel">Communication</span>
+        <ul>
+          <li>Graphic design</li>
+          <li>Marketing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-app" data-sec aria-labelledby="h-app">
+    <div class="sh">
+      <h2 class="sh-t" id="h-app">
+        Patient app
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Daily exercises, courses and progress in one app.</p>
+      <p class="tx">
+        My Day opens with what is due today: the weekly health check, the exercises waiting and any left from yesterday.
+        Explore gathers short courses, from an introduction to COPD to travel, everyday life and nutrition, and Progress
+        shows the week at a glance.
+      </p>
+    </div>
+    <figure class="mock rv">
+      <img
+        src="/media/breathment/app-screens.webp"
+        alt="Three app screens: Courses with Introduction to COPD, Travel, COPD in Everyday and Nutrition; My Day with the weekly health check, available exercises and yesterday’s exercises; and Progress with the week’s calendar"
+        style="aspect-ratio: 2656 / 2231"
+      />
+      <figcaption>Explore, My Day and Progress</figcaption>
+    </figure>
+    <div class="notes3">
+      <div class="rv">
+        <h4>My Day</h4>
+        <p>The weekly health check, today’s exercises and yesterday’s leftovers, each one tap from starting.</p>
+      </div>
+      <div class="rv">
+        <h4>Explore</h4>
+        <p>Short courses on living with COPD, from the basics to travel, everyday life and nutrition.</p>
+      </div>
+      <div class="rv">
+        <h4>Progress</h4>
+        <p>A week view with exercises waiting and done, so the routine stays visible.</p>
+      </div>
+    </div>
+    <div class="split" style="margin-top: 72px; align-items: center">
+      <div class="split-a">
+        <span class="ulabel">Progress, in context</span>
+        <p class="lead">More than a count of exercises.</p>
+        <p class="tx">
+          Alongside the exercises, Progress shows the air quality outside, daily steps against a goal, the days left in
+          a programme, active days and a streak, so each day’s activity has context.
+        </p>
+      </div>
+      <figure class="rv" style="margin: 0">
+        <img
+          class="pg"
+          src="/media/breathment/progress-screens.webp"
+          alt="Two Progress screens: the week view with today’s exercises and air quality, and cards for activity steps, programme progress, active days and streak"
+        />
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="s-diary" data-sec aria-labelledby="h-diary">
+    <div class="sh">
+      <h2 class="sh-t" id="h-diary">
+        Diary
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Health tracking that older users can keep up with.</p>
+      <p class="tx">
+        Older users need a simple way to monitor health measurements, understand changes over time and keep a consistent
+        tracking routine. Traditional health dashboards are hard to navigate, with complex medical data, dense
+        interfaces and too many options.
+      </p>
+      <p class="tx">
+        The diary is built around simplicity, accessibility and clear data visualisation. Users pick the metrics that
+        matter to them, enter new measurements quickly, follow their progress in easy-to-read charts, complete periodic
+        health checks and set personal reminders.
+      </p>
+    </div>
+    <div class="scr3">
+      <figure class="rv">
+        <img
+          src="/media/breathment/diary-home.webp"
+          alt="Diary home with measurements and the weekly health check"
+          style="aspect-ratio: 142 / 302"
+        />
+        <figcaption class="ulabel">Diary home</figcaption>
+      </figure>
+      <figure class="rv">
+        <img
+          src="/media/breathment/peak-flow-chart.webp"
+          alt="Peak flow rate chart by week, month and year"
+          style="aspect-ratio: 142 / 301"
+        />
+        <figcaption class="ulabel">Peak flow</figcaption>
+      </figure>
+      <figure class="rv">
+        <img
+          src="/media/breathment/measurements-list.webp"
+          alt="Measurements list with today’s values and personal metrics"
+          style="aspect-ratio: 142 / 301"
+        />
+        <figcaption class="ulabel">Measurements</figcaption>
+      </figure>
+    </div>
+    <div class="notes3">
+      <div class="rv">
+        <h4>Progressive disclosure</h4>
+        <p>Details appear only when they are needed, which keeps each screen light.</p>
+      </div>
+      <div class="rv">
+        <h4>Focused actions</h4>
+        <p>Consistent navigation and focused actions make everyday entries quick.</p>
+      </div>
+      <div class="rv">
+        <h4>Customisable content</h4>
+        <p>Users choose the metrics and reminders that matter to them.</p>
+      </div>
+    </div>
+    <div class="tags-row">
+      <ul class="tg" aria-label="Methods">
+        <li>Information architecture</li>
+        <li>Wireframes</li>
+        <li>Prototyping</li>
+      </ul>
+      <a
+        class="cta ul lift"
+        href="https://www.figma.com/proto/7TCbbzH8zfnjbeXvU3DHeM/Portfolio?node-id=29-9218&amp;t=qqoqRJZFLmaJii9u-0&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=29%3A8082&amp;hide-ui=1"
+        target="_blank"
+        rel="noopener"
+      >
+        View prototype <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec" id="s-website" data-sec aria-labelledby="h-website">
+    <div class="sh">
+      <h2 class="sh-t" id="h-website">
+        Website
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">A website that starts from the condition.</p>
+      <p class="tx">
+        The homepage opens with three paths, one each for COPD, asthma and lung cancer, so patients can find their own
+        way in, while solutions, providers, pricing and a demo booking stay one click away. Designing the website and
+        the app together kept one visual language from the first visit to daily use.
+      </p>
+    </div>
+    <figure class="mock rv">
+      <img
+        src="/media/breathment/website-homepage.webp"
+        alt="Breathment homepage with three image panels: I have COPD, I have Asthma and I have Lung Cancer, each with a See more link"
+        style="aspect-ratio: 1016 / 634"
+      />
+      <figcaption>Homepage, with one path per condition</figcaption>
+    </figure>
+  </section>
+
+  <section class="sec" id="s-illustrations" data-sec aria-labelledby="h-illustrations">
+    <div class="sh">
+      <h2 class="sh-t" id="h-illustrations">
+        Illustrations
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">24 scenes that make respiratory care feel human.</p>
+      <p class="tx">
+        A series of custom illustrations in one consistent visual language, tailored to the Breathment app. Each scene
+        makes a complex respiratory health topic more approachable, from asthma basics to inhaler technique and daily
+        management.
+      </p>
+    </div>
+    <div class="band" role="group" aria-label="All 24 illustrations, sliding">
+      <div class="track">
+        <img
+          src="/media/breathment/illustrations-grid.webp"
+          alt="Grid of 24 Breathment illustrations, from types of asthma medications to asthma and infections"
+        />
+        <img src="/media/breathment/illustrations-grid.webp" alt="" aria-hidden="true" />
+        <img src="/media/breathment/illustrations-grid.webp" alt="" aria-hidden="true" />
+        <img src="/media/breathment/illustrations-grid.webp" alt="" aria-hidden="true" />
+      </div>
+    </div>
+    <p class="cap">Figma and Adobe Illustrator · Hover to pause</p>
+  </section>
+
+  <section class="sec" id="s-character" data-sec aria-labelledby="h-character">
+    <div class="sh">
+      <h2 class="sh-t" id="h-character">
+        Character
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">A companion that lives across the app.</p>
+      <p class="tx">
+        The character is closely aligned with the app’s content concept. It strengthens engagement as a visual and
+        interactive element, with expressive features and one design language across illustrations, UI components and
+        communication materials.
+      </p>
+    </div>
+    <div class="chars">
+      <figure class="rv">
+        <img
+          class="ch-main"
+          src="/media/breathment/character-main.webp"
+          alt="Main Breathment character, a soft mint and blue cloud with big eyes"
+          style="aspect-ratio: 307 / 323"
+        />
+        <figcaption class="ulabel">Main character · Illustrator and Figma</figcaption>
+      </figure>
+      <figure class="rv">
+        <img
+          src="/media/breathment/character-variations.webp"
+          alt="Four variations of the character with different expressions"
+          style="aspect-ratio: 242 / 323"
+        />
+        <figcaption class="ulabel">Expressions</figcaption>
+      </figure>
+    </div>
+  </section>
+</ProjectLayout>

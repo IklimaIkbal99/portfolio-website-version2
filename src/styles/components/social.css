@@ -1,0 +1,30 @@
+/* Social media phone mockups and colour swatches. */
+
+.sw:hover {
+  transform: translateY(-4px);
+}
+
+.sw b {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.sw span {
+  font-size: 13px;
+}
+
+.soc figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.soc video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 390 / 844;
+  border-radius: 12% / 5.5%;
+  box-shadow: 0 0 0 1px rgba(46, 45, 43, 0.08);
+}

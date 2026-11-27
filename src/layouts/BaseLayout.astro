@@ -1,0 +1,40 @@
+---
+// Every page starts here: document head, the Hanken Grotesk font,
+// design tokens and base styles. Pages pass their own stylesheets in `styles`;
+// they are linked after the base ones, in the order given, so later files win.
+// reveal.css always comes last.
+import '@fontsource/hanken-grotesk/300.css';
+import '@fontsource/hanken-grotesk/400.css';
+import '@fontsource/hanken-grotesk/500.css';
+import '@fontsource/hanken-grotesk/600.css';
+import tokens from '../styles/tokens.css?url';
+import base from '../styles/base.css?url';
+import reveal from '../styles/reveal.css?url';
+
+interface Props {
+  title: string;
+  description: string;
+  styles?: string[];
+}
+
+const { title, description, styles = [] } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {[tokens, base, ...styles, reveal].map((href) => (
+      <link rel="stylesheet" href={href} />
+    ))}
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

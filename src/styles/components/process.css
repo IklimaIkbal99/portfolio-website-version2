@@ -1,0 +1,71 @@
+/* Process diagram with dotted axes and markers (Echo, AviateReady). */
+
+.dg {
+  margin-top: 56px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.dg-ax {
+  stroke: #e4e1db;
+  stroke-width: 1;
+}
+
+.dg-p {
+  fill: none;
+  stroke: var(--dot);
+  stroke-width: 1.3;
+  stroke-dasharray: 0.1 5.2;
+  stroke-linecap: round;
+  animation: march 3.2s linear infinite;
+}
+
+.dg-ld {
+  fill: none;
+  stroke: #b9b5ae;
+  stroke-width: 1.2;
+  stroke-dasharray: 0.1 5.2;
+  stroke-linecap: round;
+}
+
+.dg-m {
+  fill: var(--ink);
+}
+
+.dg-b {
+  fill: #0679f7;
+}
+
+.dg-o {
+  fill: #f8f7f4;
+  stroke: var(--dot);
+  stroke-width: 1;
+}
+
+.dg-k {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.dg-a {
+  color: var(--body);
+}
+
+.dg-k span {
+  display: block;
+  font-weight: 400;
+  color: var(--body);
+}
+
+.set {
+  display: flex;
+  gap: 24px;
+  padding-right: 24px;
+  flex-shrink: 0;
+}
+
+@keyframes march {
+  to {
+    stroke-dashoffset: -10.6;
+  }
+}

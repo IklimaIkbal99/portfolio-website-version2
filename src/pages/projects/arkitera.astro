@@ -1,0 +1,1670 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter-tight/500.css';
+import '@fontsource/inter-tight/600.css';
+import '@fontsource/inter-tight/700.css';
+import '@fontsource/dosis/500.css';
+import '@fontsource/roboto/400.css';
+import beforeAfter from '../../styles/components/before-after.css?url';
+import browser from '../../styles/components/browser.css?url';
+import diagram from '../../styles/components/diagram.css?url';
+import page from '../../styles/projects/arkitera.css?url';
+---
+
+<ProjectLayout slug="arkitera" styles={[beforeAfter, browser, diagram, page]}>
+  <div class="cover">
+    <figure class="cv-img" style="aspect-ratio: 16 / 9">
+      <img
+        src="/media/arkitera/cover.webp"
+        alt="The redesigned Arkitera homepage on a laptop: the project of the week and the latest news"
+      />
+    </figure>
+    <div class="cv-deco" aria-hidden="true">
+      <span class="cv-ring"></span>
+      <svg class="cv-ln" viewBox="0 0 106 30">
+        <polyline class="cl" points="4.3,1.2 105.4,29.5"></polyline>
+      </svg>
+      <span class="x cv-x1"></span>
+      <span class="x cv-x2"></span>
+    </div>
+  </div>
+
+  <section class="sec first" id="s-overview" data-sec aria-labelledby="h-overview">
+    <div class="sh">
+      <h2 class="sh-t" id="h-overview">
+        Overview
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split">
+      <div class="split-a">
+        <p class="lead">Less a visual makeover than a UX one.</p>
+        <p class="tx">
+          Arkitera is Türkiye’s architecture publication. Its busy, flat homepage was reorganized into an open,
+          hierarchical layout, the raw yellow-green was replaced with calm neutrals, and every label on the page now has
+          a single job.
+        </p>
+        <p class="tx">
+          Most changes are structural: what goes where, what is read first, and what is clickable. Visual polish follows
+          from that, not the other way round. Nothing was removed from the site, only moved.
+        </p>
+      </div>
+      <div class="split-b">
+        <span class="vl" aria-hidden="true"></span>
+        <dl class="facts">
+          <div>
+            <dt>Publication</dt>
+            <dd>Arkitera, Türkiye’s architecture publication</dd>
+          </div>
+          <div>
+            <dt>Scope</dt>
+            <dd>Homepage, badge system, light rebrand</dd>
+          </div>
+          <div>
+            <dt>Year</dt>
+            <dd>2026</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>In progress</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div class="notes4">
+      <div class="rv">
+        <h4>UX before decoration</h4>
+        <p>What goes where, what is read first and what is clickable come first. Visual polish follows from that.</p>
+      </div>
+      <div class="rv">
+        <h4>Hierarchy over density</h4>
+        <p>
+          One clear entry point, then sections in the order readers come for them. Fewer things compete for attention at
+          the same level.
+        </p>
+      </div>
+      <div class="rv">
+        <h4>Group by intent</h4>
+        <p>
+          Content that used to be interleaved in one long feed now lives in its own section, each with a single “see
+          all” path.
+        </p>
+      </div>
+      <div class="rv">
+        <h4>Calm, open layout</h4>
+        <p>
+          Neutral surfaces and generous spacing let architecture photography lead. Color is kept for meaning: type,
+          status, action.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-home" data-sec aria-labelledby="h-home">
+    <div class="sh">
+      <h2 class="sh-t" id="h-home">
+        Homepage
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">The new homepage, top to bottom.</p>
+      <p class="tx">
+        A hero project with the five latest items beside it, then every open competition deadline, new projects, news
+        and events, opinion and interviews, jobs and product promotions, and a dedicated place for advertisers.
+      </p>
+    </div>
+    <figure class="br rv" style="margin-left: 0; margin-right: 0; margin-bottom: 0">
+      <div class="br-b" aria-hidden="true">
+        <span class="br-d">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+        <span class="br-u">arkitera.com</span>
+        <span style="width: 44px"></span>
+      </div>
+      <div
+        class="br-sc"
+        tabindex="0"
+        role="region"
+        aria-label="The redesigned Arkitera homepage. Scroll inside the frame to explore it from the header to the footer."
+      >
+        <img
+          src="/media/arkitera/homepage-full.webp"
+          alt="The redesigned Arkitera homepage, full length: hero project and latest items, competition calendar, new projects, news and events, opinion and interviews, jobs and products, the advertising band and the footer"
+          width="1600"
+          height="6446"
+          loading="lazy"
+          draggable="false"
+        />
+        <div class="br-hint" aria-hidden="true">
+          <span>Scroll to explore ↓</span>
+        </div>
+      </div>
+    </figure>
+    <p class="cap">The redesigned homepage at 1440 px. Scroll inside the frame to explore it.</p>
+  </section>
+
+  <section class="sec" id="s-structure" data-sec aria-labelledby="h-structure">
+    <div class="sh">
+      <h2 class="sh-t" id="h-structure">
+        Structure
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">From one long page to clear groups.</p>
+      <p class="tx">
+        The live homepage mixed every content type into one feed, wrapped in banners and ad units. The redesign starts
+        with a single entry point, then gives each type its own section, in the order readers come for them.
+      </p>
+    </div>
+    <div
+      class="wfp rv"
+      role="group"
+      aria-label="Wireframes. Before: a lime header, a billboard ad, a carousel next to three colored submit banners and more ads, then a masonry feed mixing every content type with in-feed ads, a right column of careers, one competition countdown and opinion lists, a sticky ad bar and a footer of category menus. After: a hero project with the five latest items, a labelled billboard, a competition calendar, new projects, a labelled leaderboard, news beside events, a merged opinion and interview section, jobs beside sponsored products, a red advertising band, free submissions and the newsletter, and the footer."
+    >
+      <div class="wfc">
+        <div class="wfh">
+          <b>Before</b>
+          <span>Live homepage at 1440 px, November 2026</span>
+        </div>
+        <div class="wf" aria-hidden="true">
+          <div class="nv" style="box-shadow: inset 0 3px 0 #DCE61E">
+            <span class="lgo"></span>
+            <span style="flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis">
+              Haber · Etkinlik · Yarışma · Proje · Tanıtım · Söyleşi · Görüş · Kariyer · Etiket · Arkiv
+            </span>
+            <span class="tagw" style="flex: none">
+              lime bar
+            </span>
+          </div>
+          <div class="ad" style="height: 40px">
+            Ad · billboard
+          </div>
+          <div class="r" style="height: 150px">
+            <div class="b ph" style="flex: 1.7; flex-direction: column; justify-content: flex-end; gap: 8px">
+              <span class="dts">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i class="on"></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </span>
+              <span>Carousel · 11 slides, one at a time</span>
+            </div>
+            <div class="c" style="flex: 1">
+              <span class="b" style="height: 22px; padding-top: 4px; white-space: nowrap">
+                <i class="tq" style="background-color: #65D500"></i>Submit news
+              </span>
+              <span class="b" style="height: 22px; padding-top: 4px; white-space: nowrap">
+                <i class="tq" style="background-color: #6C1B84"></i>Submit project
+              </span>
+              <span class="b" style="height: 22px; padding-top: 4px; white-space: nowrap">
+                <i class="tq" style="background-color: #B42D6B"></i>Promote product
+              </span>
+              <span class="b" style="height: 22px; padding-top: 4px; white-space: nowrap">
+                <i class="tq" style="background-color: #FFC542"></i>Newsletter
+              </span>
+              <span class="b" style="flex: 1">
+                Recent comments
+              </span>
+            </div>
+            <div class="c" style="flex: 1">
+              <span class="ad" style="flex: 1.3">
+                Ad · showcase
+              </span>
+              <span class="b" style="flex: 1">
+                <i class="tq" style="background-color: #8A8F98"></i>Promotion
+              </span>
+            </div>
+          </div>
+          <div class="r" style="flex: 1">
+            <div class="c" style="flex: 2.2">
+              <span style="padding: 2px 0">Masonry feed: every type mixed, card heights vary</span>
+              <div class="r">
+                <div class="c" style="flex: 1">
+                  <span class="b" style="height: 86px">
+                    <i class="tq" style="background-color: #2F4FB0"></i>News · list of 10
+                  </span>
+                  <span class="b" style="height: 58px">
+                    <i class="tq" style="background-color: #8A8F98"></i>Promotion
+                  </span>
+                </div>
+                <div class="c" style="flex: 1">
+                  <span class="b" style="height: 54px">
+                    <i class="tq" style="background-color: #9A6B3F"></i>Project
+                  </span>
+                  <span class="b" style="height: 90px">
+                    <i class="tq" style="background-color: #2F4FB0"></i>Video
+                  </span>
+                </div>
+              </div>
+              <span class="ad" style="height: 30px">
+                Ad · in-feed banner
+              </span>
+              <div class="r">
+                <div class="c" style="flex: 1">
+                  <span class="b" style="height: 50px">
+                    <i class="tq" style="background-color: #0E8A8A"></i>Opinion
+                  </span>
+                  <span class="b" style="height: 68px">
+                    <i class="tq" style="background-color: #C8326B"></i>Event
+                  </span>
+                </div>
+                <div class="c" style="flex: 1">
+                  <span class="b" style="height: 68px">
+                    <i class="tq" style="background-color: #9A6B3F"></i>Project · competition result
+                  </span>
+                  <span class="b" style="height: 50px">
+                    <i class="tq" style="background-color: #8A8F98"></i>Promotion
+                  </span>
+                </div>
+              </div>
+              <span class="ad" style="height: 30px">
+                Ad · in-feed banner
+              </span>
+              <div class="r" style="flex: 1; min-height: 44px">
+                <span class="b" style="flex: 1">
+                  <i class="tq" style="background-color: #C8326B"></i>Event
+                </span>
+                <span class="b" style="flex: 1">
+                  <i class="tq" style="background-color: #2F4FB0"></i>News
+                </span>
+              </div>
+            </div>
+            <div class="c" style="flex: 1">
+              <div class="b" style="flex-direction: column; gap: 5px">
+                <span class="k" style="font-weight: 400">
+                  <i class="tq" style="background-color: #5F6B2E"></i>Careers · 12
+                </span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+                <span class="ln" style="width: 100%; height: 3px"></span>
+              </div>
+              <div class="b" style="flex-direction: column; gap: 6px">
+                <span class="k" style="font-weight: 400">
+                  <i class="tq" style="background-color: #6B3FD4"></i>Competitions
+                </span>
+                <span style="display: flex; align-items: center; gap: 6px">
+                  <i style="display: block; flex: none; width: 18px; height: 18px; border-radius: 50%; background-color: #A9A59E"></i>
+                  one countdown, one deadline
+                </span>
+              </div>
+              <span class="b" style="height: 34px">
+                <i class="tq" style="background-color: #0E8A8A"></i>Opinion list
+              </span>
+              <span class="b" style="height: 34px">
+                <i class="tq" style="background-color: #0E8A8A"></i>Interview list
+              </span>
+              <span class="ad" style="flex: 1; min-height: 40px">
+                Ad · box
+              </span>
+            </div>
+          </div>
+          <div class="ad" style="height: 24px">
+            Ad · sticky bottom bar
+          </div>
+          <div class="b" style="height: 28px; align-items: center">
+            Footer · five category menus
+          </div>
+        </div>
+      </div>
+      <div class="wfa" aria-hidden="true">
+        <span class="hd fr"></span>
+        <span class="ah ah-r"></span>
+      </div>
+      <div class="wfc">
+        <div class="wfh">
+          <b>After</b>
+          <span>Redesigned homepage</span>
+        </div>
+        <div class="wf" aria-hidden="true">
+          <div class="nv">
+            <span class="lgo" style="width: 26px; background-color: #151515"></span>
+            <span>Haber · Proje · Yarışma · Etkinlik · Görüş &amp; Söyleşi · Kariyer · Ürün</span>
+          </div>
+          <div class="r" style="height: 122px">
+            <div class="b ph" style="flex: 1.9; align-items: flex-end">
+              Hero project · one clear entry point
+            </div>
+            <div class="c" style="flex: 1; padding: 2px 0; justify-content: space-between">
+              <span class="k">Today · 5 latest</span>
+              <span class="lr">
+                <i class="tq" style="background-color: #2F4FB0; margin: 0"></i>
+                <span class="ln"></span>
+                <span class="aw">→</span>
+              </span>
+              <span class="lr">
+                <i class="tq" style="background-color: #2F4FB0; margin: 0"></i>
+                <span class="ln"></span>
+                <span class="aw">→</span>
+              </span>
+              <span class="lr">
+                <i class="tq" style="background-color: #9A6B3F; margin: 0"></i>
+                <span class="ln"></span>
+                <span class="aw">→</span>
+              </span>
+              <span class="lr">
+                <i class="tq" style="background-color: #2F4FB0; margin: 0"></i>
+                <span class="ln"></span>
+                <span class="aw">→</span>
+              </span>
+              <span class="lr">
+                <i class="tq" style="background-color: #0E8A8A; margin: 0"></i>
+                <span class="ln"></span>
+                <span class="aw">→</span>
+              </span>
+            </div>
+          </div>
+          <div class="ad" style="height: 34px">
+            Ad · billboard, labelled “Reklam”, at a section break
+          </div>
+          <div class="c" style="padding-top: 4px">
+            <span class="k">
+              <i class="tq" style="background-color: #6B3FD4"></i>Competition calendar · every open deadline
+            </span>
+            <div class="r" style="height: 62px">
+              <div class="b" style="flex: 1; flex-direction: column; gap: 5px">
+                <span>Dec</span>
+                <span class="mdt">
+                  <i style="background-color: #D23A1C"></i>
+                  <i style="background-color: #D23A1C"></i>
+                </span>
+                <span class="ln" style="width: 100%"></span>
+              </div>
+              <div class="b" style="flex: 1; flex-direction: column; gap: 5px">
+                <span>Jan</span>
+                <span class="mdt">
+                  <i style="background-color: #2E2D2B"></i>
+                  <i style="background-color: #2E2D2B"></i>
+                </span>
+                <span class="ln" style="width: 100%"></span>
+              </div>
+              <div class="b" style="flex: 1; flex-direction: column; gap: 5px">
+                <span>Feb</span>
+                <span class="mdt">
+                  <i style="background-color: #2E2D2B"></i>
+                </span>
+                <span class="ln" style="width: 100%"></span>
+              </div>
+              <div class="b" style="flex: 1; flex-direction: column; gap: 5px">
+                <span>Mar</span>
+                <span class="mdt">
+                  <i style="background-color: #2E2D2B"></i>
+                </span>
+                <span class="ln" style="width: 100%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="c" style="padding-top: 4px">
+            <span class="k">
+              <i class="tq" style="background-color: #9A6B3F"></i>New projects
+            </span>
+            <div class="r" style="height: 50px">
+              <span class="b ph" style="flex: 1"></span>
+              <span class="b ph" style="flex: 1"></span>
+              <span class="b ph" style="flex: 1"></span>
+              <span class="b ph" style="flex: 1"></span>
+            </div>
+            <span style="align-self: flex-end">All projects →</span>
+          </div>
+          <div class="ad" style="height: 26px">
+            Ad · leaderboard, labelled, at a section break
+          </div>
+          <div class="r" style="padding-top: 4px">
+            <div class="c" style="flex: 1.6; gap: 7px">
+              <span class="k">
+                <i class="tq" style="background-color: #2F4FB0"></i>News
+              </span>
+              <span class="lr">
+                <span class="ln"></span>
+                <span class="aw">→</span>
+              </span>
+              <span class="lr">
+                <span class="ln"></span>
+                <span class="aw">→</span>
+              </span>
+              <span class="lr">
+                <span class="ln"></span>
+                <span class="aw">→</span>
+              </span>
+              <span class="lr">
+                <span class="ln"></span>
+                <span class="aw">→</span>
+              </span>
+              <span class="lr">
+                <span class="ln"></span>
+                <span class="aw">→</span>
+              </span>
+            </div>
+            <div class="c" style="flex: 1; gap: 6px">
+              <span class="k">
+                <i class="tq" style="background-color: #C8326B"></i>Events
+              </span>
+              <span class="lr">
+                <span class="cel"></span>
+                <span class="ln"></span>
+              </span>
+              <span class="lr">
+                <span class="cel on"></span>
+                <span class="ln"></span>
+              </span>
+              <span class="lr">
+                <span class="cel"></span>
+                <span class="ln"></span>
+              </span>
+              <span class="ad" style="height: 26px">
+                Ad · box
+              </span>
+            </div>
+          </div>
+          <div class="c" style="padding-top: 4px">
+            <span class="k">
+              <i class="tq" style="background-color: #0E8A8A"></i>Opinion &amp; Interview · merged
+            </span>
+            <div class="r" style="height: 64px">
+              <span class="b" style="flex: 1.1; background-color: #4A4844; color: #F4F1EB">
+                Featured opinion
+              </span>
+              <div class="c" style="flex: 1">
+                <span class="b" style="flex: 1; padding: 0"></span>
+                <span class="b" style="flex: 1; padding: 0"></span>
+                <span class="b" style="flex: 1; padding: 0"></span>
+              </div>
+            </div>
+          </div>
+          <div class="r" style="padding-top: 4px">
+            <div class="c" style="flex: 1; gap: 6px">
+              <span class="k">
+                <i class="tq" style="background-color: #5F6B2E"></i>Jobs
+              </span>
+              <span class="lr">
+                <span class="cel" style="border: 0; background-color: #EEEBE5"></span>
+                <span class="ln"></span>
+              </span>
+              <span class="lr">
+                <span class="cel" style="border: 0; background-color: #EEEBE5"></span>
+                <span class="ln"></span>
+              </span>
+              <span class="lr">
+                <span class="cel" style="border: 0; background-color: #EEEBE5"></span>
+                <span class="ln"></span>
+              </span>
+            </div>
+            <div class="c" style="flex: 1; gap: 6px">
+              <span class="k">
+                <i class="tq" style="background-color: #8A8F98"></i>Products · all marked Sponsored
+              </span>
+              <span class="lr">
+                <span class="cel" style="width: 22px; height: 8px"></span>
+                <span class="ln"></span>
+              </span>
+              <span class="lr">
+                <span class="cel" style="width: 22px; height: 8px"></span>
+                <span class="ln"></span>
+              </span>
+              <span class="lr">
+                <span class="cel" style="width: 22px; height: 8px"></span>
+                <span class="ln"></span>
+              </span>
+            </div>
+          </div>
+          <div
+            class="b"
+            style="height: 70px; flex-direction: column; justify-content: space-between; background-color: #D23A1C; color: #FFFFFF"
+          >
+            Advertising &amp; sponsorship · brand-red band
+            <span style="display: flex; gap: 5px; width: 100%">
+              <span style="flex: 1.3; display: flex; flex-direction: column; gap: 4px">
+                <i style="display: block; height: 4px; width: 70%; background-color: #FFFFFF"></i>
+                <i style="display: block; height: 10px; width: 40%; background-color: #FFFFFF"></i>
+              </span>
+              <span style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 3px">
+                <i style="display: block; height: 9px; background-color: #E8735E"></i>
+                <i style="display: block; height: 9px; background-color: #E8735E"></i>
+                <i style="display: block; height: 9px; background-color: #E8735E"></i>
+                <i style="display: block; height: 9px; background-color: #E8735E"></i>
+              </span>
+            </span>
+          </div>
+          <div class="r" style="height: 26px">
+            <span class="b" style="flex: 1; align-items: center">
+              Submit news
+            </span>
+            <span class="b" style="flex: 1; align-items: center">
+              Submit project
+            </span>
+            <span class="b" style="flex: 2; align-items: center; background-color: #4A4844; color: #F4F1EB">
+              Newsletter
+            </span>
+          </div>
+          <div class="b" style="height: 28px; align-items: center">
+            Footer
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wfl" aria-hidden="true">
+      <span>
+        <i style="background-color: #2F4FB0"></i>News
+      </span>
+      <span>
+        <i style="background-color: #9A6B3F"></i>Project
+      </span>
+      <span>
+        <i style="background-color: #6B3FD4"></i>Competition
+      </span>
+      <span>
+        <i style="background-color: #C8326B"></i>Event
+      </span>
+      <span>
+        <i style="background-color: #0E8A8A"></i>Opinion · Interview
+      </span>
+      <span>
+        <i style="background-color: #5F6B2E"></i>Careers
+      </span>
+      <span>
+        <i style="background-color: #8A8F98"></i>Products
+      </span>
+      <span>
+        <i class="hz"></i>Ad
+      </span>
+    </div>
+    <p class="cap">Wireframes, not to scale. Colored squares mark content type; hatched boxes are ads.</p>
+
+    <div class="subh">
+      <span class="ulabel">How the content was regrouped</span>
+      <h3 class="h3">Nothing removed from the site, only moved.</h3>
+    </div>
+    <table class="rg">
+      <thead>
+        <tr>
+          <th scope="col">Before</th>
+          <th scope="col">After</th>
+          <th scope="col">Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A billboard ad, an 11-slide carousel and three loud banners</td>
+          <td>One hero project and today’s five latest items</td>
+          <td>One clear way in.</td>
+        </tr>
+        <tr>
+          <td>One masonry feed mixing every content type</td>
+          <td>One section per type, each with “see all”</td>
+          <td>Readers come for a type.</td>
+        </tr>
+        <tr>
+          <td>One competition countdown in a side widget</td>
+          <td>A calendar of every open deadline</td>
+          <td>“When?” answered at a glance.</td>
+        </tr>
+        <tr>
+          <td>Seven or more ad units, some inside lists</td>
+          <td>Three labelled slots at section breaks, plus a sponsorship band</td>
+          <td>Ads stay, but stop interrupting.</td>
+        </tr>
+        <tr>
+          <td>Product posts styled like editorial ones</td>
+          <td>Their own section, each marked Sponsored</td>
+          <td>Paid and editorial stay apart.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="sec" id="s-compare" data-sec aria-labelledby="h-compare">
+    <div class="sh">
+      <h2 class="sh-t" id="h-compare">
+        Before and after
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Side by side, on the live page.</p>
+      <p class="tx">Drag across each image to compare the live homepage with the redesign.</p>
+    </div>
+    <p class="cap">Captured November 2026. Third-party ad creatives are blurred.</p>
+
+    <div class="subh">
+      <span class="ulabel">The first screen</span>
+      <h3 class="h3">What a visitor sees before scrolling.</h3>
+    </div>
+    <div class="ba rv">
+      <img
+        src="/media/arkitera/after-neutral-header-project.webp"
+        alt="After: a neutral header, the project of the week Solymos Evi as the hero, and a Gündem list of the five latest items beside it"
+        draggable="false"
+      />
+      <img
+        class="ba-b"
+        src="/media/arkitera/before-live-first-screen.webp"
+        alt="Before: the live first screen with a lime header, a billboard ad, a carousel, three colored submit banners, more ads and an overlay ad on the news list"
+        draggable="false"
+      />
+      <span class="ba-t l" aria-hidden="true">
+        Before · live site
+      </span>
+      <span class="ba-t r" aria-hidden="true">
+        After
+      </span>
+      <span class="ba-d" aria-hidden="true">
+        <span class="ba-h">
+          <i class="l"></i>
+          <i class="r"></i>
+        </span>
+      </span>
+      <input
+        class="ba-r"
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        aria-label="Compare the live first screen with the redesign"
+      />
+    </div>
+    <div class="ba-n">
+      <p>
+        <b>Before</b>A lime bar, a billboard ad and three loud banners compete with the featured project.
+      </p>
+      <p>
+        <b>After</b>One hero project and the five latest items. Nothing above the fold competes.
+      </p>
+    </div>
+
+    <div class="subh">
+      <span class="ulabel">The feed</span>
+      <h3 class="h3">From one mixed grid to clear sections.</h3>
+    </div>
+    <div class="ba-side">
+      <div class="ba rv sm" style="aspect-ratio: 1000 / 1150">
+        <img
+          src="/media/arkitera/redesigned-sections-new-projects.webp"
+          alt="Redesigned sections: new projects as an image grid, then news and events"
+          draggable="false"
+        />
+        <img
+          class="ba-b"
+          src="/media/arkitera/live-masonry-feed-mixing.webp"
+          alt="Live masonry feed mixing news, projects, video and ads"
+          draggable="false"
+        />
+        <span class="ba-t l" aria-hidden="true">
+          Before · live site
+        </span>
+        <span class="ba-t r" aria-hidden="true">
+          After
+        </span>
+        <span class="ba-d" aria-hidden="true">
+          <span class="ba-h">
+            <i class="l"></i>
+            <i class="r"></i>
+          </span>
+        </span>
+        <input
+          class="ba-r"
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          aria-label="Compare the live feed with the redesign"
+        />
+      </div>
+      <div class="ba-n col">
+        <p>
+          <b>Before</b>News, projects, a video and ads share one masonry grid; content type is a small tag on the card
+          edge.
+        </p>
+        <p>
+          <b>After</b>One section per type, a clear “see all” for each, and every row is a link.
+        </p>
+      </div>
+    </div>
+
+    <div class="subh">
+      <span class="ulabel">Component by component</span>
+      <h3 class="h3">Easier to scan, easier to trust.</h3>
+    </div>
+    <div class="bas">
+      <figure>
+        <h4>Events</h4>
+        <div class="ba rv sm" style="aspect-ratio: 1000 / 760">
+          <img
+            src="/media/arkitera/events-list-calendar-cell.webp"
+            alt="Events list with calendar-cell dates"
+            draggable="false"
+          />
+          <img
+            class="ba-b"
+            src="/media/arkitera/live-event-cards-date.webp"
+            alt="Live event cards with the date in small text"
+            draggable="false"
+          />
+          <span class="ba-t l" aria-hidden="true">
+            Before · live site
+          </span>
+          <span class="ba-t r" aria-hidden="true">
+            After
+          </span>
+          <span class="ba-d" aria-hidden="true">
+            <span class="ba-h">
+              <i class="l"></i>
+              <i class="r"></i>
+            </span>
+          </span>
+          <input
+            class="ba-r"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            aria-label="Compare the live events with the redesign"
+          />
+        </div>
+        <p>The date leads, as calendar cells; multi-day events as joined cells.</p>
+      </figure>
+      <figure>
+        <h4>Opinion</h4>
+        <div class="ba rv sm" style="aspect-ratio: 1000 / 760">
+          <img
+            src="/media/arkitera/gorus-soylesi-section-author.webp"
+            alt="Görüş and Söyleşi section with author initials"
+            draggable="false"
+          />
+          <img
+            class="ba-b"
+            src="/media/arkitera/live-opinion-card-placeholder.webp"
+            alt="Live opinion card with a placeholder avatar"
+            draggable="false"
+          />
+          <span class="ba-t l" aria-hidden="true">
+            Before · live site
+          </span>
+          <span class="ba-t r" aria-hidden="true">
+            After
+          </span>
+          <span class="ba-d" aria-hidden="true">
+            <span class="ba-h">
+              <i class="l"></i>
+              <i class="r"></i>
+            </span>
+          </span>
+          <input
+            class="ba-r"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            aria-label="Compare the live opinion with the redesign"
+          />
+        </div>
+        <p>A face and a full name for every author; the title is the largest element.</p>
+      </figure>
+      <figure>
+        <h4>Careers</h4>
+        <div class="ba rv sm" style="aspect-ratio: 1000 / 760">
+          <img
+            src="/media/arkitera/ilanlari-list-four-full.webp"
+            alt="İş ilanları list with four full job titles"
+            draggable="false"
+          />
+          <img
+            class="ba-b"
+            src="/media/arkitera/live-careers-list-truncated.webp"
+            alt="Live careers list with truncated titles"
+            draggable="false"
+          />
+          <span class="ba-t l" aria-hidden="true">
+            Before · live site
+          </span>
+          <span class="ba-t r" aria-hidden="true">
+            After
+          </span>
+          <span class="ba-d" aria-hidden="true">
+            <span class="ba-h">
+              <i class="l"></i>
+              <i class="r"></i>
+            </span>
+          </span>
+          <input
+            class="ba-r"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            aria-label="Compare the live careers with the redesign"
+          />
+        </div>
+        <p>Four full titles with office initials instead of twelve cut-off lines.</p>
+      </figure>
+      <figure>
+        <h4>Product promotions</h4>
+        <div class="ba rv sm" style="aspect-ratio: 1000 / 760">
+          <img
+            src="/media/arkitera/urun-tanitimlari-list-sponsorlu.webp"
+            alt="Ürün tanıtımları list with Sponsorlu labels"
+            draggable="false"
+          />
+          <img
+            class="ba-b"
+            src="/media/arkitera/live-product-post-styled.webp"
+            alt="Live product post styled like an editorial card"
+            draggable="false"
+          />
+          <span class="ba-t l" aria-hidden="true">
+            Before · live site
+          </span>
+          <span class="ba-t r" aria-hidden="true">
+            After
+          </span>
+          <span class="ba-d" aria-hidden="true">
+            <span class="ba-h">
+              <i class="l"></i>
+              <i class="r"></i>
+            </span>
+          </span>
+          <input
+            class="ba-r"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            aria-label="Compare the live product promotions with the redesign"
+          />
+        </div>
+        <p>Every paid post sits in its own section, labelled “Sponsorlu”.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="s-decisions" data-sec aria-labelledby="h-decisions">
+    <div class="sh">
+      <h2 class="sh-t" id="h-decisions">
+        Key decisions
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Where it matters most.</p>
+      <p class="tx">
+        Two areas carry the most weight: competitions, which bring students and offices back week after week, and
+        advertising, which pays for the site. Both got more than a restyle; they got a new way of working.
+      </p>
+    </div>
+
+    <div class="subh">
+      <span class="ulabel">Competitions</span>
+      <h3 class="h3">From one countdown to a calendar.</h3>
+    </div>
+    <div class="it rv">
+      <div class="it-s">
+        <span class="k11">Before</span>
+        <div class="it-v">
+          <img
+            src="/media/arkitera/live-competitions-widget-48.webp"
+            alt="Live competitions widget: 48 GÜN in a red circle next to one competition title"
+            style="width: 248px; aspect-ratio: 248 / 114"
+          />
+        </div>
+        <p class="it-p">
+          A widget in the right column shows one competition and a bare day count. The other five open deadlines are
+          only findable in the feed or on the competitions page.
+        </p>
+      </div>
+      <div class="it-a" aria-hidden="true">
+        <span class="hd fr"></span>
+        <span class="ah ah-r"></span>
+      </div>
+      <div class="it-s">
+        <span class="k11">First draft · timeline</span>
+        <div
+          class="it-v"
+          role="img"
+          aria-label="First draft: every open deadline on one line from today, labelled with days left: 10, 13, 48, 64, 83 and 122 days"
+        >
+          <div class="tlx">
+            <span class="hd"></span>
+            <span class="tlx-m now" style="left: 0%"></span>
+            <span class="tlx-m red" style="left: 7.7%"></span>
+            <span class="tlx-l red" style="left: 6.2%">
+              10d
+            </span>
+            <span class="tlx-m red" style="left: 10%"></span>
+            <span class="tlx-l red" style="left: 11.8%">
+              13d
+            </span>
+            <span class="tlx-m" style="left: 36.9%"></span>
+            <span class="tlx-l" style="left: 36.9%">
+              48d
+            </span>
+            <span class="tlx-m" style="left: 49.2%"></span>
+            <span class="tlx-l" style="left: 49.2%">
+              64d
+            </span>
+            <span class="tlx-m" style="left: 63.8%"></span>
+            <span class="tlx-l" style="left: 63.8%">
+              83d
+            </span>
+            <span class="tlx-m" style="left: 93.8%"></span>
+            <span class="tlx-l" style="left: 93.8%">
+              122d
+            </span>
+            <span class="tlx-n">Today</span>
+          </div>
+        </div>
+        <p class="it-p">
+          Every deadline on one line, labelled with days left. Reviewing the draft showed it was hard to read: you had
+          to judge distances to work out a date, and close deadlines crowded each other.
+        </p>
+      </div>
+    </div>
+    <div class="it-dn" aria-hidden="true">
+      <span class="vd fd"></span>
+      <span class="ah ah-d"></span>
+    </div>
+    <figure class="it-f rv">
+      <span class="k11">Final · calendar</span>
+      <img
+        src="/media/arkitera/final-competition-calendar-four.webp"
+        alt="Final competition calendar: four months side by side with every deadline marked as a date, two December deadlines in red, and each month’s competitions listed underneath"
+        style="aspect-ratio: 2000 / 1024"
+      />
+      <figcaption class="it-p" style="max-width: 760px">
+        Four months side by side. Every deadline is a date you can see, red when it closes within 14 days, with that
+        month’s competitions listed underneath it.
+      </figcaption>
+    </figure>
+    <div class="kpi">
+      <div class="rv">
+        <b>6 vs 1</b>
+        <span>open deadlines visible on the homepage.</span>
+      </div>
+      <div class="rv">
+        <b>Dates</b>
+        <span>instead of a bare day count; the count stays as a status.</span>
+      </div>
+      <div class="rv">
+        <b>≤ 14 days</b>
+        <span>is the only thing that turns red, so urgency has one meaning.</span>
+      </div>
+      <div class="rv">
+        <b>1 click</b>
+        <span>from any month to the competition brief, via the arrow on each entry.</span>
+      </div>
+    </div>
+
+    <div class="subh">
+      <span class="ulabel">Sponsorship</span>
+      <h3 class="h3">From scattered ads to a place of its own.</h3>
+    </div>
+    <div class="ba-side">
+      <div class="ba rv sm" style="aspect-ratio: 1000 / 760">
+        <img
+          src="/media/arkitera/redesigned-advertising-band-brand.webp"
+          alt="Redesigned advertising band in brand red, with free submissions and the newsletter below"
+          draggable="false"
+        />
+        <img
+          class="ba-b"
+          src="/media/arkitera/live-submit-banners-green.webp"
+          alt="Live submit banners in green, purple and magenta"
+          draggable="false"
+        />
+        <span class="ba-t l" aria-hidden="true">
+          Before · live site
+        </span>
+        <span class="ba-t r" aria-hidden="true">
+          After
+        </span>
+        <span class="ba-d" aria-hidden="true">
+          <span class="ba-h">
+            <i class="l"></i>
+            <i class="r"></i>
+          </span>
+        </span>
+        <input
+          class="ba-r"
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          aria-label="Compare the live submit banners with the new advertising band"
+        />
+      </div>
+      <div class="ba-n col">
+        <p class="tx" style="margin: 0">
+          Advertising is Arkitera’s main source of revenue, so it gets a clear, sellable home.
+        </p>
+        <ul class="pts">
+          <li>A full-width band in brand red, the only large block of color on the page.</li>
+          <li>Three fixed ad slots at section breaks, each labelled “Reklam”.</li>
+          <li>Paid and free kept apart: free submissions sit below the band.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subh">
+      <span class="ulabel">Smaller fixes that add up</span>
+      <h3 class="h3">Details a reader feels without noticing.</h3>
+    </div>
+    <div class="notes4 ui-n">
+      <div class="rv">
+        <div class="sp ui" aria-hidden="true">
+          <span class="sp-row">
+            COP31’de Tarihi Fırsat Kaçtı<span class="sp-ar">→</span>
+          </span>
+        </div>
+        <h4>Every item is a link</h4>
+        <p>News, jobs, products, events and opinion rows all end with an arrow, so the whole row reads as clickable.</p>
+      </div>
+      <div class="rv">
+        <div class="sp ui" aria-hidden="true">
+          <span class="sp-cells">
+            <span>
+              10<small>Per</small>
+            </span>
+            <span>
+              11<small>Cum</small>
+            </span>
+          </span>
+          <span class="sp-t">
+            ANAMED Sempozyumu<small>2 gün</small>
+          </span>
+        </div>
+        <h4>Date ranges at a glance</h4>
+        <p>Multi-day events show as joined calendar cells instead of “10–11” squeezed into one box.</p>
+      </div>
+      <div class="rv">
+        <div class="sp ui" aria-hidden="true">
+          <span class="sp-av">AG</span>
+          <span class="sp-t">
+            Festival Enflasyonu<small>Alper Gülle</small>
+          </span>
+        </div>
+        <h4>Opinion gets a face</h4>
+        <p>
+          Opinion and interviews merged into one section: a featured piece plus three, each with the author’s initials
+          and name.
+        </p>
+      </div>
+      <div class="rv">
+        <div class="sp ui" aria-hidden="true">
+          <span class="sp-nav">
+            <span>Haber</span>
+            <span>Proje</span>
+            <span>Yarışma</span>
+            <span>Etkinlik</span>
+            <span>Görüş &amp; Söyleşi</span>
+          </span>
+        </div>
+        <h4>A calmer menu</h4>
+        <p>Nine items became seven, in plain language and with no count badges competing with the labels.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-badges" data-sec aria-labelledby="h-badges">
+    <div class="sh">
+      <h2 class="sh-t" id="h-badges">
+        Badge system
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Four layers, four shapes.</p>
+      <p class="tx">
+        Type, category and status used to look the same. Now each has its own shape, and color appears in only two
+        places: the type square and the status pill.
+      </p>
+    </div>
+    <div class="lay">
+      <div class="rv">
+        <div class="lay-v ui">
+          <span class="bt">
+            <i style="background-color: #9A6B3F"></i>Project
+          </span>
+        </div>
+        <h4>
+          Square <span>· type</span>
+        </h4>
+        <p>What the card is. One per card.</p>
+      </div>
+      <div class="rv">
+        <div class="lay-v ui">
+          <span class="bo">Architecture</span>
+        </div>
+        <h4>
+          Outline <span>· category</span>
+        </h4>
+        <p>What it’s about. Up to two.</p>
+      </div>
+      <div class="rv">
+        <div class="lay-v ui">
+          <span class="bpl s-ln">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 7v5l3 2"></path>
+            </svg>
+            Last 10 days
+          </span>
+        </div>
+        <h4>
+          Pill <span>· status</span>
+        </h4>
+        <p>Only when time matters. Always an icon and a word.</p>
+      </div>
+      <div class="rv">
+        <div class="lay-v ui">
+          <span class="bfl">Student</span>
+        </div>
+        <h4>
+          Fill <span>· attribute</span>
+        </h4>
+        <p>Who can enter, fee, prize. Up to three.</p>
+      </div>
+    </div>
+    <div class="tcl ui">
+      <span class="bt">
+        <i style="background-color: #2F4FB0"></i>News
+      </span>
+      <span class="bt">
+        <i style="background-color: #9A6B3F"></i>Project
+      </span>
+      <span class="bt">
+        <i style="background-color: #6B3FD4"></i>Competition
+      </span>
+      <span class="bt">
+        <i style="background-color: #C8326B"></i>Event
+      </span>
+      <span class="bt">
+        <i style="background-color: #0E8A8A"></i>Opinion · Interview
+      </span>
+      <span class="bt">
+        <i style="background-color: #5F6B2E"></i>Careers
+      </span>
+      <span class="bt">
+        <i style="background-color: #8A8F98"></i>Products
+      </span>
+      <span style="display: inline-flex; align-items: center; gap: 10px">
+        <span class="sps">SPONSORED</span>
+        <span style="font: 400 13px/1.4 Inter, sans-serif; color: #6B6862">required on product content</span>
+      </span>
+    </div>
+
+    <div class="subh">
+      <span class="ulabel">Status</span>
+      <h3 class="h3">Five states for anything with a deadline.</h3>
+    </div>
+    <div
+      class="lc rv"
+      role="group"
+      aria-label="Status lifecycle from Upcoming to Open, Last N days, Under review and Results out"
+    >
+      <div class="lc-in ui">
+        <span class="hd fr" aria-hidden="true"></span>
+        <div class="lc-s">
+          <span class="bpl s-up">Upcoming</span>
+          <span>Not open yet.</span>
+        </div>
+        <div class="lc-s">
+          <span class="bpl s-op">
+            <i></i>Open
+          </span>
+          <span>More than 14 days left.</span>
+        </div>
+        <div class="lc-s">
+          <span class="bpl s-ln">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 7v5l3 2"></path>
+            </svg>
+            Last 10 days
+          </span>
+          <span>14 days or fewer: the only red state.</span>
+        </div>
+        <div class="lc-s">
+          <span class="bpl s-rv">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M6 3h12M6 21h12M7 3c0 5 10 5 10 9s-10 4-10 9M17 3c0 5-10 5-10 9"></path>
+            </svg>
+            Under review
+          </span>
+          <span>Closed, results pending.</span>
+        </div>
+        <div class="lc-s">
+          <span class="bpl s-rs">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12l5 5 9-10"></path>
+            </svg>
+            Results out
+          </span>
+          <span>Winners published.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="subh">
+      <span class="ulabel">The card</span>
+      <h3 class="h3">From six equal labels to four clear layers.</h3>
+    </div>
+    <div class="ba rv" style="aspect-ratio: 1040 / 330">
+      <div class="ba-pn ui" style="background-color: #EFEDE8">
+        <div class="cc cc2">
+          <div class="cc-top">
+            <span class="bt">
+              <i style="background-color: #6B3FD4"></i>Competition
+            </span>
+            <span class="bpl s-op">
+              <i></i>Open · 48 days
+            </span>
+          </div>
+          <p class="cc-h">Mimarlar Derneği 1927 100. Yıl Logo Tasarım Yarışması</p>
+          <div class="cc-tg">
+            <span class="bo">Design</span>
+            <span class="bfl">Student</span>
+          </div>
+          <span class="cc-m">Deadline Jan 11, 2027</span>
+        </div>
+      </div>
+      <div class="ba-pn ba-b" style="background-color: #EFEDE8">
+        <div class="cc cc2">
+          <div class="ob">
+            <span>Competition</span>
+            <span>Design</span>
+            <span>Student</span>
+            <span>06 Nov</span>
+            <span>48 DAYS</span>
+            <span>0 Shares</span>
+          </div>
+          <p class="ob-h">Mimarlar Derneği 1927 100. Yıl Logo Tasarım Yarışması</p>
+        </div>
+      </div>
+      <span class="ba-t l" aria-hidden="true">
+        Before
+      </span>
+      <span class="ba-t r" aria-hidden="true">
+        After
+      </span>
+      <span class="ba-d" aria-hidden="true">
+        <span class="ba-h">
+          <i class="l"></i>
+          <i class="r"></i>
+        </span>
+      </span>
+      <input
+        class="ba-r"
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        aria-label="Compare the old competition card with the new one"
+      />
+    </div>
+    <p class="cap">
+      Read top to bottom: status, headline, tags, deadline. The share counter moves to the detail page, since a “0” on a
+      card erodes trust.
+    </p>
+    <div class="rules">
+      <div class="rv">
+        <b>1 · 2 · 1 · 3</b>
+        <span>Type, categories, status and attributes, at most, per card.</span>
+      </div>
+      <div class="rv">
+        <b>Two color zones</b>
+        <span>Only the type square and the status pill.</span>
+      </div>
+      <div class="rv">
+        <b>Icon + word</b>
+        <span>Status never relies on color alone.</span>
+      </div>
+      <div class="rv">
+        <b>Arrow = link</b>
+        <span>Every clickable row ends with an arrow.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-brand" data-sec aria-labelledby="h-brand">
+    <div class="sh">
+      <h2 class="sh-t" id="h-brand">
+        Brand
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">A light rebrand, not a new identity.</p>
+      <p class="tx">
+        Same name and voice, less noise: calm neutrals, one accent red and a single type family, so the architecture
+        photography leads.
+      </p>
+    </div>
+
+    <div class="subh">
+      <span class="ulabel">Logo</span>
+      <h3 class="h3">Same name, quieter mark.</h3>
+    </div>
+    <div class="ba rv" style="aspect-ratio: 1040 / 340">
+      <div class="ba-pn ui" style="background-color: #F5F3EE; gap: 40px">
+        <span class="wm">
+          <b>
+            arkitera<i></i>
+          </b>
+          <span>Türkiye’nin Mimarlık Yayını</span>
+        </span>
+        <span class="fav">
+          <span class="l">
+            a<i></i>
+          </span>
+          <span class="d">
+            a<i></i>
+          </span>
+        </span>
+      </div>
+      <div class="ba-pn ba-b" style="background-color: #DCE61E">
+        <img
+          src="/media/arkitera/previous-uppercase-arkitera-wordmark.svg"
+          alt="The previous uppercase Arkitera wordmark on the lime header colour"
+          style="position: static; width: 220px; height: auto; aspect-ratio: 145 / 50"
+        />
+      </div>
+      <span class="ba-t l" aria-hidden="true">
+        Before
+      </span>
+      <span class="ba-t r" aria-hidden="true">
+        After
+      </span>
+      <span class="ba-d" aria-hidden="true">
+        <span class="ba-h">
+          <i class="l"></i>
+          <i class="r"></i>
+        </span>
+      </span>
+      <input
+        class="ba-r"
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        aria-label="Compare the old logo with the new wordmark"
+      />
+    </div>
+    <p class="cap">
+      The lime bar goes. A lowercase wordmark in the page’s own typeface, with a red square as its full stop that
+      doubles as the favicon.
+    </p>
+
+    <div class="subh">
+      <span class="ulabel">Color</span>
+      <h3 class="h3">From seven loud hues to calm neutrals and one red.</h3>
+    </div>
+    <p class="k11" style="margin: 36px 0 0">
+      Before
+    </p>
+    <div class="pal b8 rv" style="max-width: 1040px">
+      <div>
+        <i style="background-color: #DCE61E"></i>
+        <b>Lime</b>
+        <span>#DCE61E</span>
+      </div>
+      <div>
+        <i style="background-color: #F7FDD1"></i>
+        <b>Lime tint</b>
+        <span>#F7FDD1</span>
+      </div>
+      <div>
+        <i style="background-color: #65D500"></i>
+        <b>Green</b>
+        <span>#65D500</span>
+      </div>
+      <div>
+        <i style="background-color: #6C1B84"></i>
+        <b>Purple</b>
+        <span>#6C1B84</span>
+      </div>
+      <div>
+        <i style="background-color: #B42D6B"></i>
+        <b>Magenta</b>
+        <span>#B42D6B</span>
+      </div>
+      <div>
+        <i style="background-color: #FFC542"></i>
+        <b>Yellow</b>
+        <span>#FFC542</span>
+      </div>
+      <div>
+        <i style="background-color: #EF4C50"></i>
+        <b>Coral red</b>
+        <span>#EF4C50</span>
+      </div>
+      <div>
+        <i style="background-color: #F74B47"></i>
+        <b>Red</b>
+        <span>#F74B47</span>
+      </div>
+    </div>
+    <p class="k11" style="margin: 40px 0 0">
+      After
+    </p>
+    <div class="pal a7 rv" style="max-width: 1040px">
+      <div>
+        <i style="background-color: #F5F3EE"></i>
+        <b>Paper</b>
+        <span>#F5F3EE</span>
+      </div>
+      <div>
+        <i style="background-color: #ECE9E2"></i>
+        <b>Stone</b>
+        <span>#ECE9E2</span>
+      </div>
+      <div>
+        <i style="background-color: #E2DED6"></i>
+        <b>Line</b>
+        <span>#E2DED6</span>
+      </div>
+      <div>
+        <i style="background-color: #6B6862"></i>
+        <b>Muted</b>
+        <span>#6B6862</span>
+      </div>
+      <div>
+        <i style="background-color: #4A4844"></i>
+        <b>Graphite</b>
+        <span>#4A4844</span>
+      </div>
+      <div>
+        <i style="background-color: #151515"></i>
+        <b>Ink</b>
+        <span>#151515</span>
+      </div>
+      <div>
+        <i style="background-color: #D23A1C"></i>
+        <b>Signal red</b>
+        <span>#D23A1C</span>
+      </div>
+    </div>
+    <div class="shr" role="img" aria-label="Neutrals carry the page; red is about 2 percent">
+      <div class="shr-b" aria-hidden="true">
+        <i style="flex: 44; background-color: #F5F3EE; box-shadow: inset 0 0 0 1px rgba(46,45,43,.08)"></i>
+        <i style="flex: 18; background-color: #ECE9E2"></i>
+        <i style="flex: 6; background-color: #E2DED6"></i>
+        <i style="flex: 8; background-color: #6B6862"></i>
+        <i style="flex: 12; background-color: #4A4844"></i>
+        <i style="flex: 10; background-color: #151515"></i>
+        <i style="flex: 2; background-color: #D23A1C"></i>
+      </div>
+      <div class="shr-l" aria-hidden="true">
+        <span>Neutrals carry the page</span>
+        <span>Red ≈ 2%: urgency, actions, the ad band</span>
+      </div>
+    </div>
+
+    <div class="subh">
+      <span class="ulabel">Typography</span>
+      <h3 class="h3">One family, two cuts.</h3>
+    </div>
+    <div class="ba rv" style="aspect-ratio: 1040 / 360">
+      <div class="ba-pn ui" style="background-color: #F5F3EE">
+        <div class="tyc">
+          <span style="font: 600 15px/1.4 Inter, sans-serif; color: #151515">Haber · Proje · Yarışma · Etkinlik</span>
+          <span style="font: 700 44px/1.1 'Inter Tight', Inter, sans-serif; letter-spacing: -0.025em; color: #151515">
+            Solymos Evi
+          </span>
+          <span style="font: 400 16px/1.5 Inter, sans-serif; color: #4A4844">
+            Çam ağaçlarının arasında, havuz terasına açılan iki katlı bir konut.
+          </span>
+          <span style="font: 500 12px/1.4 Inter, sans-serif; color: #6B6862; font-variant-numeric: tabular-nums">
+            24 Kasım 2026 · Mimarlık
+          </span>
+        </div>
+      </div>
+      <div class="ba-pn ba-b tyb" style="background-color: #F5F3EE">
+        <div class="tyc">
+          <span style="font: 500 15px/1.4 Dosis, sans-serif; letter-spacing: .02em; color: #323031; text-transform: uppercase">
+            Haber · Etkinlik · Yarışma · Proje
+          </span>
+          <span style="font: 500 44px/1.1 Dosis, sans-serif; color: #323031">Solymos Evi</span>
+          <span style="font: 400 16px/1.5 Roboto, Arial, sans-serif; color: #4A4A4A">
+            Çam ağaçlarının arasında, havuz terasına açılan iki katlı bir konut.
+          </span>
+          <span style="font: 400 12px/1.4 Roboto, Arial, sans-serif; color: #8A8A8A">
+            24 Kas · Mimarlık · 0 Paylaşım
+          </span>
+        </div>
+      </div>
+      <span class="ba-t l" aria-hidden="true">
+        Dosis + Roboto
+      </span>
+      <span class="ba-t r" aria-hidden="true">
+        Inter Tight + Inter
+      </span>
+      <span class="ba-d" aria-hidden="true">
+        <span class="ba-h">
+          <i class="l"></i>
+          <i class="r"></i>
+        </span>
+      </span>
+      <input
+        class="ba-r"
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        aria-label="Compare Dosis and Roboto with Inter Tight and Inter"
+      />
+    </div>
+    <p class="cap">
+      A tight cut for headlines, an open cut for reading. Tabular figures keep dates aligned, with full Turkish support.
+    </p>
+    <dl class="ts">
+      <div class="rv">
+        <dt>
+          Display<small>Inter Tight Bold · 56</small>
+        </dt>
+        <dd
+          class="ui"
+          style="font: 700 clamp(36px, 3.4vw, 56px)/1.02 'Inter Tight', Inter, sans-serif; letter-spacing: -0.025em"
+        >
+          Solymos Evi
+        </dd>
+      </div>
+      <div class="rv">
+        <dt>
+          Section<small>Inter Tight Bold · 32</small>
+        </dt>
+        <dd
+          class="ui"
+          style="font: 700 clamp(24px, 2.1vw, 32px)/1.1 'Inter Tight', Inter, sans-serif; letter-spacing: -0.02em"
+        >
+          Yeni yayınlanan projeler
+        </dd>
+      </div>
+      <div class="rv">
+        <dt>
+          Body<small>Inter Regular · 18</small>
+        </dt>
+        <dd class="ui" style="font: 400 18px/1.55 Inter, sans-serif; color: #4A4844">
+          Çam ağaçlarının arasında iki katlı bir konut.
+        </dd>
+      </div>
+      <div class="rv">
+        <dt>
+          Label<small>Inter Semibold · 11 · caps</small>
+        </dt>
+        <dd class="ui" style="font: 600 11px/1.4 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase">
+          Proje · Haber · Etkinlik
+        </dd>
+      </div>
+    </dl>
+  </section>
+</ProjectLayout>
+
+<script>
+  import '../../scripts/before-after.js';
+</script>

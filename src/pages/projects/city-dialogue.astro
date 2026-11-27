@@ -1,0 +1,346 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import diagram from '../../styles/components/diagram.css?url';
+import film from '../../styles/components/film.css?url';
+import page from '../../styles/projects/city-dialogue.css?url';
+---
+
+<ProjectLayout slug="city-dialogue" styles={[diagram, film, page]}>
+  <div class="cover">
+    <figure class="cv-img">
+      <img
+        src="/media/city-dialogue/cover.webp"
+        alt="City Dialogue on a tablet: a map of connected discussion topics, with recent popular topics, shown with the EU and NetZeroCities logos"
+      />
+    </figure>
+    <div class="cv-deco" aria-hidden="true">
+      <span class="cv-ring"></span>
+      <svg class="cv-ln" viewBox="0 0 106 30">
+        <polyline class="cl" points="4.3,1.2 105.4,29.5"></polyline>
+      </svg>
+      <span class="x cv-x1"></span>
+      <span class="x cv-x2"></span>
+    </div>
+  </div>
+
+  <section class="sec first" id="s-overview" data-sec aria-labelledby="h-overview">
+    <div class="sh">
+      <h2 class="sh-t" id="h-overview">
+        Overview
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split">
+      <div class="split-a">
+        <p class="lead">Turning a network into a place to talk.</p>
+        <p class="tx">
+          City Dialogue was developed during a workshop with NetZeroCities, within the European Union context, in
+          response to a brief for a digital platform that could strengthen knowledge exchange around climate-neutral
+          cities.
+        </p>
+        <p class="tx">
+          Our approach turned a network into an accessible, structured digital experience. Live discussion rooms,
+          topic-based conversations, expert knowledge, shared resources, archived discussions and profiles let
+          participants both contribute to and explore an evolving knowledge community.
+        </p>
+        <ul class="tg" aria-label="Themes">
+          <li>NetZeroCities</li>
+          <li>European Union</li>
+          <li>Discussion hub</li>
+          <li>Network</li>
+        </ul>
+      </div>
+      <div class="split-b">
+        <span class="vl" aria-hidden="true"></span>
+        <dl class="facts">
+          <div>
+            <dt>Context</dt>
+            <dd>NetZeroCities, European Union</dd>
+          </div>
+          <div>
+            <dt>Year</dt>
+            <dd>2024</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>Delivered</dd>
+          </div>
+          <div>
+            <dt>Prototype</dt>
+            <dd>
+              <a
+                class="ul"
+                href="https://www.figma.com/proto/7TCbbzH8zfnjbeXvU3DHeM/Portfolio?node-id=102-38565&amp;t=qqoqRJZFLmaJii9u-0&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;page-id=72%3A27732&amp;hide-ui=1"
+                target="_blank"
+                rel="noopener"
+              >
+                View prototype <span aria-hidden="true">↗</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <figure class="film rv">
+      <video
+        src="/media/city-dialogue/concept-film.mp4"
+        poster="/media/city-dialogue/concept-film-poster.webp"
+        controls
+        muted
+        autoplay
+        loop
+        playsinline
+        aria-label="City Dialogue concept film: experts and citizens finding each other in topic-based discussion rooms"
+      ></video>
+      <figcaption>Concept film · Unmute for sound</figcaption>
+    </figure>
+  </section>
+
+  <section class="sec" id="s-hub" data-sec aria-labelledby="h-hub">
+    <div class="sh">
+      <h2 class="sh-t" id="h-hub">
+        Discussion hub
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Find an expert, join a room, share what you know.</p>
+      <p class="tx">
+        The website works as a community hub where users discover experts, join topic-based discussions and exchange
+        knowledge around climate-neutral cities, with a structured space for collaboration and long-term knowledge
+        sharing.
+      </p>
+    </div>
+    <figure class="mock rv">
+      <img
+        src="/media/city-dialogue/discussion-hub.webp"
+        alt="City Dialogue discussion hub on a tablet: a network of topic bubbles, discussions and recent popular topics"
+        style="aspect-ratio: 1853 / 1105"
+      />
+    </figure>
+    <div class="notes4">
+      <div class="rv">
+        <h4>Live rooms</h4>
+        <p>Real-time discussions around a topic.</p>
+      </div>
+      <div class="rv">
+        <h4>Archive</h4>
+        <p>Past conversations stay available, so knowledge builds up.</p>
+      </div>
+      <div class="rv">
+        <h4>Resources</h4>
+        <p>Shared links and articles enrich each topic.</p>
+      </div>
+      <div class="rv">
+        <h4>Profiles and messages</h4>
+        <p>People find each other and continue the conversation directly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-ia" data-sec aria-labelledby="h-ia">
+    <div class="sh">
+      <h2 class="sh-t" id="h-ia">
+        Information architecture
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Homepage, live sessions, archive and profile.</p>
+      <p class="tx">
+        Preferences come first: participants pick their topics and cities, then land on the homepage. Four main pages
+        carry the rooms, discussions, people and resources, with the actions available in each.
+      </p>
+    </div>
+    <div class="ia rv" role="group" aria-label="City Dialogue information architecture">
+      <div class="ia-pref">
+        <span class="mk pg" aria-hidden="true"></span>
+        <b class="ia-st">Preferences</b>
+        <ul class="tree open">
+          <li>
+            <span class="mk act" aria-hidden="true"></span>select topics
+          </li>
+          <li>
+            <span class="mk act" aria-hidden="true"></span>select cities
+          </li>
+        </ul>
+        <span class="ia-in" aria-hidden="true">
+          <span class="vd fd"></span>
+          <span class="ah ah-d"></span>
+        </span>
+      </div>
+      <div class="ia-row">
+        <span class="hd fr ia-trk" aria-hidden="true"></span>
+        <div class="ia-col">
+          <span class="mk pg" aria-hidden="true"></span>
+          <b class="ia-st">Homepage</b>
+          <ul class="tree">
+            <li>
+              <span class="mk els" aria-hidden="true"></span>topics
+              <ul class="tree">
+                <li>
+                  <span class="mk els" aria-hidden="true"></span>participants
+                </li>
+                <li>
+                  <span class="mk els" aria-hidden="true"></span>discussions
+                </li>
+                <li>
+                  <span class="mk els" aria-hidden="true"></span>resources
+                </li>
+                <li>
+                  <span class="mk act" aria-hidden="true"></span>comment
+                </li>
+                <li>
+                  <span class="mk act" aria-hidden="true"></span>like
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="mk act" aria-hidden="true"></span>start a new discussion
+            </li>
+            <li>
+              <span class="mk act" aria-hidden="true"></span>share
+            </li>
+            <li>
+              <span class="mk act" aria-hidden="true"></span>send a message
+            </li>
+            <li>
+              <span class="mk act" aria-hidden="true"></span>search
+            </li>
+            <li>
+              <span class="mk act" aria-hidden="true"></span>filter
+            </li>
+          </ul>
+        </div>
+        <div class="ia-col">
+          <span class="mk pg" aria-hidden="true"></span>
+          <b class="ia-st">Live session</b>
+          <ul class="tree">
+            <li>
+              <span class="mk els" aria-hidden="true"></span>rooms
+              <ul class="tree">
+                <li>
+                  <span class="mk els" aria-hidden="true"></span>discussions
+                </li>
+                <li>
+                  <span class="mk act" aria-hidden="true"></span>start a new discussion
+                </li>
+                <li>
+                  <span class="mk els" aria-hidden="true"></span>participants
+                </li>
+                <li>
+                  <span class="mk els" aria-hidden="true"></span>room analytics
+                </li>
+                <li>
+                  <span class="mk act" aria-hidden="true"></span>leave room
+                </li>
+                <li>
+                  <span class="mk act" aria-hidden="true"></span>report
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="mk els" aria-hidden="true"></span>participants
+            </li>
+            <li>
+              <span class="mk els" aria-hidden="true"></span>reports
+            </li>
+            <li>
+              <span class="mk act" aria-hidden="true"></span>create a new room
+            </li>
+            <li>
+              <span class="mk act" aria-hidden="true"></span>join a room
+            </li>
+            <li>
+              <span class="mk act" aria-hidden="true"></span>search
+            </li>
+          </ul>
+        </div>
+        <div class="ia-col">
+          <span class="mk pg" aria-hidden="true"></span>
+          <b class="ia-st">Archive</b>
+          <ul class="tree">
+            <li>
+              <span class="mk els" aria-hidden="true"></span>rooms
+              <ul class="tree">
+                <li>
+                  <span class="mk els" aria-hidden="true"></span>discussions
+                </li>
+                <li>
+                  <span class="mk act" aria-hidden="true"></span>join the discussion
+                </li>
+                <li>
+                  <span class="mk els" aria-hidden="true"></span>participants
+                </li>
+                <li>
+                  <span class="mk els" aria-hidden="true"></span>room analytics
+                </li>
+                <li>
+                  <span class="mk act" aria-hidden="true"></span>search
+                </li>
+                <li>
+                  <span class="mk act" aria-hidden="true"></span>filter
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="ia-col">
+          <span class="mk pg" aria-hidden="true"></span>
+          <b class="ia-st">Profile</b>
+          <ul class="tree">
+            <li class="pgi">
+              <span class="mk pg sm" aria-hidden="true"></span>Account management
+              <ul class="tree">
+                <li>
+                  <span class="mk els" aria-hidden="true"></span>personal information
+                </li>
+                <li>
+                  <span class="mk act" aria-hidden="true"></span>save your changes
+                </li>
+              </ul>
+            </li>
+            <li class="pgi">
+              <span class="mk pg sm" aria-hidden="true"></span>Settings
+              <ul class="tree">
+                <li>
+                  <span class="mk el" aria-hidden="true"></span>language
+                </li>
+                <li>
+                  <span class="mk el" aria-hidden="true"></span>privacy
+                </li>
+                <li>
+                  <span class="mk el" aria-hidden="true"></span>security
+                </li>
+                <li>
+                  <span class="mk el" aria-hidden="true"></span>notification settings
+                </li>
+              </ul>
+            </li>
+            <li class="pgi">
+              <span class="mk pg sm" aria-hidden="true"></span>Help
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="lg">
+      <span>
+        <span class="mk pg"></span>Page
+      </span>
+      <span>
+        <span class="mk el"></span>Element
+      </span>
+      <span>
+        <span class="mk els"></span>Elements, plural
+      </span>
+      <span>
+        <span class="mk act"></span>Action
+      </span>
+    </div>
+    <p class="cap">Built in Figma during the workshop week.</p>
+  </section>
+</ProjectLayout>

@@ -1,0 +1,110 @@
+---
+// Case study page: the sticky sidebar card on the left, the page content on the right.
+// Title, meta, badges, section list and previous / next links all come from src/data/projects.js.
+import BaseLayout from './BaseLayout.astro';
+import { projects } from '../data/projects.js';
+import projectStyles from '../styles/project.css?url';
+
+interface Props {
+  slug: string;
+  styles?: string[];
+}
+
+const { slug, styles = [] } = Astro.props;
+const index = projects.findIndex((p) => p.slug === slug);
+const project = projects[index];
+const prev = projects[(index - 1 + projects.length) % projects.length];
+const next = projects[(index + 1) % projects.length];
+---
+
+<BaseLayout
+  title={`${project.name} — İklima İkbal Türköz`}
+  description={project.description}
+  styles={[projectStyles, ...styles]}
+>
+  <div class="pp" id="top">
+    <span class="x reg a" aria-hidden="true"></span>
+    <span class="x reg b" aria-hidden="true"></span>
+    <span class="x reg c" aria-hidden="true"></span>
+    <span class="x reg d" aria-hidden="true"></span>
+    <span class="dm dm-tr" aria-hidden="true"></span>
+
+    <div class="grid in">
+      <div class="side">
+        <nav class="snav" aria-label="Main">
+          <a class="ul" href="/">
+            Home
+          </a>
+          <a class="ul" href="/about">
+            About
+          </a>
+          <a class="ul" href="/contact">
+            Contact
+          </a>
+        </nav>
+
+        <div class="id">
+          <h1 class="ttl">{project.name}</h1>
+          <p class="sub">{project.sub}</p>
+          <dl class="meta">
+            {project.meta.map(([term, value]) => (
+              <>
+                <dt>{term}</dt>
+                <dd>{value}</dd>
+              </>
+            ))}
+          </dl>
+          <ul class="badges" aria-label="Disciplines">
+            {project.badges.map((badge) => (
+              <li>{badge}</li>
+            ))}
+          </ul>
+        </div>
+
+        <nav class="toc" aria-label="Case study sections">
+          <div class="toc-rail" aria-hidden="true">
+            <span class="toc-fill"></span>
+          </div>
+          <ol class="toc-list">
+            {project.sections.map((section, i) => (
+              <li class="toc-i" data-st={i === 0 ? 'on' : 'next'}>
+                <a class="toc-a" href={`#s-${section.id}`} aria-current={i === 0 ? 'true' : 'false'}>
+                  <span class="toc-n" aria-hidden="true"></span>
+                  <span>{section.label}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+
+        <div class="sfoot">
+          <a class="sf-pv sf-n" href={`/projects/${prev.slug}`} aria-label={`Previous project: ${prev.name}`}>
+            <span class="sf-a" aria-hidden="true">
+              ←
+            </span>{' '}
+            <span class="ulx">{prev.name}</span>
+          </a>
+          <a class="sf-nx sf-n" href={`/projects/${next.slug}`} aria-label={`Next project: ${next.name}`}>
+            <span class="ulx">{next.name}</span>{' '}
+            <span class="sf-a" aria-hidden="true">
+              →
+            </span>
+          </a>
+        </div>
+
+        <span class="dm side-dots" aria-hidden="true"></span>
+        <svg class="side-arc" viewBox="0 0 220 180" aria-hidden="true">
+          <path d="M 0 30 A 190 190 0 0 1 190 180"></path>
+        </svg>
+      </div>
+
+      <main class="main">
+        <slot />
+      </main>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  import '../scripts/project-nav.js';
+</script>

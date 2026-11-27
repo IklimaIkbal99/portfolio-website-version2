@@ -1,0 +1,91 @@
+/* Browser window frame, and the scrollable full-page website mockup inside it. */
+
+.br-b {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 38px;
+  padding: 0 14px;
+  background-color: #efebe3;
+}
+
+.br-d {
+  display: flex;
+  gap: 7px;
+  width: 44px;
+}
+
+.br-u {
+  flex: 1;
+  max-width: 360px;
+  margin: 0 auto;
+  height: 24px;
+  border-radius: 999px;
+  background-color: #f8f5ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--mute);
+}
+
+.br-sc {
+  position: relative;
+  aspect-ratio: 1280 / 800;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f5f3ee;
+  scrollbar-width: thin;
+  scrollbar-color: #b9b5ae transparent;
+}
+
+.br-sc img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.br-sc:focus-visible {
+  outline: 1px solid #2e2d2b;
+  outline-offset: -1px;
+}
+
+.br-hint {
+  position: sticky;
+  bottom: 16px;
+  display: flex;
+  justify-content: center;
+  height: 34px;
+  margin-top: -50px;
+  pointer-events: none;
+}
+
+.br-hint span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background-color: rgba(30, 29, 27, 0.82);
+  color: #f8f7f4;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+}
+
+.br video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1440 / 900;
+}
+
+/* Scroll-driven reveals (browsers that support them) */
+
+@supports (animation-timeline: scroll()) {
+  .br-hint {
+    animation: hintout linear both;
+    animation-timeline: scroll(nearest);
+    animation-range: 0% 3%;
+  }
+}

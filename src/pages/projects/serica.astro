@@ -1,0 +1,441 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import diagram from '../../styles/components/diagram.css?url';
+import film from '../../styles/components/film.css?url';
+import social from '../../styles/components/social.css?url';
+import tabs from '../../styles/components/tabs.css?url';
+import page from '../../styles/projects/serica.css?url';
+---
+
+<ProjectLayout slug="serica" styles={[diagram, film, social, tabs, page]}>
+  <div class="cover">
+    <figure class="cv-img">
+      <img
+        src="/media/serica/cover.webp"
+        alt="Three Serica posters on a stone wall in charcoal, white and silk purple: bespoke itineraries to unveil Como’s silk heritage"
+      />
+    </figure>
+    <div class="cv-deco" aria-hidden="true">
+      <span class="cv-ring"></span>
+      <svg class="cv-ln" viewBox="0 0 106 30">
+        <polyline class="cl" points="4.3,1.2 105.4,29.5"></polyline>
+      </svg>
+      <span class="x cv-x1"></span>
+      <span class="x cv-x2"></span>
+    </div>
+  </div>
+
+  <section class="sec first" id="s-overview" data-sec aria-labelledby="h-overview">
+    <div class="sh">
+      <h2 class="sh-t" id="h-overview">
+        Overview
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split">
+      <div class="split-a">
+        <p class="lead">Silk heritage, turned into a route through Como.</p>
+        <p class="tx">
+          Our approach was to create a digital experience that brings Como’s silk heritage closer to both visitors and
+          the local community. We combined cultural storytelling with practical travel tools, so tourists can discover
+          silk-related places, stories and activities through personalised itineraries and an interactive map.
+        </p>
+        <p class="tx">
+          At the same time, the platform gives local businesses and cultural institutions greater visibility. By
+          connecting heritage, tourism and local commerce in one experience, Serica aims to make exploring Como more
+          meaningful, accessible and engaging.
+        </p>
+        <ul class="tg" aria-label="Themes">
+          <li>Cultural heritage</li>
+          <li>Interactive maps</li>
+          <li>Community engagement</li>
+        </ul>
+      </div>
+      <div class="split-b">
+        <span class="vl" aria-hidden="true"></span>
+        <dl class="facts">
+          <div>
+            <dt>Scope</dt>
+            <dd>App, website and brand</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>Delivered</dd>
+          </div>
+          <div>
+            <dt>Tools</dt>
+            <dd>Figma, Adobe Illustrator</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <figure class="film rv">
+      <video
+        src="/media/serica/concept-film.mp4"
+        poster="/media/serica/concept-film-poster.webp"
+        controls
+        muted
+        autoplay
+        loop
+        playsinline
+        aria-label="Serica concept film: a walk through Como’s silk heritage and the app that designs your route"
+      ></video>
+      <figcaption>Concept film · Unmute for sound</figcaption>
+    </figure>
+  </section>
+
+  <section class="sec" id="s-app" data-sec aria-labelledby="h-app">
+    <div class="sh">
+      <h2 class="sh-t" id="h-app">
+        App
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split" style="align-items: center">
+      <div class="split-a">
+        <span class="ulabel">Touchpoint · App</span>
+        <p class="lead">Itineraries built around your time.</p>
+        <p class="tx">
+          Users create custom itineraries based on their available time and interests. Each tour links checkpoints such
+          as museums, villas and shops, enriched with bonus stops that showcase local places like bars and restaurants.
+        </p>
+        <a
+          class="cta ul lift"
+          href="https://www.figma.com/proto/7TCbbzH8zfnjbeXvU3DHeM/Portfolio?node-id=72-34557&amp;t=qqoqRJZFLmaJii9u-0&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=72%3A34781&amp;page-id=72%3A27730&amp;hide-ui=1"
+          target="_blank"
+          rel="noopener"
+        >
+          View app prototype <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <figure class="rv" style="margin: 0">
+        <img
+          class="ph-img"
+          src="/media/serica/app-itinerary.webp"
+          alt="Serica app: Riccardo’s itinerary on an interactive map with the Como Silk Museum as a checkpoint"
+          style="aspect-ratio: 152 / 303"
+        />
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="s-website" data-sec aria-labelledby="h-website">
+    <div class="sh">
+      <h2 class="sh-t" id="h-website">
+        Website
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <span class="ulabel">Touchpoint · Website</span>
+      <p class="lead">A door in for local businesses.</p>
+      <p class="tx">
+        The website is for providers who want to become part of the itineraries and for local businesses that want to
+        offer a bonus stop. They submit an application and follow how they perform as a checkpoint or bonus stop.
+      </p>
+      <a
+        class="cta ul lift"
+        href="https://www.figma.com/proto/7TCbbzH8zfnjbeXvU3DHeM/Portfolio?node-id=72-28474&amp;t=qqoqRJZFLmaJii9u-0&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=72%3A27731&amp;hide-ui=1"
+        target="_blank"
+        rel="noopener"
+      >
+        View website prototype <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <figure class="mock rv" style="max-width: 860px">
+      <img
+        src="/media/serica/website-tablet.webp"
+        alt="Serica website on a tablet: unveil Como’s silk heritage"
+        style="aspect-ratio: 1904 / 1380"
+      />
+    </figure>
+  </section>
+
+  <section class="sec" id="s-flows" data-sec aria-labelledby="h-flows">
+    <div class="sh">
+      <h2 class="sh-t" id="h-flows">
+        UI flows
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Two flows, one for visitors and one for businesses.</p>
+    </div>
+
+    <div class="tbw">
+      <div class="tb" role="tablist" aria-label="UI flows">
+        <button
+          class="tb-b"
+          type="button"
+          role="tab"
+          id="tb-af"
+          aria-controls="tp-af"
+          aria-selected="true"
+          tabindex="0"
+        >
+          App flow
+        </button>
+        <button
+          class="tb-b"
+          type="button"
+          role="tab"
+          id="tb-wf"
+          aria-controls="tp-wf"
+          aria-selected="false"
+          tabindex="-1"
+        >
+          Web flow
+        </button>
+      </div>
+      <div class="tb-p" role="tabpanel" id="tp-af" aria-labelledby="tb-af">
+        <div class="subh">
+          <h3 class="h3">From opening the app to each checkpoint along the route.</h3>
+        </div>
+        <div
+          class="af rv"
+          role="group"
+          aria-label="Serica app flow: open the app, set duration and interest preferences, start an itinerary from the homepage, open the route on Google Maps, get notified of a discount nearby, show the code to bonus stop staff, arrive at a checkpoint and unlock its info page, and so on until the last checkpoint"
+        >
+          <span class="hd fr" aria-hidden="true"></span>
+          <div class="ac" style="grid-column: 1; grid-row: 1">
+            <span class="mk out" aria-hidden="true"></span>
+            <b class="fl-t">Open Serica app</b>
+          </div>
+          <div class="ac" style="grid-column: 2; grid-row: 1">
+            <span class="vd fd ac-stem" aria-hidden="true"></span>
+            <span class="mk purple" aria-hidden="true"></span>
+            <b class="fl-t">Preference settings</b>
+            <span class="mk page s" aria-hidden="true"></span>
+            <span class="fl-s">Duration preference</span>
+            <span class="mk page s" aria-hidden="true"></span>
+            <span class="fl-s">Interests preferences</span>
+          </div>
+          <div class="ac" style="grid-column: 3; grid-row: 1">
+            <span class="vd fd ac-stem" aria-hidden="true"></span>
+            <span class="mk purple" aria-hidden="true"></span>
+            <b class="fl-t">Homepage</b>
+            <span class="mk page s" aria-hidden="true"></span>
+            <span class="fl-s">Start itinerary</span>
+            <span class="mk out s" aria-hidden="true"></span>
+            <span class="fl-s">Open route on Google Maps</span>
+            <span class="mk page s" aria-hidden="true"></span>
+            <span class="fl-s">Notification: discount nearby!</span>
+          </div>
+          <div class="ac" style="grid-column: 4; grid-row: 1">
+            <span class="vd fd ac-stem" aria-hidden="true"></span>
+            <span class="mk purple" aria-hidden="true"></span>
+            <b class="fl-t">Discount page</b>
+            <span class="mk page s" aria-hidden="true"></span>
+            <span class="fl-s">Available code to get discount</span>
+            <span class="mk out s" aria-hidden="true"></span>
+            <span class="fl-s">Show code to bonus stops staff</span>
+            <span class="mk page s" aria-hidden="true"></span>
+            <span class="fl-s">Arrival at checkpoint</span>
+          </div>
+          <div class="ac" style="grid-column: 5; grid-row: 1">
+            <span class="vd fd ac-stem" aria-hidden="true"></span>
+            <span class="mk purple" aria-hidden="true"></span>
+            <b class="fl-t">Explore page</b>
+            <span class="mk page s" aria-hidden="true"></span>
+            <span class="fl-s">Unlocked info page about checkpoint</span>
+          </div>
+          <div class="ac-end" style="grid-column: 5; grid-row: 2">
+            <span class="ae-l" aria-hidden="true">
+              <span class="vd fd" style="left: 2px; top: 0; bottom: 6px"></span>
+              <span class="ah ah-d" style="left: 0; bottom: 0"></span>
+            </span>
+            <span class="fl-n">And so on until the last checkpoint…</span>
+          </div>
+        </div>
+      </div>
+      <div class="tb-p" role="tabpanel" hidden id="tp-wf" aria-labelledby="tb-wf">
+        <div class="subh">
+          <h3 class="h3">
+            Tourists explore and get the app; businesses apply, then manage events, offers and a calendar.
+          </h3>
+        </div>
+        <div
+          class="wf rv"
+          role="group"
+          aria-label="Serica web flow: open the website and reach the homepage; tourists go to the explore page and the link to download the app; businesses apply and fill in the application form, then after approval log in to a dashboard with a calendar page, an events page for checkpoints and an offers page for bonus stops"
+        >
+          <div class="wc" style="grid-column: 1; grid-row: 1">
+            <span class="vd fd st" style="top: 6px" aria-hidden="true"></span>
+            <span class="mk out" aria-hidden="true"></span>
+            <span class="fl-s" style="margin-top: 10px">
+              Open website
+            </span>
+            <span class="mk purple s" aria-hidden="true"></span>
+            <b class="fl-t">Homepage</b>
+          </div>
+          <div class="wb" aria-hidden="true" style="grid-column: 1 / 3; grid-row: 2">
+            <span class="vd fd" style="left: calc(25% - 2px); top: 0; bottom: 0"></span>
+            <span class="hd fr" style="left: 25%; right: 25%; top: 12px"></span>
+            <span class="vd fd" style="left: calc(75% - 2px); top: 14px; bottom: 0"></span>
+          </div>
+          <div class="wc" style="grid-column: 1; grid-row: 3">
+            <span class="vd fd st" aria-hidden="true"></span>
+            <span class="fl-l" style="margin-top: 0">
+              Tourists
+            </span>
+            <span class="mk purple s" aria-hidden="true"></span>
+            <b class="fl-t">Explore page</b>
+            <span class="mk page s" aria-hidden="true"></span>
+            <span class="fl-s">Link to download the app</span>
+          </div>
+          <div class="wc" style="grid-column: 2; grid-row: 3">
+            <span class="vd fd st" aria-hidden="true"></span>
+            <span class="fl-l" style="margin-top: 0">
+              Businesses
+            </span>
+            <span class="mk purple s" aria-hidden="true"></span>
+            <b class="fl-t">Apply</b>
+            <span class="mk out s" aria-hidden="true"></span>
+            <span class="fl-s">Fill application form</span>
+            <span class="fl-l">after approval</span>
+            <span class="mk purple s" aria-hidden="true"></span>
+            <b class="fl-t">Login</b>
+            <span class="mk purple s" aria-hidden="true"></span>
+            <b class="fl-t">Dashboard</b>
+          </div>
+          <div class="wb" aria-hidden="true" style="grid-column: 2 / 5; grid-row: 4">
+            <span class="vd fd" style="left: calc(16.667% - 2px); top: 0; bottom: 0"></span>
+            <span class="hd fr" style="left: 16.667%; right: 16.667%; top: 12px"></span>
+            <span class="vd fd" style="left: calc(50% - 2px); top: 14px; bottom: 0"></span>
+            <span class="vd fd" style="left: calc(83.333% - 2px); top: 14px; bottom: 0"></span>
+          </div>
+          <div class="wc" style="grid-column: 2; grid-row: 5">
+            <span class="vd fd st" style="bottom: auto; height: 8px" aria-hidden="true"></span>
+            <span class="mk purple" aria-hidden="true"></span>
+            <b class="fl-t">Calendar page</b>
+          </div>
+          <div class="wc" style="grid-column: 3; grid-row: 5">
+            <span class="vd fd st" aria-hidden="true"></span>
+            <span class="fl-l" style="margin-top: 0">
+              for checkpoints
+            </span>
+            <span class="mk purple s" aria-hidden="true"></span>
+            <b class="fl-t">Events page</b>
+            <span class="mk page s" aria-hidden="true"></span>
+            <span class="fl-s">Add and edit events</span>
+          </div>
+          <div class="wc" style="grid-column: 4; grid-row: 5">
+            <span class="vd fd st" aria-hidden="true"></span>
+            <span class="fl-l" style="margin-top: 0">
+              for bonus stops
+            </span>
+            <span class="mk purple s" aria-hidden="true"></span>
+            <b class="fl-t">Offers page</b>
+            <span class="mk page s" aria-hidden="true"></span>
+            <span class="fl-s">Add and edit discounts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg">
+      <span>
+        <span class="mk purple"></span>Screen
+      </span>
+      <span>
+        <span class="mk page"></span>Action
+      </span>
+      <span>
+        <span class="mk out"></span>Outside the app or site
+      </span>
+    </div>
+  </section>
+
+  <section class="sec" id="s-brand" data-sec aria-labelledby="h-brand">
+    <div class="sh">
+      <h2 class="sh-t" id="h-brand">
+        Brand
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <span class="ulabel">Como Silk Museum</span>
+      <p class="lead">A brand for the museum and its posters.</p>
+      <p class="tx">
+        The identity pairs a single silk purple with charcoal and soft greys, set in Josefin Sans and Raleway. The
+        poster campaign and roll-up carry the same line: bespoke itineraries to unveil Como’s silk heritage.
+      </p>
+    </div>
+    <div class="bt2">
+      <figure class="rv">
+        <div class="bt">
+          <img
+            src="/media/serica/brand-marks.webp"
+            alt="Serica brand marks: the S monogram and the wordmark in purple and white"
+            style="aspect-ratio: 1551 / 918"
+          />
+        </div>
+        <figcaption class="ulabel">Brand marks</figcaption>
+      </figure>
+      <figure class="rv">
+        <div class="bt">
+          <img
+            src="/media/serica/typography.webp"
+            alt="Typography: Josefin Sans Regular and Raleway Regular"
+            style="aspect-ratio: 2281 / 958"
+          />
+        </div>
+        <figcaption class="ulabel">Typography · Josefin Sans and Raleway</figcaption>
+      </figure>
+    </div>
+    <div class="sws rv" role="list" aria-label="Palette">
+      <div
+        class="sw"
+        role="listitem"
+        style="background-color: #FFFFFF; color: #2A2A2A; box-shadow: inset 0 0 0 1px #E3DEE8"
+      >
+        <b>White</b>
+        <span>#FFFFFF</span>
+      </div>
+      <div class="sw" role="listitem" style="background-color: #2A2A2A; color: #FFFFFF">
+        <b>Charcoal</b>
+        <span>#2A2A2A</span>
+      </div>
+      <div
+        class="sw"
+        role="listitem"
+        style="background-color: #F2EFF5; color: #2A2A2A; box-shadow: inset 0 0 0 1px #E3DEE8"
+      >
+        <b>Light grey</b>
+        <span>#F2EFF5</span>
+      </div>
+      <div class="sw" role="listitem" style="background-color: #B45EFF; color: #2A2A2A">
+        <b>Silk purple</b>
+        <span>#B45EFF</span>
+      </div>
+    </div>
+    <div class="bt2" style="margin-top: 40px">
+      <figure class="rv lift">
+        <img
+          class="bimg"
+          src="/media/serica/poster-campaign.webp"
+          alt="Serica poster campaign on a concrete wall with a passer-by"
+          style="aspect-ratio: 2231 / 1702"
+        />
+        <figcaption class="ulabel">Poster campaign · Illustrator</figcaption>
+      </figure>
+      <figure class="rv lift">
+        <img
+          class="bimg"
+          src="/media/serica/roll-up-banner.webp"
+          alt="Serica roll-up banner"
+          style="aspect-ratio: 1683 / 1702; background-color: #E6E3EA; object-fit: cover; width: 356px; height: 360px"
+        />
+        <figcaption class="ulabel">Roll-up</figcaption>
+      </figure>
+    </div>
+  </section>
+</ProjectLayout>
+
+<script>
+  import '../../scripts/tabs.js';
+</script>

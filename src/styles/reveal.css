@@ -1,0 +1,12 @@
+/* Scroll reveal: content fades up as it enters the screen.
+   Linked after every other stylesheet so it wins over component animations. */
+
+/* Scroll-driven reveals (browsers that support them) */
+
+@supports (animation-timeline: view()) {
+  .rv {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+  }
+}

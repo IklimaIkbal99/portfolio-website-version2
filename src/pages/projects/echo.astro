@@ -1,0 +1,785 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import marquee from '../../styles/components/marquee.css?url';
+import process from '../../styles/components/process.css?url';
+import tabs from '../../styles/components/tabs.css?url';
+import page from '../../styles/projects/echo.css?url';
+---
+
+<ProjectLayout slug="echo" styles={[marquee, process, tabs, page]}>
+  <div class="cover">
+    <figure class="cv-img">
+      <img
+        src="/media/echo/cover.webp"
+        alt="Echo: three sprout characters running through a sunny meadow past stone ruins"
+      />
+    </figure>
+    <div class="cv-deco" aria-hidden="true">
+      <span class="cv-ring"></span>
+      <svg class="cv-ln" viewBox="0 0 106 30">
+        <polyline class="cl" points="4.3,1.2 105.4,29.5"></polyline>
+      </svg>
+      <span class="x cv-x1"></span>
+      <span class="x cv-x2"></span>
+    </div>
+  </div>
+
+  <section class="sec first" id="s-overview" data-sec aria-labelledby="h-overview">
+    <div class="sh">
+      <h2 class="sh-t" id="h-overview">
+        Overview
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split">
+      <div class="split-a">
+        <p class="lead">A shared forest where two children can find each other, without being told to.</p>
+        <p class="tx">
+          Echo is a two-player forest world with no score, no win condition, no dialogue and no instructions. Most
+          inclusive games treat social interaction as a skill to teach children with ADHD. Echo takes the opposite
+          route: it redesigns the environment itself, so interaction between children with ADHD and their neurotypical
+          peers can emerge on its own.
+        </p>
+      </div>
+      <div class="split-b">
+        <span class="vl" aria-hidden="true"></span>
+        <dl class="facts">
+          <div>
+            <dt>Supervision</dt>
+            <dd>
+              Prof. Giorgio Buratti
+              <br />
+              Prof. Giuseppe Amoruso
+            </dd>
+          </div>
+          <div>
+            <dt>Built with</dt>
+            <dd>Unity, C#, Netcode for GameObjects</dd>
+          </div>
+          <div>
+            <dt>Players</dt>
+            <dd>Multiplayer, joined by a room code</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-question" data-sec aria-labelledby="h-question">
+    <div class="sh">
+      <h2 class="sh-t" id="h-question">
+        Research question
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <p class="rq">
+      <span class="rq-l" aria-hidden="true"></span>How can game design create environments where social interaction
+      emerges naturally between children with ADHD and their neurotypical peers, without instruction, predefined roles
+      or performance-based expectations?
+    </p>
+  </section>
+
+  <section class="sec" id="s-approach" data-sec aria-labelledby="h-approach">
+    <div class="sh">
+      <h2 class="sh-t" id="h-approach">
+        Approach
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Design-based research, from the literature to two real play sessions.</p>
+      <p class="tx">
+        The study followed a double diamond process. A literature review and a semi-structured interview with a
+        professional who works directly with children with ADHD led to a design framework. The framework became a game
+        concept and a working multiplayer prototype, which I then observed in use with two pairs of children.
+      </p>
+    </div>
+    <div
+      class="dg rv"
+      role="group"
+      aria-label="Process: from the research question, through a literature review and an expert interview, to a design framework; then through a game concept and a multiplayer prototype, to two play sessions"
+    >
+      <div style="position: relative; width: 880px; height: 300px">
+        <svg
+          width="880"
+          height="300"
+          viewBox="0 0 880 300"
+          aria-hidden="true"
+          style="position: absolute; left: 0; top: 0; width: 880px; height: 300px; overflow: visible"
+        >
+          <line class="dg-ax" x1="80" y1="150" x2="800" y2="150"></line>
+          <polyline class="dg-p" points="80,150 260,60 440,150 620,60 800,150"></polyline>
+          <polyline class="dg-p" points="80,150 260,240 440,150 620,240 800,150"></polyline>
+          <polyline class="dg-ld" points="80,158 80,244"></polyline>
+          <polyline class="dg-ld" points="440,158 440,244"></polyline>
+          <polyline class="dg-ld" points="800,158 800,244"></polyline>
+          <circle class="dg-o" cx="260" cy="60" r="3.5"></circle>
+          <circle class="dg-o" cx="260" cy="240" r="3.5"></circle>
+          <circle class="dg-o" cx="620" cy="60" r="3.5"></circle>
+          <circle class="dg-o" cx="620" cy="240" r="3.5"></circle>
+          <circle class="dg-m" cx="80" cy="150" r="4"></circle>
+          <circle class="dg-m" cx="440" cy="150" r="4"></circle>
+          <circle class="dg-m" cx="800" cy="150" r="4"></circle>
+        </svg>
+        <div class="dg-a" style="left: 185px; top: 28px; width: 150px">
+          Literature review
+        </div>
+        <div class="dg-a" style="left: 545px; top: 28px; width: 150px">
+          Game concept
+        </div>
+        <div class="dg-k" style="left: 10px; top: 252px; width: 140px">
+          Research question
+        </div>
+        <div class="dg-a" style="left: 185px; top: 252px; width: 150px">
+          Expert interview
+        </div>
+        <div class="dg-k" style="left: 365px; top: 252px; width: 150px">
+          Design framework
+        </div>
+        <div class="dg-a" style="left: 535px; top: 252px; width: 170px">
+          Multiplayer prototype
+        </div>
+        <div class="dg-k" style="left: 725px; top: 252px; width: 150px">
+          Two play sessions
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-game" data-sec aria-labelledby="h-game">
+    <div class="sh">
+      <h2 class="sh-t" id="h-game">
+        The game
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split">
+      <div class="split-a">
+        <p class="lead">A forest without a defined path.</p>
+        <p class="tx">
+          The map is roughly circular, with no entrance, no walls and no marked route. Each child can walk, look around
+          and send a single signal, and the creatures resting in the landscape respond to it.
+        </p>
+      </div>
+      <div class="mc rv">
+        <div style="position: relative; width: 300px; height: 200px">
+          <svg
+            width="300"
+            height="200"
+            viewBox="0 0 300 200"
+            aria-hidden="true"
+            style="position: absolute; left: 0; top: 0; width: 300px; height: 200px; overflow: visible"
+          >
+            <line class="mc-ax" x1="60" y1="100" x2="240" y2="100"></line>
+            <circle class="mc-r mc-ra" cx="60" cy="100" r="96"></circle>
+            <circle class="mc-r mc-rb" cx="240" cy="100" r="96"></circle>
+            <circle class="mc-c" cx="150" cy="100" r="11"></circle>
+            <circle class="mc-p" cx="60" cy="100" r="5"></circle>
+            <circle class="mc-p" cx="240" cy="100" r="5"></circle>
+          </svg>
+          <div class="mc-l" style="left: 18px">
+            Player one
+          </div>
+          <div class="mc-l" style="left: 108px">
+            Creature
+          </div>
+          <div class="mc-l" style="left: 198px">
+            Player two
+          </div>
+        </div>
+        <p class="mc-cap">One signal makes a creature stir; two signals in the same place wake it fully.</p>
+      </div>
+    </div>
+    <div class="band game">
+      <div class="track">
+        <div class="set">
+          <figure class="bf">
+            <img
+              src="/media/echo/forest-map.webp"
+              alt="Isometric view of the Echo forest map with paths, streams and clearings"
+              style="aspect-ratio: 769 / 433"
+            />
+            <figcaption>
+              <span class="fc-t">The forest</span>
+              <span class="fc-d">Open in every direction, with no marked path.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img
+              src="/media/echo/two-players-forest.webp"
+              alt="The two player figures walking on a forest path"
+              style="aspect-ratio: 728 / 434"
+            />
+            <figcaption>
+              <span class="fc-t">Two figures, no names</span>
+              <span class="fc-d">No roles or backstory, so children can simply be present.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img
+              src="/media/echo/signal-solo-vs-joint.webp"
+              alt="Side by side: the small golden solo signal ring and the larger blue call signal"
+              style="aspect-ratio: 711 / 433"
+            />
+            <figcaption>
+              <span class="fc-t">One gesture</span>
+              <span class="fc-d">One press sends a ring of light; three send a call across the forest.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img
+              src="/media/echo/creature-states.webp"
+              alt="A creature across three states: dormant, partially stirred by one player, fully awakened by both"
+              style="aspect-ratio: 1299 / 433"
+            />
+            <figcaption>
+              <span class="fc-t">Waking together</span>
+              <span class="fc-d">One signal makes a creature stir; two signals in the same place wake it fully.</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="set" aria-hidden="true">
+          <figure class="bf">
+            <img src="/media/echo/forest-map.webp" alt="" style="aspect-ratio: 769 / 433" />
+            <figcaption>
+              <span class="fc-t">The forest</span>
+              <span class="fc-d">Open in every direction, with no marked path.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img src="/media/echo/two-players-forest.webp" alt="" style="aspect-ratio: 728 / 434" />
+            <figcaption>
+              <span class="fc-t">Two figures, no names</span>
+              <span class="fc-d">No roles or backstory, so children can simply be present.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img src="/media/echo/signal-solo-vs-joint.webp" alt="" style="aspect-ratio: 711 / 433" />
+            <figcaption>
+              <span class="fc-t">One gesture</span>
+              <span class="fc-d">One press sends a ring of light; three send a call across the forest.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img src="/media/echo/creature-states.webp" alt="" style="aspect-ratio: 1299 / 433" />
+            <figcaption>
+              <span class="fc-t">Waking together</span>
+              <span class="fc-d">One signal makes a creature stir; two signals in the same place wake it fully.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-interface" data-sec aria-labelledby="h-interface">
+    <div class="sh">
+      <h2 class="sh-t" id="h-interface">
+        Interface
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Menus that feel like part of the forest.</p>
+      <p class="tx">
+        Menus sit on a warm, hand-crafted board inside the forest. During play, the screen holds only what a child
+        needs: the room code, the signal and a way to pause.
+      </p>
+    </div>
+    <div class="band ui">
+      <div class="track rev">
+        <div class="set">
+          <figure class="bf">
+            <img
+              src="/media/echo/screen-main-menu.webp"
+              alt="Echo main menu with Play, Collection, Echo Memory, Setting and Quit"
+              style="aspect-ratio: 2000 / 1119"
+            />
+            <figcaption>
+              <span class="fc-t">Main menu</span>
+              <span class="fc-d">Play, Collection, Echo Memory and Settings.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img
+              src="/media/echo/screen-room.webp"
+              alt="Room menu with Create Room and Join Room options and a room code field"
+              style="aspect-ratio: 2000 / 1119"
+            />
+            <figcaption>
+              <span class="fc-t">Rooms</span>
+              <span class="fc-d">Create a room and share its code, or join with a friend’s.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img
+              src="/media/echo/screen-game.webp"
+              alt="In-game view with the room code, leave and pause buttons, and the signal button"
+              style="aspect-ratio: 2000 / 1126"
+            />
+            <figcaption>
+              <span class="fc-t">In-game HUD</span>
+              <span class="fc-d">Only the room code, the signal, leave and pause.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img
+              src="/media/echo/screen-pause.webp"
+              alt="Pause menu with Resume, Go to Main Menu, Leave Room and Quit Game"
+              style="aspect-ratio: 2000 / 1126"
+            />
+            <figcaption>
+              <span class="fc-t">Pause</span>
+              <span class="fc-d">Resume, return to the menu, leave or quit.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img
+              src="/media/echo/screen-collection.webp"
+              alt="Collection screen showing creature portraits, with locked ones greyed out"
+              style="aspect-ratio: 2000 / 1119"
+            />
+            <figcaption>
+              <span class="fc-t">Collection</span>
+              <span class="fc-d">Every creature woken so far, and the ones still to find.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img
+              src="/media/echo/screen-memory.webp"
+              alt="Echo Memory screen with session cards showing the creatures woken and a memory code"
+              style="aspect-ratio: 2000 / 1119"
+            />
+            <figcaption>
+              <span class="fc-t">Echo Memory</span>
+              <span class="fc-d">A card for each session, recording what two players woke together.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img
+              src="/media/echo/screen-settings-audio.webp"
+              alt="Audio settings with music and sound volume, screen size and language"
+              style="aspect-ratio: 2000 / 1119"
+            />
+            <figcaption>
+              <span class="fc-t">Settings: audio</span>
+              <span class="fc-d">Volume, screen size and language.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img
+              src="/media/echo/screen-settings-controls.webp"
+              alt="Control settings showing movement keys, the signal key, pause and mouse sensitivity"
+              style="aspect-ratio: 2000 / 1119"
+            />
+            <figcaption>
+              <span class="fc-t">Settings: controls</span>
+              <span class="fc-d">Movement, the signal key and mouse sensitivity.</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="set" aria-hidden="true">
+          <figure class="bf">
+            <img src="/media/echo/screen-main-menu.webp" alt="" style="aspect-ratio: 2000 / 1119" />
+            <figcaption>
+              <span class="fc-t">Main menu</span>
+              <span class="fc-d">Play, Collection, Echo Memory and Settings.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img src="/media/echo/screen-room.webp" alt="" style="aspect-ratio: 2000 / 1119" />
+            <figcaption>
+              <span class="fc-t">Rooms</span>
+              <span class="fc-d">Create a room and share its code, or join with a friend’s.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img src="/media/echo/screen-game.webp" alt="" style="aspect-ratio: 2000 / 1126" />
+            <figcaption>
+              <span class="fc-t">In-game HUD</span>
+              <span class="fc-d">Only the room code, the signal, leave and pause.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img src="/media/echo/screen-pause.webp" alt="" style="aspect-ratio: 2000 / 1126" />
+            <figcaption>
+              <span class="fc-t">Pause</span>
+              <span class="fc-d">Resume, return to the menu, leave or quit.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img src="/media/echo/screen-collection.webp" alt="" style="aspect-ratio: 2000 / 1119" />
+            <figcaption>
+              <span class="fc-t">Collection</span>
+              <span class="fc-d">Every creature woken so far, and the ones still to find.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img src="/media/echo/screen-memory.webp" alt="" style="aspect-ratio: 2000 / 1119" />
+            <figcaption>
+              <span class="fc-t">Echo Memory</span>
+              <span class="fc-d">A card for each session, recording what two players woke together.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img src="/media/echo/screen-settings-audio.webp" alt="" style="aspect-ratio: 2000 / 1119" />
+            <figcaption>
+              <span class="fc-t">Settings: audio</span>
+              <span class="fc-d">Volume, screen size and language.</span>
+            </figcaption>
+          </figure>
+          <figure class="bf">
+            <img src="/media/echo/screen-settings-controls.webp" alt="" style="aspect-ratio: 2000 / 1119" />
+            <figcaption>
+              <span class="fc-t">Settings: controls</span>
+              <span class="fc-d">Movement, the signal key and mouse sensitivity.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-evaluation" data-sec aria-labelledby="h-evaluation">
+    <div class="sh">
+      <h2 class="sh-t" id="h-evaluation">
+        Evaluation
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Two play sessions, each pairing a child with ADHD and a neurotypical peer.</p>
+      <p class="tx">
+        Uninstructed interaction emerged in both sessions, most clearly in a six-minute stretch of wordless, coordinated
+        movement during the second.
+      </p>
+    </div>
+    <div class="tbw">
+      <div class="tb" role="tablist" aria-label="Play sessions">
+        <button
+          class="tb-b"
+          type="button"
+          role="tab"
+          id="tb-s1"
+          aria-controls="tp-s1"
+          aria-selected="true"
+          tabindex="0"
+        >
+          Session one · 20 min
+        </button>
+        <button
+          class="tb-b"
+          type="button"
+          role="tab"
+          id="tb-s2"
+          aria-controls="tp-s2"
+          aria-selected="false"
+          tabindex="-1"
+        >
+          Session two · 15 min
+        </button>
+      </div>
+      <figure class="tl fade" role="tabpanel" id="tp-s1" aria-labelledby="tb-s1">
+        <div class="tl-i">
+          <span class="x tl-x1" aria-hidden="true"></span>
+          <span class="x tl-x2" aria-hidden="true"></span>
+          <span class="x tl-x3" aria-hidden="true"></span>
+          <span class="x tl-x4" aria-hidden="true"></span>
+          <div
+            class="tc-w"
+            tabindex="0"
+            role="img"
+            aria-label="Session one timeline over 20 minutes. Child A, neurotypical, explores freely, finds creature 1 and signals at minute 7, finds creature 2 and repeats the signal rapidly at minute 12, then keeps exploring the map. Child B, with ADHD, moves more slowly, is first to try the signal after a cue at minute 3, notices A and joins the signal at minute 8, gets stuck on a bug three times between minutes 9 and 11 and asks to switch games, then watches and joins the second activation at minute 14. Interaction moves from solo to parallel play at minute 8 and again from minute 14."
+          >
+            <div class="tc" style="height: 420px">
+              <svg
+                width="920"
+                height="420"
+                viewBox="0 0 920 420"
+                aria-hidden="true"
+                style="position: absolute; left: 0; top: 0; width: 920px; height: 420px; overflow: visible"
+              >
+                <line class="tc-g" x1="352.5" y1="46" x2="352.5" y2="372"></line>
+                <line class="tc-g" x1="535" y1="46" x2="535" y2="372"></line>
+                <line class="tc-g" x1="717.5" y1="46" x2="717.5" y2="372"></line>
+                <line class="tc-g" x1="900" y1="46" x2="900" y2="372"></line>
+                <rect class="tc-b bug" x="462" y="46" width="146" height="302"></rect>
+                <line class="tc-be" x1="462" y1="46" x2="462" y2="348"></line>
+                <line class="tc-be" x1="608" y1="46" x2="608" y2="348"></line>
+                <line class="tc-ln" x1="170" y1="116" x2="900" y2="116"></line>
+                <line class="tc-ln" x1="170" y1="204" x2="900" y2="204"></line>
+                <line class="tc-j" x1="425.5" y1="116" x2="462" y2="204"></line>
+                <line class="tc-j" x1="608" y1="116" x2="681" y2="204"></line>
+                <line class="tc-sd" x1="170" y1="326" x2="425.5" y2="326"></line>
+                <line class="tc-st" x1="425.5" y1="326" x2="462" y2="326"></line>
+                <line class="tc-ss" x1="462" y1="326" x2="608" y2="326"></line>
+                <line class="tc-st" x1="608" y1="326" x2="681" y2="326"></line>
+                <line class="tc-ss" x1="681" y1="326" x2="900" y2="326"></line>
+                <circle class="tc-jt" cx="462" cy="326" r="4.5"></circle>
+                <circle class="tc-jt" cx="681" cy="326" r="4.5"></circle>
+                <circle class="tc-nt" cx="170" cy="116" r="4.5"></circle>
+                <circle class="tc-pl" cx="425.5" cy="116" r="5"></circle>
+                <circle class="tc-jt" cx="425.5" cy="116" r="5"></circle>
+                <circle class="tc-nt" cx="608" cy="116" r="4.5"></circle>
+                <circle class="tc-ad" cx="170" cy="204" r="4.5"></circle>
+                <circle class="tc-ad" cx="279.5" cy="204" r="4.5"></circle>
+                <circle class="tc-pl" cx="462" cy="204" r="5"></circle>
+                <circle class="tc-jt" cx="462" cy="204" r="5"></circle>
+                <path class="tc-x" d="M 495 200.5 L 502 207.5 M 502 200.5 L 495 207.5"></path>
+                <path class="tc-x" d="M 531.5 200.5 L 538.5 207.5 M 538.5 200.5 L 531.5 207.5"></path>
+                <path class="tc-x" d="M 568 200.5 L 575 207.5 M 575 200.5 L 568 207.5"></path>
+                <circle class="tc-pl" cx="681" cy="204" r="5"></circle>
+                <circle class="tc-jt" cx="681" cy="204" r="5"></circle>
+                <line class="tc-ax" x1="170" y1="372" x2="900" y2="372"></line>
+                <line class="tc-ax" x1="170" y1="372" x2="170" y2="378"></line>
+                <line class="tc-ax" x1="206.5" y1="372" x2="206.5" y2="375"></line>
+                <line class="tc-ax" x1="243" y1="372" x2="243" y2="375"></line>
+                <line class="tc-ax" x1="279.5" y1="372" x2="279.5" y2="375"></line>
+                <line class="tc-ax" x1="316" y1="372" x2="316" y2="375"></line>
+                <line class="tc-ax" x1="352.5" y1="372" x2="352.5" y2="378"></line>
+                <line class="tc-ax" x1="389" y1="372" x2="389" y2="375"></line>
+                <line class="tc-ax" x1="425.5" y1="372" x2="425.5" y2="375"></line>
+                <line class="tc-ax" x1="462" y1="372" x2="462" y2="375"></line>
+                <line class="tc-ax" x1="498.5" y1="372" x2="498.5" y2="375"></line>
+                <line class="tc-ax" x1="535" y1="372" x2="535" y2="378"></line>
+                <line class="tc-ax" x1="571.5" y1="372" x2="571.5" y2="375"></line>
+                <line class="tc-ax" x1="608" y1="372" x2="608" y2="375"></line>
+                <line class="tc-ax" x1="644.5" y1="372" x2="644.5" y2="375"></line>
+                <line class="tc-ax" x1="681" y1="372" x2="681" y2="375"></line>
+                <line class="tc-ax" x1="717.5" y1="372" x2="717.5" y2="378"></line>
+                <line class="tc-ax" x1="754" y1="372" x2="754" y2="375"></line>
+                <line class="tc-ax" x1="790.5" y1="372" x2="790.5" y2="375"></line>
+                <line class="tc-ax" x1="827" y1="372" x2="827" y2="375"></line>
+                <line class="tc-ax" x1="863.5" y1="372" x2="863.5" y2="375"></line>
+                <line class="tc-ax" x1="900" y1="372" x2="900" y2="378"></line>
+              </svg>
+              <div class="tc-h bug" style="left: 462px; top: 38px; width: 280px">
+                <span class="tc-k">Min 8–12</span>Bug interruption, three times
+              </div>
+              <div class="tc-n" style="top: 116px">
+                <b>Child A</b>
+                <span>Neurotypical</span>
+              </div>
+              <div class="tc-n" style="top: 204px">
+                <b>Child B</b>
+                <span>ADHD</span>
+              </div>
+              <div class="tc-n tc-n2" style="top: 326px">
+                <b>Interaction level</b>
+              </div>
+              <div class="tc-sl" style="left: 237.8px; top: 338px">
+                Solo
+              </div>
+              <div class="tc-sl" style="left: 475px; top: 338px">
+                Parallel
+              </div>
+              <div class="tc-sl" style="left: 730.5px; top: 338px">
+                Parallel
+              </div>
+              <div class="tc-l up" style="left: 166px; top: 102px; width: 150px">
+                <span class="tc-k">Min 0</span>Free, confident exploration
+              </div>
+              <div class="tc-l up" style="left: 421.5px; top: 102px; width: 150px">
+                <span class="tc-k">Min 7</span>Finds creature 1, signals
+              </div>
+              <div class="tc-l up" style="left: 604px; top: 102px; width: 165px">
+                <span class="tc-k">Min 12</span>Finds creature 2, repeats signal rapidly
+              </div>
+              <div class="tc-l" style="text-align: right; left: 730px; top: 128px; width: 170px">
+                <span class="tc-k">Min 14–20</span>Continues exploring map
+              </div>
+              <div class="tc-l" style="left: 166px; top: 216px; width: 100px">
+                <span class="tc-k">Min 0</span>Slower, more restricted movement
+              </div>
+              <div class="tc-l" style="left: 275.5px; top: 216px; width: 150px">
+                <span class="tc-k">Min 3</span>First to try signal after cue
+              </div>
+              <div class="tc-l" style="left: 458px; top: 216px; width: 140px">
+                <span class="tc-k">Min 8</span>Notices A, approaches, joins signal
+              </div>
+              <div class="tc-l up bug" style="text-align: right; left: 480.9px; top: 190px; width: 118px">
+                <span class="tc-k">Min 9–11</span>Stuck on bug, asks to switch games
+              </div>
+              <div class="tc-l" style="left: 677px; top: 216px; width: 150px">
+                <span class="tc-k">Min 14</span>Watches, then joins 2nd activation
+              </div>
+              <div class="tc-t" style="left: 140px; top: 384px">
+                0
+              </div>
+              <div class="tc-t" style="left: 322.5px; top: 384px">
+                5
+              </div>
+              <div class="tc-t" style="left: 505px; top: 384px">
+                10
+              </div>
+              <div class="tc-t" style="left: 687.5px; top: 384px">
+                15
+              </div>
+              <div class="tc-t" style="left: 870px; top: 384px">
+                20 min
+              </div>
+              <div class="tc-n tc-n2" style="top: 372px">
+                <span>Minutes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tc-lg">
+          <span>
+            <span class="tc-m nt"></span>Child A, neurotypical
+          </span>
+          <span>
+            <span class="tc-m ad"></span>Child B, ADHD
+          </span>
+          <span>
+            <span class="tc-m jt"></span>Joint, emergent shared moment
+          </span>
+          <span>
+            <span class="tc-m bx">×</span>Bug-related frustration
+          </span>
+          <span>
+            <span class="tc-m bd bug"></span>Bug interruption episode
+          </span>
+        </div>
+        <figcaption>
+          Controls left for spontaneous discovery. A recurring bug between minutes 8 and 12 interrupted play.
+        </figcaption>
+      </figure>
+      <figure class="tl fade" role="tabpanel" hidden id="tp-s2" aria-labelledby="tb-s2">
+        <div class="tl-i">
+          <span class="x tl-x1" aria-hidden="true"></span>
+          <span class="x tl-x2" aria-hidden="true"></span>
+          <span class="x tl-x3" aria-hidden="true"></span>
+          <span class="x tl-x4" aria-hidden="true"></span>
+          <div
+            class="tc-w"
+            tabindex="0"
+            role="img"
+            aria-label="Session two timeline over 15 minutes. Children C, with ADHD, and D, neurotypical, recognise each other through movement in the first three minutes. C finds object 1 at minute 3; D approaches and presses the button at minute 4, the first joint activation, as both infer the dual-signal mechanic. From then on they move and play together, taking turns, following and staying close; they find object 2 together at minute 10, a second joint activation, and continue exploring jointly. No technical interruptions occurred."
+          >
+            <div class="tc" style="height: 380px">
+              <svg
+                width="920"
+                height="380"
+                viewBox="0 0 920 380"
+                aria-hidden="true"
+                style="position: absolute; left: 0; top: 0; width: 920px; height: 380px; overflow: visible"
+              >
+                <line class="tc-g" x1="413.3" y1="46" x2="413.3" y2="332"></line>
+                <line class="tc-g" x1="656.7" y1="46" x2="656.7" y2="332"></line>
+                <line class="tc-g" x1="900" y1="46" x2="900" y2="332"></line>
+                <rect class="tc-b rec" x="170" y="46" width="146" height="262"></rect>
+                <line class="tc-be" x1="170" y1="46" x2="170" y2="308"></line>
+                <line class="tc-be" x1="316" y1="46" x2="316" y2="308"></line>
+                <line class="tc-ln" x1="170" y1="126" x2="364.7" y2="126"></line>
+                <line class="tc-ln" x1="170" y1="214" x2="364.7" y2="214"></line>
+                <path class="tc-ln" d="M 364.7 126 C 388.7 126, 380.7 166, 404.7 166 L 900 166"></path>
+                <path class="tc-ln" d="M 364.7 214 C 388.7 214, 380.7 174, 404.7 174 L 900 174"></path>
+                <line class="tc-j" x1="316" y1="126" x2="364.7" y2="214"></line>
+                <circle class="tc-ad" cx="170" cy="126" r="4.5"></circle>
+                <circle class="tc-ad" cx="316" cy="126" r="4.5"></circle>
+                <circle class="tc-nt" cx="170" cy="214" r="4.5"></circle>
+                <circle class="tc-pl" cx="364.7" cy="214" r="5"></circle>
+                <circle class="tc-jt" cx="364.7" cy="214" r="5"></circle>
+                <circle class="tc-pl" cx="656.7" cy="170" r="5"></circle>
+                <circle class="tc-jt" cx="656.7" cy="170" r="5"></circle>
+                <line class="tc-ax" x1="170" y1="332" x2="900" y2="332"></line>
+                <line class="tc-ax" x1="170" y1="332" x2="170" y2="338"></line>
+                <line class="tc-ax" x1="218.7" y1="332" x2="218.7" y2="335"></line>
+                <line class="tc-ax" x1="267.3" y1="332" x2="267.3" y2="335"></line>
+                <line class="tc-ax" x1="316" y1="332" x2="316" y2="335"></line>
+                <line class="tc-ax" x1="364.7" y1="332" x2="364.7" y2="335"></line>
+                <line class="tc-ax" x1="413.3" y1="332" x2="413.3" y2="338"></line>
+                <line class="tc-ax" x1="462" y1="332" x2="462" y2="335"></line>
+                <line class="tc-ax" x1="510.7" y1="332" x2="510.7" y2="335"></line>
+                <line class="tc-ax" x1="559.3" y1="332" x2="559.3" y2="335"></line>
+                <line class="tc-ax" x1="608" y1="332" x2="608" y2="335"></line>
+                <line class="tc-ax" x1="656.7" y1="332" x2="656.7" y2="338"></line>
+                <line class="tc-ax" x1="705.3" y1="332" x2="705.3" y2="335"></line>
+                <line class="tc-ax" x1="754" y1="332" x2="754" y2="335"></line>
+                <line class="tc-ax" x1="802.7" y1="332" x2="802.7" y2="335"></line>
+                <line class="tc-ax" x1="851.3" y1="332" x2="851.3" y2="335"></line>
+                <line class="tc-ax" x1="900" y1="332" x2="900" y2="338"></line>
+                <line class="tc-jv" x1="364.7" y1="46" x2="364.7" y2="206"></line>
+              </svg>
+              <div class="tc-l tc-in rec" style="left: 180px; top: 244px; width: 126px">
+                <span class="tc-k">Min 0–3</span>Mutual recognition via movement
+              </div>
+              <div class="tc-n" style="top: 126px">
+                <b>Child C</b>
+                <span>ADHD</span>
+              </div>
+              <div class="tc-n" style="top: 214px">
+                <b>Child D</b>
+                <span>Neurotypical</span>
+              </div>
+              <div class="tc-l up" style="left: 312px; top: 112px; width: 140px">
+                <span class="tc-k">Min 3</span>Finds object 1
+              </div>
+              <div class="tc-l" style="left: 360.7px; top: 226px; width: 200px">
+                <span class="tc-k">Min 4</span>Approaches, presses button
+              </div>
+              <div class="tc-l up" style="left: 423.9px; top: 152px; width: 230px">
+                <span class="tc-k">Min 4–15</span>Moving and playing together: turns, follows, close proximity
+              </div>
+              <div class="tc-l" style="left: 652.7px; top: 186px; width: 170px">
+                <span class="tc-k">Min 10</span>Finds object 2, joint activation 2
+              </div>
+              <div class="tc-l up" style="text-align: right; left: 700px; top: 152px; width: 200px">
+                <span class="tc-k">Min 10–15</span>Continued joint exploration
+              </div>
+              <div class="tc-t" style="left: 140px; top: 344px">
+                0
+              </div>
+              <div class="tc-t" style="left: 383.3px; top: 344px">
+                5
+              </div>
+              <div class="tc-t" style="left: 626.7px; top: 344px">
+                10
+              </div>
+              <div class="tc-t" style="left: 870px; top: 344px">
+                15 min
+              </div>
+              <div class="tc-n tc-n2" style="top: 332px">
+                <span>Minutes</span>
+              </div>
+              <div class="tc-h jt" style="left: 364.7px; top: 38px; width: 360px">
+                <span class="tc-k">Min 4 · Joint activation 1</span>Both infer the dual-signal mechanic
+              </div>
+              <div class="tc-note" style="left: 420px; top: 280px">
+                No technical interruptions occurred during this session.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tc-lg">
+          <span>
+            <span class="tc-m ad"></span>Child C, ADHD
+          </span>
+          <span>
+            <span class="tc-m nt"></span>Child D, neurotypical
+          </span>
+          <span>
+            <span class="tc-m jt"></span>Joint, emergent shared moment
+          </span>
+          <span>
+            <span class="tc-m bd"></span>Mutual recognition
+          </span>
+        </div>
+        <figcaption>
+          Controls explained up front. From minute 4, the children explored together without a single word.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+</ProjectLayout>
+
+<script>
+  import '../../scripts/tabs.js';
+</script>

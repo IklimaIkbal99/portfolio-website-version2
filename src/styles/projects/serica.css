@@ -1,0 +1,221 @@
+/* Serica case study: styles used only on this page. */
+
+.cta {
+  align-self: flex-start;
+  display: inline-flex;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.film video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background-color: #2a2a2a;
+}
+
+.ph-img {
+  display: block;
+  width: min(300px, 100%);
+  height: auto;
+  margin: 0 auto;
+  animation: floaty 7s ease-in-out infinite;
+}
+
+/* Flows: stations on a line, steps hanging below; labels sit on the page colour so the line passes behind them */
+
+.af {
+  position: relative;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: start;
+}
+
+.af > .hd {
+  left: 10%;
+  right: 10%;
+  top: 4px;
+}
+
+.ac,
+.wc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.ac-stem {
+  left: calc(50% - 2px);
+  top: 6px;
+  bottom: 0;
+}
+
+.wc > .st {
+  left: calc(50% - 2px);
+  top: 0;
+  bottom: 0;
+}
+
+.ac .mk.s,
+.wc .mk.s {
+  margin-top: 20px;
+}
+
+.fl-t,
+.fl-s,
+.fl-l,
+.fl-n {
+  position: relative;
+  z-index: 1;
+  background-color: #f8f7f4;
+  padding: 3px 6px;
+}
+
+.fl-t {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.fl-s {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--body);
+}
+
+.fl-l {
+  margin-top: 18px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+
+.fl-n {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--mute);
+}
+
+.ac-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ae-l {
+  position: relative;
+  display: block;
+  width: 8px;
+  height: 40px;
+}
+
+.wf {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+}
+
+.wb {
+  position: relative;
+  height: 40px;
+}
+
+/* Brand */
+
+.bt2 {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.bt2 figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bt {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 10;
+  padding: 8%;
+  box-sizing: border-box;
+  background-color: #f2eff5;
+}
+
+.bt img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sws {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.sw {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4px;
+  min-height: 132px;
+  padding: 14px;
+  box-sizing: border-box;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (max-width: 760px) {
+  .af,
+  .wf {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 28px;
+  }
+
+  .af > *,
+  .wf > * {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+
+  .af > .hd,
+  .wb {
+    display: none;
+  }
+
+  .bt2,
+  .sws {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .bt2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

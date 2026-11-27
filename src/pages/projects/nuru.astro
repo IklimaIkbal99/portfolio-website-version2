@@ -1,0 +1,1153 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import '@fontsource/outfit/400.css';
+import '@fontsource/outfit/500.css';
+import '@fontsource/outfit/600.css';
+import browser from '../../styles/components/browser.css?url';
+import diagram from '../../styles/components/diagram.css?url';
+import social from '../../styles/components/social.css?url';
+import tabs from '../../styles/components/tabs.css?url';
+import page from '../../styles/projects/nuru.css?url';
+---
+
+<ProjectLayout slug="nuru" styles={[browser, diagram, social, tabs, page]}>
+  <div class="cover">
+    <figure class="cv-img">
+      <img
+        src="/media/nuru/cover.webp"
+        alt="The nuru homepage in a browser beside the nuru app on a phone, showing the next consultation, today’s menu and the water tracker"
+      />
+    </figure>
+    <div class="cv-deco" aria-hidden="true">
+      <span class="cv-ring"></span>
+      <svg class="cv-ln" viewBox="0 0 106 30">
+        <polyline class="cl" points="4.3,1.2 105.4,29.5"></polyline>
+      </svg>
+      <span class="x cv-x1"></span>
+      <span class="x cv-x2"></span>
+    </div>
+  </div>
+
+  <section class="sec first" id="s-overview" data-sec aria-labelledby="h-overview">
+    <div class="sh">
+      <h2 class="sh-t" id="h-overview">
+        Overview
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split">
+      <div class="split-a">
+        <p class="lead">Quick fixes are everywhere. Lasting change isn’t.</p>
+        <p class="tx">
+          Takeaway is one tap away, and injections or operations promise fast results. Yet many people are still unhappy
+          with their body, or simply too busy for a proper meal.
+        </p>
+        <p class="tx">
+          nuru is a case study for a service that connects people with licensed dietitians, practical meal plans and an
+          app that keeps the routine going. I mapped the service first, then designed the website, the client app and
+          the brand.
+        </p>
+      </div>
+      <div class="split-b">
+        <span class="vl" aria-hidden="true"></span>
+        <dl class="facts">
+          <div>
+            <dt>Scope</dt>
+            <dd>Website, app and brand</dd>
+          </div>
+          <div>
+            <dt>Platform</dt>
+            <dd>Website · iOS and Android app</dd>
+          </div>
+          <div>
+            <dt>UX maps</dt>
+            <dd>Stakeholders, journey, site flow, architecture</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <table class="cmp rv">
+      <thead>
+        <tr>
+          <th scope="col">The quick fix</th>
+          <th aria-hidden="true"></th>
+          <th scope="col">
+            <span class="mk olive" aria-hidden="true"></span>With nuru
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ordering in because there’s no time to cook</td>
+          <td class="cmp-a" aria-hidden="true">
+            <span class="hd fr"></span>
+            <span class="ah ah-r"></span>
+          </td>
+          <td>Meals planned around your working week</td>
+        </tr>
+        <tr>
+          <td>Injections or operations that work for a while</td>
+          <td class="cmp-a" aria-hidden="true">
+            <span class="hd fr"></span>
+            <span class="ah ah-r"></span>
+          </td>
+          <td>Habits that keep working long after you start</td>
+        </tr>
+        <tr>
+          <td>Strict diets you follow on your own</td>
+          <td class="cmp-a" aria-hidden="true">
+            <span class="hd fr"></span>
+            <span class="ah ah-r"></span>
+          </td>
+          <td>A dietitian who adjusts the plan with you</td>
+        </tr>
+        <tr>
+          <td>Guilt after every “bad” meal</td>
+          <td class="cmp-a" aria-hidden="true">
+            <span class="hd fr"></span>
+            <span class="ah ah-r"></span>
+          </td>
+          <td>A calmer, more flexible relationship with food</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="sec" id="s-ux" data-sec aria-labelledby="h-ux">
+    <div class="sh">
+      <h2 class="sh-t" id="h-ux">
+        UX process
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Mapping the service before designing a screen.</p>
+      <p class="tx">
+        Four maps shaped every decision: who nuru serves and depends on, how one person’s week actually feels, how a
+        visitor becomes a client, and what the system needs behind it.
+      </p>
+    </div>
+
+    <div class="tbw">
+      <div class="tb" role="tablist" aria-label="Service maps">
+        <button
+          class="tb-b"
+          type="button"
+          role="tab"
+          id="tb-sm"
+          aria-controls="tp-sm"
+          aria-selected="true"
+          tabindex="0"
+        >
+          Stakeholders
+        </button>
+        <button
+          class="tb-b"
+          type="button"
+          role="tab"
+          id="tb-jr"
+          aria-controls="tp-jr"
+          aria-selected="false"
+          tabindex="-1"
+        >
+          User journey
+        </button>
+        <button
+          class="tb-b"
+          type="button"
+          role="tab"
+          id="tb-sf"
+          aria-controls="tp-sf"
+          aria-selected="false"
+          tabindex="-1"
+        >
+          Site flow
+        </button>
+        <button
+          class="tb-b"
+          type="button"
+          role="tab"
+          id="tb-ar"
+          aria-controls="tp-ar"
+          aria-selected="false"
+          tabindex="-1"
+        >
+          System
+        </button>
+      </div>
+      <div class="tb-p" role="tabpanel" id="tp-sm" aria-labelledby="tb-sm">
+        <div class="subh">
+          <h3 class="h3">Clients, dietitians and the platform between them.</h3>
+        </div>
+        <div
+          class="sm rv"
+          role="group"
+          aria-label="Stakeholder map: clients send needs and goals to the nuru platform and get a plan and support back; the platform sends matched clients to dietitians, who bring expertise and plans; the nuru team, care teams and families, service providers and regulators support it"
+        >
+          <div class="sm-cl">
+            <div class="sm-hd" style="grid-column: 1 / -1">
+              <span class="mk clay" aria-hidden="true"></span>
+              <h4>Clients</h4>
+              <p>Different ages, bodies and health needs, not one average dieter.</p>
+            </div>
+            <div class="sm-g">
+              <span class="ulabel">Age</span>
+              <ul class="tg">
+                <li>18 to 29</li>
+                <li>30 to 49</li>
+                <li>50 to 64</li>
+                <li>65 and over</li>
+              </ul>
+            </div>
+            <div class="sm-g">
+              <span class="ulabel">Gender and life stage</span>
+              <ul class="tg">
+                <li>Women</li>
+                <li>Men</li>
+                <li>Non-binary</li>
+                <li>Pregnancy</li>
+                <li>Menopause</li>
+              </ul>
+            </div>
+            <div class="sm-g">
+              <span class="ulabel">Health needs</span>
+              <ul class="tg">
+                <li>Diabetes</li>
+                <li>Insulin resistance</li>
+                <li>Celiac disease</li>
+                <li>Eating disorders</li>
+              </ul>
+            </div>
+            <div class="sm-g">
+              <span class="ulabel">Goals</span>
+              <ul class="tg">
+                <li>Lose or gain weight</li>
+                <li>Busy working weeks</li>
+                <li>A lasting routine</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sm-v" aria-hidden="true">
+            <span class="vd fd" style="left: calc(36% - 2px)"></span>
+            <span class="ah ah-d" style="left: calc(36% - 4px); bottom: 0"></span>
+            <span class="vd fu" style="left: calc(64% - 2px); top: 6px; bottom: 0"></span>
+            <span class="ah ah-u" style="left: calc(64% - 4px); top: 0"></span>
+            <span class="sm-vl" style="right: calc(64% + 12px)">
+              needs, goals
+            </span>
+            <span class="sm-vl" style="left: calc(64% + 12px)">
+              plan, support
+            </span>
+          </div>
+          <span class="dm sm-dm" aria-hidden="true"></span>
+          <div class="sm-pf">
+            <span class="mk ink" aria-hidden="true"></span>
+            <h4>nuru platform</h4>
+            <p>Website and app. Matches each client to a dietitian by age, life stage and condition.</p>
+            <span class="vd sm-down" aria-hidden="true"></span>
+          </div>
+          <div class="sm-h" aria-hidden="true">
+            <span class="sm-hl" style="top: 0">
+              matched clients
+            </span>
+            <span class="hd fr" style="top: 22px; right: 6px"></span>
+            <span class="ah ah-r" style="top: 20px; right: 0"></span>
+            <span class="hd fl" style="top: 36px; left: 6px"></span>
+            <span class="ah ah-l" style="top: 34px; left: 0"></span>
+            <span class="sm-hl" style="top: 46px">
+              expertise, plans
+            </span>
+          </div>
+          <div class="sm-di">
+            <div class="sm-hd">
+              <span class="mk olive" aria-hidden="true"></span>
+              <h4>Dietitians</h4>
+            </div>
+            <p>Licensed, and matched by speciality rather than by chance.</p>
+            <span class="ulabel">Specialities</span>
+            <ul class="tg col">
+              <li>Weight management</li>
+              <li>Eating disorder recovery</li>
+              <li>Diabetes and insulin resistance</li>
+              <li>Pregnancy and celiac nutrition</li>
+            </ul>
+            <p>They also write and review the tips and sample plans on the website.</p>
+          </div>
+          <div class="sm-bus" aria-hidden="true">
+            <span class="hd"></span>
+            <span class="sm-bc"></span>
+            <span class="sm-bc up"></span>
+            <span class="sm-bc"></span>
+            <span class="sm-bc"></span>
+          </div>
+          <div class="sm-sup">
+            <div class="sm-s">
+              <span class="mk ink" aria-hidden="true"></span>
+              <h5>nuru team</h5>
+              <p>
+                Product, content editors and support. They need trust and a clear view of what helps clients, and bring
+                the platform, matching and content.
+              </p>
+            </div>
+            <div class="sm-s">
+              <span class="mk out" aria-hidden="true"></span>
+              <h5>Care team and family</h5>
+              <p>
+                Doctors, therapists and caregivers. They need plans that stay in line with treatment, and bring medical
+                guidance and referrals.
+              </p>
+            </div>
+            <div class="sm-s">
+              <span class="mk out" aria-hidden="true"></span>
+              <h5>Service providers</h5>
+              <p>
+                Payments, video calls, notifications and app stores. They need a stable integration, and bring the
+                infrastructure nuru runs on.
+              </p>
+            </div>
+            <div class="sm-s">
+              <span class="mk out" aria-hidden="true"></span>
+              <h5>Regulators and associations</h5>
+              <p>
+                Health and data regulators, dietetic associations. They need licensed practice and protected data, and
+                bring rules and credibility.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg">
+          <span>
+            <span class="mk clay"></span>Clients
+          </span>
+          <span>
+            <span class="mk olive"></span>Dietitians
+          </span>
+          <span>
+            <span class="mk ink"></span>nuru team
+          </span>
+          <span>
+            <span class="mk out"></span>External partners
+          </span>
+        </div>
+      </div>
+      <div class="tb-p" role="tabpanel" hidden id="tp-jr" aria-labelledby="tb-jr">
+        <div class="split">
+          <div class="split-a stack" style="margin-top: 0">
+            <h3 class="h3">From a late takeaway to a routine he keeps.</h3>
+            <p class="tx">Six stages, what John does, thinks and feels, and what nuru should do at each one.</p>
+          </div>
+          <div class="split-b persona">
+            <span class="vl" aria-hidden="true"></span>
+            <span class="ulabel">Persona</span>
+            <b>John, 34, project manager</b>
+            <p>Works long days and orders in most evenings. Wants to lose weight without another strict diet.</p>
+            <q>I don’t have time to cook, and diets never last for me.</q>
+          </div>
+        </div>
+        <div class="jr rv">
+          <span class="jr-h">
+            Stage<small>and touchpoints</small>
+          </span>
+          <span class="jr-h">
+            Feeling<small>low to high</small>
+          </span>
+          <span class="jr-h">Doing</span>
+          <span class="jr-h">Thinking</span>
+          <span class="jr-h">What nuru should do</span>
+          <div class="jr-fe" aria-hidden="true">
+            <span class="vd jr-ax" style="left: calc(8% - 2px)"></span>
+            <span class="vd jr-ax" style="left: calc(92% - 2px)"></span>
+            <svg viewBox="0 0 100 600" preserveAspectRatio="none">
+              <path d="M8,50 C8,100 39,100 39,150 C39,200 19.8,200 19.8,250 C19.8,300 70.2,300 70.2,350 C70.2,400 51.7,400 51.7,450 C51.7,500 92,500 92,550"></path>
+            </svg>
+            <span class="jr-d" style="left: 8%; top: 8.333%"></span>
+            <span class="jr-fl" style="left: 0; top: 8.333%">
+              tired, sceptical
+            </span>
+            <span class="jr-d" style="left: 39%; top: 25%"></span>
+            <span class="jr-fl" style="left: 39%; top: 25%; transform: translateX(-50%)">
+              curious
+            </span>
+            <span class="jr-d" style="left: 19.8%; top: 41.667%"></span>
+            <span class="jr-fl" style="left: 0; top: 41.667%">
+              hesitant
+            </span>
+            <span class="jr-d" style="left: 70.2%; top: 58.333%"></span>
+            <span class="jr-fl" style="left: 70.2%; top: 58.333%; transform: translateX(-50%)">
+              relieved
+            </span>
+            <span class="jr-d" style="left: 51.7%; top: 75%"></span>
+            <span class="jr-fl" style="left: 51.7%; top: 75%; transform: translateX(-50%)">
+              wobbly
+            </span>
+            <span class="jr-d" style="left: 92%; top: 91.667%"></span>
+            <span class="jr-fl" style="right: 0; top: 91.667%">
+              confident
+            </span>
+          </div>
+
+          <div class="jr-c jr-st">
+            <b>Aware</b>
+            <span>Social post, search, a friend’s referral</span>
+            <em class="jr-fm">Feeling: tired, sceptical</em>
+          </div>
+          <div class="jr-c jr-do">Orders takeaway again after a late day. Sees a nuru post about work lunches.</div>
+          <div class="jr-c jr-th">“I don’t have time to cook, and diets never last for me.”</div>
+          <div class="jr-c jr-nu">Speak to busy lives, not to weight. Lead with free, practical tips.</div>
+
+          <div class="jr-c jr-st">
+            <b>Explore</b>
+            <span>Home, Who it’s for, Tips and meal plans</span>
+            <em class="jr-fm">Feeling: curious</em>
+          </div>
+          <div class="jr-c jr-do">Reads Why nuru, checks who it’s for and opens a sample meal plan.</div>
+          <div class="jr-c jr-th">“This looks doable. Are these real dietitians?”</div>
+          <div class="jr-c jr-nu">Show credentials and specialities early. Keep sample plans free.</div>
+
+          <div class="jr-c jr-st">
+            <b>Sign up and book</b>
+            <span>Sign-up, intake, booking, payment</span>
+            <em class="jr-fm">Feeling: hesitant</em>
+          </div>
+          <div class="jr-c jr-do">
+            Creates an account, fills in the intake, picks a dietitian and a time, then pays.
+          </div>
+          <div class="jr-c jr-th">“That’s a lot of questions. I hope it’s worth it.”</div>
+          <div class="jr-c jr-nu">Keep the intake short and saved as he goes. Show the price before payment.</div>
+
+          <div class="jr-c jr-st">
+            <b>First consultation</b>
+            <span>Video call, written plan, email summary</span>
+            <em class="jr-fm">Feeling: relieved</em>
+          </div>
+          <div class="jr-c jr-do">Meets Elif on a video call. They agree on a goal and a first week.</div>
+          <div class="jr-c jr-th">“She asked about my week, not just my weight.”</div>
+          <div class="jr-c jr-nu">Send the plan the same day and invite him into the app.</div>
+
+          <div class="jr-c jr-st">
+            <b>Daily routine</b>
+            <span>App: Home, My meals, reminders</span>
+            <em class="jr-fm">Feeling: wobbly</em>
+          </div>
+          <div class="jr-c jr-do">Opens the app each morning, follows today’s menu, logs meals and water.</div>
+          <div class="jr-c jr-th">“I slipped on Wednesday. Have I ruined it?”</div>
+          <div class="jr-c jr-nu">Gentle reminders, no red marks. One tap to message the dietitian.</div>
+
+          <div class="jr-c jr-st">
+            <b>Follow-up and habit</b>
+            <span>App: My dietitian, follow-up call</span>
+            <em class="jr-fm">Feeling: confident</em>
+          </div>
+          <div class="jr-c jr-do">Reviews progress with Elif, adjusts the plan and cooks without checking it.</div>
+          <div class="jr-c jr-th">“It feels like my routine now, not a diet.”</div>
+          <div class="jr-c jr-nu">Celebrate habits, not numbers. Offer lighter check-ins over time.</div>
+        </div>
+      </div>
+      <div class="tb-p" role="tabpanel" hidden id="tp-sf" aria-labelledby="tb-sf">
+        <div class="subh">
+          <h3 class="h3">How a visitor moves from the public website to a booked consultation and into the app.</h3>
+        </div>
+        <div
+          class="sf rv"
+          role="group"
+          aria-label="Site flow in three phases: discover on the public website, book a first consultation, then use the service with the dietitian and the app"
+        >
+          <div class="sf-row c5">
+            <span class="sf-ph">Discover, on the public website</span>
+            <span class="hd fr" aria-hidden="true"></span>
+            <div class="sf-node">
+              <span class="mk out" aria-hidden="true"></span>
+              <b>Search, social or a referral</b>
+            </div>
+            <div class="sf-node">
+              <span class="mk page" aria-hidden="true"></span>
+              <b>Home</b>
+            </div>
+            <div class="sf-node">
+              <span class="mk page" aria-hidden="true"></span>
+              <b>Explore</b>
+              <small>Why nuru · Who it’s for · Services · Dietitians · Tips and meal plans · Questions</small>
+            </div>
+            <div class="sf-node">
+              <span class="mk dec" aria-hidden="true"></span>
+              <b>Ready to talk to a dietitian?</b>
+            </div>
+            <div class="sf-node">
+              <span class="mk page" aria-hidden="true"></span>
+              <b>Free tips and meal plans</b>
+              <small>comes back when ready</small>
+            </div>
+            <span class="sf-lb" style="left: 80%; top: -18px; transform: translateX(-50%)">
+              not yet
+            </span>
+          </div>
+          <div class="sf-cx" aria-hidden="true">
+            <span class="vd fd" style="left: calc(70% - 2px); top: 8px; height: calc(50% - 8px)"></span>
+            <span class="hd fl" style="left: 8.333%; right: 30%; top: calc(50% - 2px)"></span>
+            <span class="vd fd" style="left: calc(8.333% - 2px); top: 50%; bottom: 6px"></span>
+            <span class="ah ah-d" style="left: calc(8.333% - 4px); bottom: 0"></span>
+            <span class="sf-lb" style="left: calc(70% + 12px)">
+              yes
+            </span>
+          </div>
+          <div class="sf-row c6">
+            <span class="sf-ph">Book a first consultation</span>
+            <span class="hd fr" aria-hidden="true"></span>
+            <div class="sf-node">
+              <span class="mk clay" aria-hidden="true"></span>
+              <b>Create account</b>
+            </div>
+            <div class="sf-node">
+              <span class="mk clay" aria-hidden="true"></span>
+              <b>Intake questionnaire</b>
+              <small>routine, goals, health</small>
+            </div>
+            <div class="sf-node">
+              <span class="mk ink" aria-hidden="true"></span>
+              <b>Dietitian match</b>
+              <small>by speciality</small>
+            </div>
+            <div class="sf-node">
+              <span class="mk clay" aria-hidden="true"></span>
+              <b>Choose a time</b>
+            </div>
+            <div class="sf-node">
+              <span class="mk clay" aria-hidden="true"></span>
+              <b>Payment</b>
+              <small>via payment provider</small>
+            </div>
+            <div class="sf-node">
+              <span class="mk ink" aria-hidden="true"></span>
+              <b>Booking confirmed</b>
+              <small>email and reminder</small>
+            </div>
+          </div>
+          <div class="sf-cx" aria-hidden="true">
+            <span class="vd fd" style="left: calc(91.667% - 2px); top: 8px; height: calc(50% - 8px)"></span>
+            <span class="hd fl" style="left: 10%; right: 8.333%; top: calc(50% - 2px)"></span>
+            <span class="vd fd" style="left: calc(10% - 2px); top: 50%; bottom: 6px"></span>
+            <span class="ah ah-d" style="left: calc(10% - 4px); bottom: 0"></span>
+          </div>
+          <div class="sf-row c5">
+            <span class="sf-ph">Use, with the dietitian and the app</span>
+            <span class="hd fr" aria-hidden="true"></span>
+            <div class="sf-node">
+              <span class="mk olive" aria-hidden="true"></span>
+              <b>Video consultation</b>
+              <small>client and dietitian</small>
+            </div>
+            <div class="sf-node">
+              <span class="mk olive" aria-hidden="true"></span>
+              <b>Personal plan</b>
+              <small>written by the dietitian</small>
+            </div>
+            <div class="sf-node">
+              <span class="mk clay" aria-hidden="true"></span>
+              <b>Download the app</b>
+            </div>
+            <div class="sf-node">
+              <span class="mk clay" aria-hidden="true"></span>
+              <b>Client app</b>
+              <small>Home · My meals · My dietitian · Profile</small>
+            </div>
+            <div class="sf-node">
+              <span class="mk olive" aria-hidden="true"></span>
+              <b>Follow-up consultation</b>
+              <small>progress review</small>
+            </div>
+          </div>
+          <div class="sf-cx" aria-hidden="true" style="height: 64px">
+            <span class="vd fd" style="left: calc(90% - 2px); top: 8px; height: calc(50% - 8px)"></span>
+            <span class="hd fl" style="left: 30%; right: 10%; top: calc(50% - 2px)"></span>
+            <span class="vd fu" style="left: calc(30% - 2px); top: 14px; height: calc(50% - 14px)"></span>
+            <span class="ah ah-u" style="left: calc(30% - 4px); top: 8px"></span>
+            <span class="sf-lb" style="left: 60%; top: calc(50% + 8px); transform: translateX(-50%)">
+              plan adjusted
+            </span>
+          </div>
+        </div>
+        <div class="lg">
+          <span>
+            <span class="mk page"></span>Website page
+          </span>
+          <span>
+            <span class="mk clay"></span>Client action
+          </span>
+          <span>
+            <span class="mk ink"></span>nuru step
+          </span>
+          <span>
+            <span class="mk olive"></span>With the dietitian
+          </span>
+          <span>
+            <span class="mk out"></span>Outside nuru
+          </span>
+          <span>
+            <span class="mk dec"></span>Decision
+          </span>
+        </div>
+      </div>
+      <div class="tb-p" role="tabpanel" hidden id="tp-ar" aria-labelledby="tb-ar">
+        <div class="subh">
+          <h3 class="h3">The channels each group uses, the services behind them and the partners nuru relies on.</h3>
+          <p class="tx" style="margin-top: 8px">
+            Four channels, the website, the client app, a dietitian workspace and an admin CMS, share one API, eight
+            services and four data stores.
+          </p>
+        </div>
+        <div
+          class="ar rv"
+          role="group"
+          aria-label="System architecture: clients, dietitians and the nuru team use four channels that share one API, eight services, four data stores and four external services"
+        >
+          <span class="al" style="grid-row: 1">
+            People
+          </span>
+          <div class="an" style="grid-column: 2 / 4; grid-row: 1">
+            <span class="mk clay" aria-hidden="true"></span>
+            <b>Clients</b>
+          </div>
+          <div class="an" style="grid-column: 4; grid-row: 1">
+            <span class="mk olive" aria-hidden="true"></span>
+            <b>Dietitians</b>
+          </div>
+          <div class="an" style="grid-column: 5; grid-row: 1">
+            <span class="mk ink" aria-hidden="true"></span>
+            <b>nuru team</b>
+          </div>
+          <span class="cb" aria-hidden="true" style="grid-column: 2 / 4; grid-row: 2">
+            <span class="vd" style="left: calc(50% - 2px); top: 0; height: 13px"></span>
+            <span class="hd" style="left: 25%; right: 25%; top: 11px"></span>
+            <span class="vd fd" style="left: calc(25% - 2px); top: 13px; bottom: 6px"></span>
+            <span class="vd fd" style="left: calc(75% - 2px); top: 13px; bottom: 6px"></span>
+            <span class="ah ah-d" style="left: calc(25% - 4px); bottom: 0"></span>
+            <span class="ah ah-d" style="left: calc(75% - 4px); bottom: 0"></span>
+          </span>
+          <span class="cv" aria-hidden="true" style="grid-column: 4; grid-row: 2"></span>
+          <span class="cv" aria-hidden="true" style="grid-column: 5; grid-row: 2"></span>
+
+          <span class="al" style="grid-row: 3">
+            Channels
+          </span>
+          <div class="an" style="grid-column: 2; grid-row: 3">
+            <span class="mk clay" aria-hidden="true"></span>
+            <b>Website</b>
+            <small>Public pages, tips and meal plans, sign-up, intake and booking</small>
+          </div>
+          <div class="an" style="grid-column: 3; grid-row: 3">
+            <span class="mk clay" aria-hidden="true"></span>
+            <b>Client app</b>
+            <small>Home, My meals, My dietitian, Profile</small>
+          </div>
+          <div class="an" style="grid-column: 4; grid-row: 3">
+            <span class="mk olive" aria-hidden="true"></span>
+            <b>Dietitian workspace</b>
+            <small>Schedule, clients, plan builder, messages</small>
+          </div>
+          <div class="an" style="grid-column: 5; grid-row: 3">
+            <span class="mk ink" aria-hidden="true"></span>
+            <b>Admin and CMS</b>
+            <small>Content, dietitian approval, support</small>
+          </div>
+          <span class="cv" aria-hidden="true" style="grid-column: 2; grid-row: 4"></span>
+          <span class="cv" aria-hidden="true" style="grid-column: 3; grid-row: 4"></span>
+          <span class="cv" aria-hidden="true" style="grid-column: 4; grid-row: 4"></span>
+          <span class="cv" aria-hidden="true" style="grid-column: 5; grid-row: 4"></span>
+
+          <span class="al" style="grid-row: 5">
+            API
+          </span>
+          <div class="api" style="grid-column: 2 / 6; grid-row: 5">
+            <b>nuru API</b>
+            <small>sign-in, roles and permissions, audit log</small>
+          </div>
+          <span class="cv" aria-hidden="true" style="grid-column: 2; grid-row: 6"></span>
+          <span class="cv" aria-hidden="true" style="grid-column: 3; grid-row: 6"></span>
+          <span class="cv" aria-hidden="true" style="grid-column: 4; grid-row: 6"></span>
+          <span class="cv" aria-hidden="true" style="grid-column: 5; grid-row: 6"></span>
+
+          <span class="al" style="grid-row: 7">
+            Services
+          </span>
+          <div class="an" style="grid-column: 2; grid-row: 7">
+            <span class="mk page" aria-hidden="true"></span>
+            <b>Accounts and profiles</b>
+            <small>clients and dietitians</small>
+          </div>
+          <div class="an" style="grid-column: 3; grid-row: 7">
+            <span class="mk page" aria-hidden="true"></span>
+            <b>Intake and matching</b>
+            <small>questionnaire, speciality match</small>
+          </div>
+          <div class="an" style="grid-column: 4; grid-row: 7">
+            <span class="mk page" aria-hidden="true"></span>
+            <b>Booking and calendar</b>
+            <small>slots, reminders</small>
+          </div>
+          <div class="an" style="grid-column: 5; grid-row: 7">
+            <span class="mk page" aria-hidden="true"></span>
+            <b>Payments</b>
+            <small>sessions, receipts</small>
+          </div>
+          <div class="an" style="grid-column: 2; grid-row: 8">
+            <span class="mk page" aria-hidden="true"></span>
+            <b>Meal plans</b>
+            <small>plans, shopping lists</small>
+          </div>
+          <div class="an" style="grid-column: 3; grid-row: 8">
+            <span class="mk page" aria-hidden="true"></span>
+            <b>Tracking</b>
+            <small>meals, water, number-free mode</small>
+          </div>
+          <div class="an" style="grid-column: 4; grid-row: 8">
+            <span class="mk page" aria-hidden="true"></span>
+            <b>Messaging</b>
+            <small>client and dietitian</small>
+          </div>
+          <div class="an" style="grid-column: 5; grid-row: 8">
+            <span class="mk page" aria-hidden="true"></span>
+            <b>Content library</b>
+            <small>tips, sample plans</small>
+          </div>
+          <span class="cv" aria-hidden="true" style="grid-column: 2; grid-row: 9"></span>
+          <span class="cv" aria-hidden="true" style="grid-column: 3; grid-row: 9"></span>
+          <span class="cv" aria-hidden="true" style="grid-column: 4; grid-row: 9"></span>
+          <span class="cv" aria-hidden="true" style="grid-column: 5; grid-row: 9"></span>
+
+          <span class="al" style="grid-row: 10">
+            Data
+          </span>
+          <div class="an" style="grid-column: 2; grid-row: 10">
+            <span class="mk sage" aria-hidden="true"></span>
+            <b>Client profiles</b>
+            <small>health intake, encrypted</small>
+          </div>
+          <div class="an" style="grid-column: 3; grid-row: 10">
+            <span class="mk sage" aria-hidden="true"></span>
+            <b>Plans and logs</b>
+            <small>meals, water, notes</small>
+          </div>
+          <div class="an" style="grid-column: 4; grid-row: 10">
+            <span class="mk sage" aria-hidden="true"></span>
+            <b>Appointments</b>
+            <small>bookings and payments</small>
+          </div>
+          <div class="an" style="grid-column: 5; grid-row: 10">
+            <span class="mk sage" aria-hidden="true"></span>
+            <b>Content</b>
+            <small>articles, sample plans</small>
+          </div>
+
+          <div class="ext" style="grid-column: 6; grid-row: 7 / 11">
+            <span class="ext-c" aria-hidden="true">
+              <span class="hd fr" style="left: 2px; width: 18px; top: 60px"></span>
+              <span class="ah ah-r" style="left: 20px; top: 58px"></span>
+              <span class="hd fl" style="left: 6px; width: 18px; top: 74px"></span>
+              <span class="ah ah-l" style="left: 0; top: 72px"></span>
+            </span>
+            <span class="ulabel">External services</span>
+            <div class="ex">
+              <span class="mk out" aria-hidden="true"></span>
+              <span>
+                <b>Payment provider</b>
+                <small>card payments for sessions</small>
+              </span>
+            </div>
+            <div class="ex">
+              <span class="mk out" aria-hidden="true"></span>
+              <span>
+                <b>Video call provider</b>
+                <small>consultation calls</small>
+              </span>
+            </div>
+            <div class="ex">
+              <span class="mk out" aria-hidden="true"></span>
+              <span>
+                <b>Email and push</b>
+                <small>confirmations, reminders</small>
+              </span>
+            </div>
+            <div class="ex">
+              <span class="mk out" aria-hidden="true"></span>
+              <span>
+                <b>App stores</b>
+                <small>distribute the client app</small>
+              </span>
+            </div>
+          </div>
+        </div>
+        <p class="cap">
+          Health data stays encrypted and access is role-based: a dietitian sees only their own clients, and the nuru
+          team sees no health details by default.
+        </p>
+        <div class="lg">
+          <span>
+            <span class="mk clay"></span>For clients
+          </span>
+          <span>
+            <span class="mk olive"></span>For dietitians
+          </span>
+          <span>
+            <span class="mk ink"></span>nuru core
+          </span>
+          <span>
+            <span class="mk page"></span>Service
+          </span>
+          <span>
+            <span class="mk sage"></span>Data store
+          </span>
+          <span>
+            <span class="mk out"></span>External service
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="subh">
+      <span class="ulabel">What sets nuru apart</span>
+    </div>
+    <div class="notes3" style="margin-top: 24px">
+      <div class="rv">
+        <h4>Every age</h4>
+        <p>
+          A 25-year-old student, a working parent and a 70-year-old get different meals and different support.{' '}
+          <em>Elsewhere: one plan for the average adult.</em>
+        </p>
+      </div>
+      <div class="rv">
+        <h4>Gender and life stage</h4>
+        <p>
+          Plans for women, men and non-binary clients, through pregnancy and menopause.{' '}
+          <em>Elsewhere: the same advice whoever you are.</em>
+        </p>
+      </div>
+      <div class="rv">
+        <h4>Health conditions first</h4>
+        <p>
+          Diabetes, insulin resistance, celiac disease and eating disorders go to specialists.{' '}
+          <em>Elsewhere: weight loss only, conditions left out.</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-website" data-sec aria-labelledby="h-website">
+    <div class="sh">
+      <h2 class="sh-t" id="h-website">
+        Website
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">A homepage that answers the journey’s questions.</p>
+      <p class="tx">
+        Each section meets a stage John goes through: why nuru, who it’s for, the three services, the dietitians, the
+        app and free tips. Tabs for each need, a sample meal plan by weekday and an FAQ let visitors explore before they
+        commit.
+      </p>
+    </div>
+    <figure class="br rv">
+      <div class="br-b" aria-hidden="true">
+        <span class="br-d">
+          <i style="background-color: #C9976E"></i>
+          <i style="background-color: #CBC9B4"></i>
+          <i style="background-color: #6B5E1A"></i>
+        </span>
+        <span class="br-u">www.nuru.com</span>
+        <span style="width: 44px"></span>
+      </div>
+      <video
+        src="/media/nuru/website-scroll.mp4"
+        poster="/media/nuru/website-scroll-poster.webp"
+        autoplay
+        muted
+        loop
+        playsinline
+        aria-label="Scrolling through the nuru homepage: hero, why nuru, who it’s for tabs, services, sample meal plan, app, how it works, dietitians, tips and questions"
+      ></video>
+    </figure>
+    <div class="notes3">
+      <div class="rv">
+        <h4>Who it’s for</h4>
+        <p>
+          Five needs, from weight goals to eating disorder support and special meal planning, each with its own promise
+          and next step.
+        </p>
+      </div>
+      <div class="rv">
+        <h4>Free before paid</h4>
+        <p>A sample meal plan for a working week and dietitian-reviewed tips give value before anyone books.</p>
+      </div>
+      <div class="rv">
+        <h4>Trust, early</h4>
+        <p>Licensed dietitians matched by speciality, and honest answers on medical conditions and eating disorders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-app" data-sec aria-labelledby="h-app">
+    <div class="sh">
+      <h2 class="sh-t" id="h-app">
+        Client app
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split" style="margin-top: 0px; padding-top: 40px">
+      <div class="split-a">
+        <p class="lead">Small daily steps, with the dietitian one message away.</p>
+        <div class="feat">
+          <div>
+            <h3>Your day, planned</h3>
+            <p>Today’s meals, a ready shopping list and gentle reminders for meals and water.</p>
+          </div>
+          <div>
+            <h3>Tracking without the pressure</h3>
+            <p>Log meals in a tap and note how food makes you feel. A number-free mode is there for recovery.</p>
+          </div>
+          <div>
+            <h3>Your dietitian, one message away</h3>
+            <p>Share progress and ask questions, so the plan is adjusted while it still matters.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="phn rv" style="width: auto; transform: scale(0.7)">
+        <div class="phn-b" style="height: 608px; width: 272px">
+          <div class="phn-s" style="height: 544px; width: 270px">
+            <div class="phn-sb" aria-hidden="true" style="width: 280px">
+              <span>9:41</span>
+              <span class="phn-ic">
+                <svg width="17" height="11" viewBox="0 0 17 11">
+                  <rect x="0" y="7" width="3" height="4" rx="1"></rect>
+                  <rect x="4.5" y="5" width="3" height="6" rx="1"></rect>
+                  <rect x="9" y="2.5" width="3" height="8.5" rx="1"></rect>
+                  <rect x="13.5" y="0" width="3" height="11" rx="1"></rect>
+                </svg>
+                <svg width="15" height="11" viewBox="0 0 15 11">
+                  <path d="M7.5 2.2c2.2 0 4.2.8 5.7 2.2l1.1-1.2C12.5 1.5 10.1.5 7.5.5S2.5 1.5.7 3.2l1.1 1.2c1.5-1.4 3.5-2.2 5.7-2.2zm0 3.3c1.3 0 2.5.5 3.4 1.3l1.1-1.2C10.8 4.5 9.2 3.8 7.5 3.8s-3.3.7-4.5 1.8l1.1 1.2c.9-.8 2.1-1.3 3.4-1.3zm0 3.3c.5 0 .9.2 1.2.5L7.5 10.8 6.3 9.3c.3-.3.7-.5 1.2-.5z"></path>
+                </svg>
+                <svg width="25" height="12" viewBox="0 0 25 12">
+                  <rect
+                    x=".5"
+                    y=".5"
+                    width="21"
+                    height="11"
+                    rx="3.5"
+                    fill="none"
+                    stroke="currentColor"
+                    opacity=".4"
+                  ></rect>
+                  <rect x="2" y="2" width="16" height="8" rx="2"></rect>
+                  <path d="M23 4v4c.8-.3 1.3-1 1.3-2s-.5-1.7-1.3-2z" opacity=".4"></path>
+                </svg>
+              </span>
+            </div>
+            <span class="phn-di" aria-hidden="true"></span>
+            <img
+              src="/media/nuru/app-home.webp"
+              alt="nuru app home: the next consultation with Elif, today’s menu with breakfast done and lunch up next, and the water tracker at 5 of 8 glasses"
+              width="609"
+              height="1099"
+              style="height: 544px; width: 270px"
+            />
+            <span class="phn-hi" aria-hidden="true"></span>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="s-brand" data-sec aria-labelledby="h-brand">
+    <div class="sh">
+      <h2 class="sh-t" id="h-brand">
+        Brand
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split">
+      <div class="split-a">
+        <p class="lead">Soft strokes and a single leaf.</p>
+        <p class="tx">
+          The wordmark spells nuru in rounded, unbroken strokes, with a leaf as its only accent. Olive, clay and sage
+          keep the palette warm and calm, far from the clinical whites and loud greens of diet apps.
+        </p>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: center; min-height: 200px">
+        <svg class="logo-w" viewBox="95 115 365 280" role="img" aria-label="nuru logo">
+          <g fill="none" stroke="#20201E" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M118 255 C118 222 138 200 160 200 C182 200 196 220 196 245 L196 270"></path>
+            <path d="M196 322 L196 340 C196 362 214 375 236 375 C258 375 276 362 276 340 L276 300"></path>
+            <path d="M276 242 L276 212 C276 196 290 186 306 186 L318 186"></path>
+            <path d="M357 214 L357 232 C357 262 378 282 400 282 C424 282 435 262 435 235 L435 212"></path>
+          </g>
+          <path class="leaf" d="M385 178 C390 146 414 129 445 127 C440 160 416 178 385 178 Z" fill="#C9976E"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="tiles">
+      <figure class="rv lift">
+        <div style="display: grid; place-items: center; aspect-ratio: 1 / 1; background-color: #EFEBDF">
+          <div style="display: grid; place-items: center; width: 46%; aspect-ratio: 1 / 1; border-radius: 22%; background-color: #20201E">
+            <svg viewBox="95 115 365 280" width="70%" aria-hidden="true">
+              <g fill="none" stroke="#F8F5EE" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M118 255 C118 222 138 200 160 200 C182 200 196 220 196 245 L196 270"></path>
+                <path d="M196 322 L196 340 C196 362 214 375 236 375 C258 375 276 362 276 340 L276 300"></path>
+                <path d="M276 242 L276 212 C276 196 290 186 306 186 L318 186"></path>
+                <path d="M357 214 L357 232 C357 262 378 282 400 282 C424 282 435 262 435 235 L435 212"></path>
+              </g>
+              <path d="M385 178 C390 146 414 129 445 127 C440 160 416 178 385 178 Z" fill="#CBC9B4"></path>
+            </svg>
+          </div>
+        </div>
+        <figcaption class="ulabel">App icon, ink</figcaption>
+      </figure>
+      <figure class="rv lift">
+        <div style="display: grid; place-items: center; aspect-ratio: 1 / 1; background-color: #EFEBDF">
+          <div style="display: grid; place-items: center; width: 46%; aspect-ratio: 1 / 1; border-radius: 22%; background-color: #CBC9B4">
+            <svg viewBox="95 115 365 280" width="70%" aria-hidden="true">
+              <g fill="none" stroke="#20201E" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M118 255 C118 222 138 200 160 200 C182 200 196 220 196 245 L196 270"></path>
+                <path d="M196 322 L196 340 C196 362 214 375 236 375 C258 375 276 362 276 340 L276 300"></path>
+                <path d="M276 242 L276 212 C276 196 290 186 306 186 L318 186"></path>
+                <path d="M357 214 L357 232 C357 262 378 282 400 282 C424 282 435 262 435 235 L435 212"></path>
+              </g>
+              <path d="M385 178 C390 146 414 129 445 127 C440 160 416 178 385 178 Z" fill="#C9976E"></path>
+            </svg>
+          </div>
+        </div>
+        <figcaption class="ulabel">App icon, sage</figcaption>
+      </figure>
+      <figure class="rv lift">
+        <div style="display: grid; place-items: center; aspect-ratio: 1 / 1; background-color: #EFEBDF">
+          <div style="display: grid; place-items: center; width: 46%; aspect-ratio: 1 / 1; border-radius: 22%; background-color: #F8F5EE; box-shadow: 0 0 0 1px #D9D3C3">
+            <svg viewBox="95 115 365 280" width="70%" aria-hidden="true">
+              <g fill="none" stroke="#20201E" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M118 255 C118 222 138 200 160 200 C182 200 196 220 196 245 L196 270"></path>
+                <path d="M196 322 L196 340 C196 362 214 375 236 375 C258 375 276 362 276 340 L276 300"></path>
+                <path d="M276 242 L276 212 C276 196 290 186 306 186 L318 186"></path>
+                <path d="M357 214 L357 232 C357 262 378 282 400 282 C424 282 435 262 435 235 L435 212"></path>
+              </g>
+              <path d="M385 178 C390 146 414 129 445 127 C440 160 416 178 385 178 Z" fill="#CBC9B4"></path>
+            </svg>
+          </div>
+        </div>
+        <figcaption class="ulabel">App icon, cream</figcaption>
+      </figure>
+      <figure class="rv">
+        <div style="display: flex; flex-direction: column; justify-content: space-between; aspect-ratio: 1 / 1; box-sizing: border-box; padding: 24px; background-color: #20201E; color: #F8F5EE; font-family: 'Outfit', sans-serif">
+          <span style="font-size: 15px; color: #CFCAB8">Outfit</span>
+          <span style="font-size: clamp(64px, 6vw, 104px); line-height: 0.9; font-weight: 500; letter-spacing: -0.03em">
+            Aa
+          </span>
+          <span style="display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 15px">
+            <span style="font-weight: 300">Light</span>
+            <span style="font-weight: 400">Regular</span>
+            <span style="font-weight: 500">Medium</span>
+            <span style="font-weight: 600">Semibold</span>
+          </span>
+        </div>
+        <figcaption class="ulabel">Typeface</figcaption>
+      </figure>
+    </div>
+    <div class="sws rv">
+      <div class="sw" style="background-color: #6B5E1A; color: #F8F5EE">
+        <b>Olive</b>
+        <span>#6B5E1A</span>
+      </div>
+      <div class="sw" style="background-color: #20201E; color: #F8F5EE">
+        <b>Ink</b>
+        <span>#20201E</span>
+      </div>
+      <div class="sw" style="background-color: #C9976E; color: #20201E">
+        <b>Clay</b>
+        <span>#C9976E</span>
+      </div>
+      <div class="sw" style="background-color: #CBC9B4; color: #20201E">
+        <b>Sage</b>
+        <span>#CBC9B4</span>
+      </div>
+      <div class="sw" style="background-color: #F8F5EE; color: #20201E; border: 1px solid #D9D3C3">
+        <b>Cream</b>
+        <span>#F8F5EE</span>
+      </div>
+    </div>
+    <figure class="wide rv">
+      <img src="/media/nuru/brand-card.webp" alt="nuru business card resting on olive, clay and cream shapes" />
+    </figure>
+  </section>
+
+  <section class="sec" id="s-social" data-sec aria-labelledby="h-social">
+    <div class="sh">
+      <h2 class="sh-t" id="h-social">
+        Social media
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Posts in the same calm voice.</p>
+      <p class="tx">
+        A carousel on quick fixes versus lasting change, feed posts for tips and dietitians, and stories for common
+        questions and the app.
+      </p>
+    </div>
+    <div class="soc">
+      <figure class="rv">
+        <video
+          src="/media/nuru/social-carousel.mp4"
+          poster="/media/nuru/social-carousel-poster.webp"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-label="Instagram carousel mockup swiping through four nuru slides"
+          style="background-color: #FFFFFF"
+        ></video>
+        <figcaption>
+          <span class="fc-t">Carousel</span>
+          <span class="fc-d">Quick fixes versus lasting change.</span>
+        </figcaption>
+      </figure>
+      <figure class="rv">
+        <video
+          src="/media/nuru/social-feed.mp4"
+          poster="/media/nuru/social-feed-poster.webp"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-label="Instagram feed mockup with a meal prep tip and a dietitians post"
+          style="background-color: #FFFFFF"
+        ></video>
+        <figcaption>
+          <span class="fc-t">Feed posts</span>
+          <span class="fc-d">A meal prep tip and the dietitians.</span>
+        </figcaption>
+      </figure>
+      <figure class="rv">
+        <video
+          src="/media/nuru/social-stories.mp4"
+          poster="/media/nuru/social-stories-poster.webp"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-label="Instagram stories mockup with a question and an app story"
+          style="background-color: #000000"
+        ></video>
+        <figcaption>
+          <span class="fc-t">Stories</span>
+          <span class="fc-d">A common question and the app.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+</ProjectLayout>
+
+<script>
+  import '../../scripts/tabs.js';
+</script>

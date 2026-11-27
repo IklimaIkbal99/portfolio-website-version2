@@ -1,0 +1,323 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '@fontsource/ibm-plex-mono/400.css';
+import home from '../styles/pages/home.css?url';
+---
+
+<BaseLayout
+  title="İklima İkbal Türköz — Portfolio"
+  description="İklima İkbal Türköz, interaction and UI/UX designer in Milan. Selected work in product, game and brand design."
+  styles={[home]}
+>
+  <div class="sg" data-sg>
+    <div class="dots" data-dots aria-hidden="true"></div>
+    <svg class="ln" data-ln aria-hidden="true"></svg>
+
+    <section
+      class="stage"
+      data-stage
+      tabindex="0"
+      aria-roledescription="carousel"
+      aria-label="Selected projects. Drag, or use the left and right arrow keys to browse. Press Enter to open the project in the centre."
+    >
+      <div
+        class="pl"
+        data-pl="0"
+        data-ha="1.777"
+        role="group"
+        aria-roledescription="slide"
+        aria-label="Breathment"
+        style="background-color: #DCE6F0"
+      >
+        <img
+          src="/media/breathment/cover.webp"
+          alt="The Breathment website on a desktop screen beside the app on two phones"
+          draggable="false"
+        />
+        <img class="sq" data-sq src="/media/home/breathment-thumb.webp" alt="" draggable="false" />
+      </div>
+      <div
+        class="pl"
+        data-pl="1"
+        data-ha="1.777"
+        role="group"
+        aria-roledescription="slide"
+        aria-label="nuru"
+        style="background-color: #F3E7D8"
+      >
+        <img
+          src="/media/nuru/cover.webp"
+          alt="The nuru homepage in a browser beside the nuru app on a phone"
+          draggable="false"
+        />
+        <img class="sq" data-sq src="/media/home/nuru-thumb.webp" alt="" draggable="false" />
+      </div>
+      <div
+        class="pl"
+        data-pl="2"
+        data-ha="1.777"
+        role="group"
+        aria-roledescription="slide"
+        aria-label="AviateReady"
+        style="background-color: #E8F0FB"
+      >
+        <img
+          src="/media/aviateready/cover.webp"
+          alt="AviateReady logo beside the app on iPhone and iPad, with a boarding pass counting down to the interview"
+          draggable="false"
+        />
+        <img class="sq" data-sq src="/media/home/aviateready-thumb.webp" alt="" draggable="false" />
+      </div>
+      <div class="pl" data-pl="3" data-ha="2.25" role="group" aria-roledescription="slide" aria-label="Echo">
+        <img
+          src="/media/echo/cover.webp"
+          alt="Echo: three sprout characters running through a sunny meadow past stone ruins"
+          draggable="false"
+        />
+        <img class="sq" data-sq src="/media/home/echo-thumb.webp" alt="" draggable="false" />
+      </div>
+      <div
+        class="pl"
+        data-pl="4"
+        data-ha="1.777"
+        role="group"
+        aria-roledescription="slide"
+        aria-label="Arkitera"
+        style="background-color: #EFE9E1"
+      >
+        <img
+          src="/media/arkitera/cover.webp"
+          alt="The Arkitera homepage on a laptop: the project of the week and the latest news"
+          draggable="false"
+        />
+        <img class="sq" data-sq src="/media/home/arkitera-thumb.webp" alt="" draggable="false" />
+      </div>
+      <div
+        class="pl"
+        data-pl="5"
+        data-ha="1.777"
+        role="group"
+        aria-roledescription="slide"
+        aria-label="City Dialogue"
+        style="background-color: #E6DDEE"
+      >
+        <img
+          src="/media/city-dialogue/cover.webp"
+          alt="City Dialogue on a tablet: a map of connected discussion topics for climate-neutral cities, part of the EU NetZeroCities mission platform"
+          draggable="false"
+        />
+        <img class="sq" data-sq src="/media/home/city-dialogue-thumb.webp" alt="" draggable="false" />
+      </div>
+      <div
+        class="pl"
+        data-pl="6"
+        data-ha="1.777"
+        role="group"
+        aria-roledescription="slide"
+        aria-label="Serica"
+        style="background-color: #E6DDEB"
+      >
+        <img
+          src="/media/serica/cover.webp"
+          alt="Three Serica posters on a stone wall in charcoal, white and silk purple"
+          draggable="false"
+        />
+        <img class="sq" data-sq src="/media/home/serica-thumb.webp" alt="" draggable="false" />
+      </div>
+
+      <div class="cap" data-cap="0" aria-hidden="true">
+        <span class="cap-name">Breathment</span>
+        <button class="cap-go ul" type="button" data-go="0" tabindex="-1">
+          View project <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="cap" data-cap="1" aria-hidden="true">
+        <span class="cap-name">nuru</span>
+        <button class="cap-go ul" type="button" data-go="1" tabindex="-1">
+          View project <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="cap" data-cap="2" aria-hidden="true">
+        <span class="cap-name">AviateReady</span>
+        <button class="cap-go ul" type="button" data-go="2" tabindex="-1">
+          View project <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="cap" data-cap="3" aria-hidden="true">
+        <span class="cap-name">Echo</span>
+        <button class="cap-go ul" type="button" data-go="3" tabindex="-1">
+          View project <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="cap" data-cap="4" aria-hidden="true">
+        <span class="cap-name">Arkitera</span>
+        <button class="cap-go ul" type="button" data-go="4" tabindex="-1">
+          View project <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="cap" data-cap="5" aria-hidden="true">
+        <span class="cap-name">City Dialogue</span>
+        <button class="cap-go ul" type="button" data-go="5" tabindex="-1">
+          View project <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <div class="cap" data-cap="6" aria-hidden="true">
+        <span class="cap-name">Serica</span>
+        <button class="cap-go ul" type="button" data-go="6" tabindex="-1">
+          View project <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="hd-id" data-id style="top: 80px">
+      <h1 class="nm">İklima İkbal Türköz</h1>
+      <div class="role-w">
+        <span class="role-b" aria-hidden="true"></span>
+        <p class="role" style='font-family: "Hanken Grotesk"'>
+          Interaction &amp;
+          <br />
+          UI/UX Designer
+        </p>
+        <span class="role-x" aria-hidden="true"></span>
+        <span class="role-l" aria-hidden="true"></span>
+      </div>
+      <div
+        class="intro"
+        style="margin-top: 0; padding-top: 60px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; display: none"
+      >
+        <span class="rule"></span>
+        <p class="lay">
+          Layers of
+          <br />
+          interaction
+        </p>
+      </div>
+      <canvas class="idp" data-idp aria-hidden="true"></canvas>
+    </div>
+
+    <nav class="nav" aria-label="Main">
+      <a class="ul" href="/about">
+        About
+      </a>
+      <a class="ul" href="/contact">
+        Contact
+      </a>
+    </nav>
+    <a class="rpn a" data-rpn href="/about">
+      <span>
+        About{' '}
+        <span aria-hidden="true" style="display: none">
+          ↗
+        </span>
+      </span>
+    </a>
+    <a class="rpn c" data-rpn href="/contact">
+      <span>
+        Contact{' '}
+        <span aria-hidden="true" style="display: none">
+          ↗
+        </span>
+      </span>
+    </a>
+
+    <div class="detail" data-detail aria-hidden="true">
+      <button class="back ul" type="button" data-back>
+        ← Back to projects
+      </button>
+      <article class="dt" data-dt="0">
+        <p class="dt-k">Selected work · 2025</p>
+        <h2 class="dt-t serif">Breathment</h2>
+        <p class="dt-c">Digital health UI &amp; illustration</p>
+        <p class="dt-p">UI/UX, illustration and a character for respiratory care.</p>
+        <a class="dt-go ul" href="/projects/breathment">
+          Read the case study ↗
+        </a>
+      </article>
+      <article class="dt" data-dt="1">
+        <p class="dt-k">Selected work · 2026</p>
+        <h2 class="dt-t serif">nuru</h2>
+        <p class="dt-c">UX case study &amp; brand identity</p>
+        <p class="dt-p">A website, app and brand for food guidance from licensed dietitians.</p>
+        <a class="dt-go ul" href="/projects/nuru">
+          Read the case study ↗
+        </a>
+      </article>
+      <article class="dt" data-dt="2">
+        <p class="dt-k">Selected work · 2026</p>
+        <h2 class="dt-t serif">AviateReady</h2>
+        <p class="dt-c">iOS app design</p>
+        <p class="dt-p">Interview prep for airline pilots, live on the App Store.</p>
+        <a class="dt-go ul" href="/projects/aviateready">
+          Read the case study ↗
+        </a>
+      </article>
+      <article class="dt" data-dt="3">
+        <p class="dt-k">Selected work · 2026</p>
+        <h2 class="dt-t serif">Echo</h2>
+        <p class="dt-c">Inclusive game &amp; interaction design</p>
+        <p class="dt-p">A shared forest where children with ADHD and their peers find each other.</p>
+        <a class="dt-go ul" href="/projects/echo">
+          Read the case study ↗
+        </a>
+      </article>
+      <article class="dt" data-dt="4">
+        <p class="dt-k">Selected work · 2026</p>
+        <h2 class="dt-t serif">Arkitera</h2>
+        <p class="dt-c">Editorial web redesign</p>
+        <p class="dt-p">Rethinking how readers move through architecture news.</p>
+        <a class="dt-go ul" href="/projects/arkitera">
+          Read the case study ↗
+        </a>
+      </article>
+      <article class="dt" data-dt="5">
+        <p class="dt-k">Selected work · 2024</p>
+        <h2 class="dt-t serif">City Dialogue</h2>
+        <p class="dt-c">Knowledge-sharing web platform</p>
+        <p class="dt-p">A knowledge exchange hub for climate-neutral cities.</p>
+        <a class="dt-go ul" href="/projects/city-dialogue">
+          Read the case study ↗
+        </a>
+      </article>
+      <article class="dt" data-dt="6">
+        <p class="dt-k">Selected work · 2024</p>
+        <h2 class="dt-t serif">Serica</h2>
+        <p class="dt-c">Cultural heritage app &amp; identity</p>
+        <p class="dt-p">Itineraries through Como’s silk heritage, with an app, website and brand.</p>
+        <a class="dt-go ul" href="/projects/serica">
+          Read the case study ↗
+        </a>
+      </article>
+    </div>
+
+    <div class="ft-c" data-hint aria-hidden="true">
+      <span class="hr"></span>
+      <span class="hw">
+        <svg
+          class="hand"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M18 11V6a2 2 0 0 0-4 0"></path>
+          <path d="M14 10V4a2 2 0 0 0-4 0v2"></path>
+          <path d="M10 10.5V6a2 2 0 0 0-4 0v8"></path>
+          <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-6-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.83L7 15"></path>
+        </svg>
+        <span>Drag to explore</span>
+      </span>
+      <span class="hr"></span>
+    </div>
+
+    <p class="sr" data-live aria-live="polite"></p>
+  </div>
+</BaseLayout>
+
+<script>
+  import { initGallery } from '../scripts/home-gallery.js';
+
+  const root = document.querySelector('[data-sg]');
+  if (root) initGallery(root);
+</script>

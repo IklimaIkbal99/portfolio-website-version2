@@ -1,0 +1,262 @@
+/* Breathment case study: styles used only on this page. */
+
+/* One designer, three areas */
+
+.roles {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 24px;
+}
+
+.ro-top {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.ro-top .mk {
+  width: 14px;
+  height: 14px;
+}
+
+.ro-top b {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.ro-top small {
+  font-size: 13px;
+  color: var(--mute);
+}
+
+.ro-bus {
+  grid-column: 1 / -1;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 24px;
+  height: 52px;
+}
+
+.ro-bus .hd {
+  top: 24px;
+  left: calc((100% - 48px) / 6);
+  right: calc((100% - 48px) / 6);
+}
+
+.ro-bc {
+  position: relative;
+}
+
+.ro-bc::after,
+.ro-bc.up::before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  background-image: radial-gradient(circle at center, #8c8881 0 0.65px, transparent 1.1px);
+  background-size: 4px 5.3px;
+  background-repeat: repeat-y;
+  animation: f-d 1.6s linear infinite;
+}
+
+.ro-bc::after {
+  top: 26px;
+  bottom: 0;
+}
+
+.ro-bc.up::before {
+  top: 6px;
+  height: 20px;
+}
+
+.ro-g {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.ro-g ul {
+  list-style: none;
+  margin: 2px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--body);
+}
+
+/* Mockups and screens */
+
+.mock {
+  margin: 56px 0 0;
+  max-width: 960px;
+}
+
+.pg {
+  display: block;
+  width: min(440px, 100%);
+  height: auto;
+  aspect-ratio: 1226 / 1255;
+  margin-left: auto;
+}
+
+.scr3 {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 32px;
+  align-items: start;
+}
+
+.scr3 figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.scr3 figure:nth-child(2) {
+  padding-top: 48px;
+}
+
+.scr3 img {
+  display: block;
+  width: min(240px, 100%);
+  height: auto;
+  animation: floaty 7s ease-in-out infinite;
+}
+
+.scr3 figure:nth-child(2) img {
+  animation-delay: -2.3s;
+}
+
+.scr3 figure:nth-child(3) img {
+  animation-delay: -4.6s;
+}
+
+.tags-row {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+}
+
+.cta {
+  display: inline-flex;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* Illustration band, no backdrop */
+
+.band {
+  position: relative;
+  overflow: hidden;
+  margin-top: 48px;
+  padding: 4px 0;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+  padding-right: 24px;
+  animation: marquee 110s linear infinite;
+}
+
+.band img {
+  display: block;
+  flex-shrink: 0;
+  height: clamp(260px, 26vw, 380px);
+  width: auto;
+  aspect-ratio: 671 / 464;
+}
+
+/* Character */
+
+.chars {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px 32px;
+  align-items: end;
+}
+
+.chars figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.chars img {
+  display: block;
+  height: clamp(260px, 26vw, 380px);
+  width: auto;
+  max-width: 100%;
+}
+
+.ch-main {
+  animation: floaty 7s ease-in-out infinite;
+}
+
+@media (max-width: 1023px) {
+  .pg {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .notes3,
+  .scr3,
+  .chars {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .scr3 figure:nth-child(2) {
+    padding-top: 0;
+  }
+
+  .roles {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 28px;
+  }
+
+  .ro-bus {
+    display: none;
+  }
+
+  .ro-g,
+  .ro-top {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .band {
+    overflow-x: auto;
+  }
+}
+
+/* Sidebar: project title and previous / next links */
+
+.ttl {
+  font-size: clamp(30px, 2.9vw, 48px);
+}

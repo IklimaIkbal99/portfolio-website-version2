@@ -1,0 +1,679 @@
+---
+import ProjectLayout from '../../layouts/ProjectLayout.astro';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import marquee from '../../styles/components/marquee.css?url';
+import process from '../../styles/components/process.css?url';
+import social from '../../styles/components/social.css?url';
+import page from '../../styles/projects/aviateready.css?url';
+---
+
+<ProjectLayout slug="aviateready" styles={[marquee, process, social, page]}>
+  <div class="cover">
+    <figure class="cv-img">
+      <img
+        src="/media/aviateready/cover.webp"
+        alt="AviateReady logo beside the app on iPhone and iPad, with a boarding pass counting down to the interview"
+      />
+    </figure>
+    <div class="cv-deco" aria-hidden="true">
+      <span class="cv-ring"></span>
+      <svg class="cv-ln" viewBox="0 0 106 30">
+        <polyline class="cl" points="4.3,1.2 105.4,29.5"></polyline>
+      </svg>
+      <span class="x cv-x1"></span>
+      <span class="x cv-x2"></span>
+    </div>
+  </div>
+
+  <section class="sec first" id="s-overview" data-sec aria-labelledby="h-overview">
+    <div class="sh">
+      <h2 class="sh-t" id="h-overview">
+        Overview
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="split">
+      <div class="split-a">
+        <p class="lead">Interview prep that flies around one date.</p>
+        <p class="tx">
+          AviateReady helps pilots prepare for airline interviews with technical questions, CRM scenarios, HR questions
+          and flashcards. I redesigned the live iOS app end to end: the information architecture, every screen for
+          iPhone and iPad, the design system and the brand.
+        </p>
+        <p class="tx">
+          The new structure is built around one active target, the airline and the interview date, refined through an
+          Active Target model, a Departure Board concept and an iOS-native pass before the final screens.
+        </p>
+      </div>
+      <div class="split-b">
+        <span class="vl" aria-hidden="true"></span>
+        <dl class="facts">
+          <div>
+            <dt>Platform</dt>
+            <dd>iOS · iPhone &amp; iPad</dd>
+          </div>
+          <div>
+            <dt>Status</dt>
+            <dd>
+              Live on the App Store
+              <br />
+              <a class="store-a ul" href="https://apps.apple.com/app/id6761301046" target="_blank" rel="noopener">
+                View on the App Store <span aria-hidden="true">↗</span>
+              </a>
+            </dd>
+          </div>
+          <div>
+            <dt>Design system</dt>
+            <dd>Built with the help of Claude</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div
+      class="dg rv"
+      role="group"
+      aria-label="Design process: an Active Target model, then a Departure Board concept, then an iOS-native pass, then the final screens"
+    >
+      <div style="position: relative; width: 900px; height: 150px">
+        <svg
+          width="900"
+          height="150"
+          viewBox="0 0 900 150"
+          aria-hidden="true"
+          style="position: absolute; left: 0; top: 0; width: 900px; height: 150px; overflow: visible"
+        >
+          <polyline class="cl" points="100,52 800,52"></polyline>
+          <circle class="dg-o" cx="100" cy="52" r="4"></circle>
+          <circle class="dg-o" cx="333" cy="52" r="4"></circle>
+          <circle class="dg-o" cx="567" cy="52" r="4"></circle>
+          <circle class="dg-b" cx="800" cy="52" r="4.5"></circle>
+          <g class="plane">
+            <path d="M 10 0 L -12 -9 L -7 0 L -12 9 Z" fill="#061B45"></path>
+            <path d="M 10 0 L -7 0 L -12 9 Z" fill="#0679F7"></path>
+            <animateMotion dur="9s" repeatCount="indefinite" rotate="auto" path="M 100 52 L 800 52"></animateMotion>
+            <animate
+              attributeName="opacity"
+              values="0;1;1;0"
+              keyTimes="0;0.08;0.9;1"
+              dur="9s"
+              repeatCount="indefinite"
+            ></animate>
+          </g>
+        </svg>
+        <div class="ulabel" style="position: absolute; left: 0; top: 0; width: 300px">
+          Design process
+        </div>
+        <div class="dg-k" style="left: 0; top: 76px; width: 200px; text-align: center">
+          Active Target<span>model</span>
+        </div>
+        <div class="dg-k" style="left: 233px; top: 76px; width: 200px; text-align: center">
+          Departure Board<span>concept</span>
+        </div>
+        <div class="dg-k" style="left: 467px; top: 76px; width: 200px; text-align: center">
+          iOS-native<span>pass</span>
+        </div>
+        <div class="dg-k" style="left: 700px; top: 76px; width: 200px; text-align: center">
+          Final<span>screens</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-app" data-sec aria-labelledby="h-app">
+    <div class="sh">
+      <h2 class="sh-t" id="h-app">
+        The app
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Every flow, from onboarding to offer.</p>
+      <p class="tx">
+        Onboarding sets the airline, stage and interview date. From there, practice, questions, flashcards and
+        applications all follow the same target.
+      </p>
+    </div>
+    <div
+      class="dg rv"
+      role="group"
+      aria-label="Information architecture: onboarding sets the active target, the airline, stage and interview date; practice, questions, flashcards and applications all follow it"
+    >
+      <div style="position: relative; width: 880px; height: 260px">
+        <svg
+          width="880"
+          height="260"
+          viewBox="0 0 880 260"
+          aria-hidden="true"
+          style="position: absolute; left: 0; top: 0; width: 880px; height: 260px; overflow: visible"
+        >
+          <polyline class="cl flow" points="236,130 344,130"></polyline>
+          <polyline class="cl flow" points="586,130 640,130"></polyline>
+          <polyline class="cl flow" points="640,130 640,46 688,46"></polyline>
+          <polyline class="cl flow" points="640,130 640,102 688,102"></polyline>
+          <polyline class="cl flow" points="640,130 640,158 688,158"></polyline>
+          <polyline class="cl flow" points="640,130 640,214 688,214"></polyline>
+          <circle class="dg-m" cx="236" cy="130" r="3.5"></circle>
+          <circle class="dg-b" cx="344" cy="130" r="6"></circle>
+          <circle class="dg-m" cx="586" cy="130" r="3.5"></circle>
+          <circle class="dg-o" cx="688" cy="46" r="3.5"></circle>
+          <circle class="dg-o" cx="688" cy="102" r="3.5"></circle>
+          <circle class="dg-o" cx="688" cy="158" r="3.5"></circle>
+          <circle class="dg-o" cx="688" cy="214" r="3.5"></circle>
+        </svg>
+        <div class="dg-k" style="left: 0; top: 103px; width: 210px">
+          Onboarding<span>Sets the airline, stage and interview date</span>
+        </div>
+        <div class="dg-k" style="left: 362px; top: 103px; width: 210px">
+          Active target<span>Airline, stage and interview date</span>
+        </div>
+        <div class="dg-a" style="left: 704px; top: 37px; width: 170px">
+          Practice
+        </div>
+        <div class="dg-a" style="left: 704px; top: 93px; width: 170px">
+          Questions
+        </div>
+        <div class="dg-a" style="left: 704px; top: 149px; width: 170px">
+          Flashcards
+        </div>
+        <div class="dg-a" style="left: 704px; top: 205px; width: 170px">
+          Applications
+        </div>
+      </div>
+    </div>
+    <div class="band">
+      <div class="track">
+        <div class="set">
+          <img class="scr" src="/media/aviateready/onboarding-your-name.webp" alt="Onboarding: your name" />
+          <img class="scr" src="/media/aviateready/onboarding-choose-airline.webp" alt="Onboarding: choose airline" />
+          <img
+            class="scr"
+            src="/media/aviateready/onboarding-stage-interview-date.webp"
+            alt="Onboarding: stage and interview date"
+          />
+          <img class="scr" src="/media/aviateready/onboarding-flight-plan.webp" alt="Onboarding: flight plan" />
+          <img
+            class="scr"
+            src="/media/aviateready/home-boarding-pass-countdown.webp"
+            alt="Home with boarding pass countdown"
+          />
+          <img class="scr" src="/media/aviateready/practice.webp" alt="Practice" />
+          <img class="scr" src="/media/aviateready/start-session-sheet.webp" alt="Start session sheet" />
+          <img class="scr" src="/media/aviateready/question.webp" alt="Question" />
+          <img class="scr" src="/media/aviateready/explain-my-answer.webp" alt="Explain my answer" />
+          <img class="scr" src="/media/aviateready/flashcards.webp" alt="Flashcards" />
+          <img class="scr" src="/media/aviateready/session-complete.webp" alt="Session complete" />
+          <img class="scr" src="/media/aviateready/applications.webp" alt="Applications" />
+          <img class="scr" src="/media/aviateready/application-detail.webp" alt="Application detail" />
+          <img class="scr" src="/media/aviateready/profile.webp" alt="Profile" />
+          <img class="scr" src="/media/aviateready/pricing.webp" alt="Pricing" />
+          <img class="scr" src="/media/aviateready/daily-energy-sheet.webp" alt="Daily energy sheet" />
+        </div>
+        <div class="set" aria-hidden="true">
+          <img class="scr" src="/media/aviateready/onboarding-your-name.webp" alt="" />
+          <img class="scr" src="/media/aviateready/onboarding-choose-airline.webp" alt="" />
+          <img class="scr" src="/media/aviateready/onboarding-stage-interview-date.webp" alt="" />
+          <img class="scr" src="/media/aviateready/onboarding-flight-plan.webp" alt="" />
+          <img class="scr" src="/media/aviateready/home-boarding-pass-countdown.webp" alt="" />
+          <img class="scr" src="/media/aviateready/practice.webp" alt="" />
+          <img class="scr" src="/media/aviateready/start-session-sheet.webp" alt="" />
+          <img class="scr" src="/media/aviateready/question.webp" alt="" />
+          <img class="scr" src="/media/aviateready/explain-my-answer.webp" alt="" />
+          <img class="scr" src="/media/aviateready/flashcards.webp" alt="" />
+          <img class="scr" src="/media/aviateready/session-complete.webp" alt="" />
+          <img class="scr" src="/media/aviateready/applications.webp" alt="" />
+          <img class="scr" src="/media/aviateready/application-detail.webp" alt="" />
+          <img class="scr" src="/media/aviateready/profile.webp" alt="" />
+          <img class="scr" src="/media/aviateready/pricing.webp" alt="" />
+          <img class="scr" src="/media/aviateready/daily-energy-sheet.webp" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="s-highlights" data-sec aria-labelledby="h-highlights">
+    <div class="sh">
+      <h2 class="sh-t" id="h-highlights">
+        Design highlights
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="hl3">
+      <figure class="hl rv">
+        <div class="hl-ph scr">
+          <img
+            class="scroll"
+            src="/media/aviateready/home-scroll.webp"
+            alt="Home screen scrolling from the boarding pass countdown to progress"
+            style="aspect-ratio: 390 / 1300"
+          />
+        </div>
+        <figcaption>
+          <h3>A boarding pass for the big day</h3>
+          <p>Home counts down to the interview with split-flap digits and shows how ready you are.</p>
+        </figcaption>
+      </figure>
+      <figure class="hl rv">
+        <div class="hl-ph scr">
+          <img
+            src="/media/aviateready/daily-energy-sheet.webp"
+            alt="Daily energy sheet showing 150 energy left and session costs"
+            style="aspect-ratio: 390 / 844"
+          />
+        </div>
+        <figcaption>
+          <h3>Daily energy</h3>
+          <p>
+            200 energy a day. A question session costs 20 and flashcards 50, pacing practice across the days before the
+            interview.
+          </p>
+        </figcaption>
+      </figure>
+      <figure class="hl rv">
+        <div class="hl-ph scr">
+          <img
+            src="/media/aviateready/question-correct.webp"
+            alt="Question answered correctly with green feedback"
+            style="aspect-ratio: 390 / 844"
+          />
+        </div>
+        <figcaption>
+          <h3>Instant feedback</h3>
+          <p>Every answer gets immediate feedback, and “Explain my answer” turns a mistake into key points.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="s-ipad" data-sec aria-labelledby="h-ipad">
+    <div class="sh">
+      <h2 class="sh-t" id="h-ipad">
+        iPad
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">The same flows, adapted for iPad.</p>
+      <p class="tx">
+        A floating tab bar and wider layouts give practice, questions and flashcards room to breathe on a larger screen.
+      </p>
+    </div>
+    <div class="pads">
+      <figure class="rv lift">
+        <img
+          class="pad-s"
+          src="/media/aviateready/ipad-home-boarding-pass.webp"
+          alt="iPad home with boarding pass and progress"
+        />
+      </figure>
+      <figure class="rv lift">
+        <img
+          class="pad-s"
+          src="/media/aviateready/ipad-practice-four-topic.webp"
+          alt="iPad practice with four topic cards"
+        />
+      </figure>
+      <figure class="rv lift">
+        <img
+          class="pad-s"
+          src="/media/aviateready/ipad-question-answer-options.webp"
+          alt="iPad question with answer options"
+        />
+      </figure>
+      <figure class="rv lift">
+        <img class="pad-s" src="/media/aviateready/ipad-flashcards-deck.webp" alt="iPad flashcards deck" />
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="s-system" data-sec aria-labelledby="h-system">
+    <div class="sh">
+      <h2 class="sh-t" id="h-system">
+        Design system
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">One system for iPhone and iPad, built with Claude.</p>
+      <p class="tx">
+        Colour, type, icons, the energy system, buttons, headers and every question state live in one component library.
+        The design system was created with the help of Claude.
+      </p>
+    </div>
+    <figure class="vid rv">
+      <video
+        src="/media/aviateready/design-system-walkthrough.mp4"
+        poster="/media/aviateready/design-system-walkthrough-poster.webp"
+        controls
+        autoplay
+        muted
+        loop
+        playsinline
+        aria-label="Walkthrough of the AviateReady design system: palette, type, icons, buttons, headers and question states"
+      ></video>
+      <figcaption>
+        <span>Palette, Inter type scale, line icons, energy, buttons, headers and question flow.</span>
+        <b>Built with the help of Claude</b>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="sec" id="s-brand" data-sec aria-labelledby="h-brand">
+    <div class="sh">
+      <h2 class="sh-t" id="h-brand">
+        Brand
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">A paper plane meets a wing, forming the letter A.</p>
+      <p class="tx">
+        The forward-leaning mark signals speed, precision and progress. A white canvas, one confident blue and a family
+        of near-blacks keep the focus on the questions.
+      </p>
+    </div>
+    <div class="logos">
+      <figure class="rv lift">
+        <div class="logo-t" style="background-color: #FFFFFF; border: 1px solid #D9DEE8">
+          <svg viewBox="1285 515 360 265" width="52%" role="img" aria-label="AviateReady logo, gradient">
+            <defs>
+              <linearGradient id="avg1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" style="stop-color: #169fff"></stop>
+                <stop offset=".5" style="stop-color: #0679f7"></stop>
+                <stop offset="1" style="stop-color: #0149ce"></stop>
+              </linearGradient>
+            </defs>
+            <path
+              d="M 1488,523 L 1483,528 L 1411,637 L 1482,637 L 1483,638 L 1493,639 L 1506,645 L 1514,652 L 1522,663 L 1572,754 L 1582,764 L 1595,771 L 1607,774 L 1639,774 L 1506,530 L 1500,523 L 1496,521 L 1492,521 Z"
+              fill="url(#avg1)"
+            ></path>
+            <path
+              d="M 1292,651 L 1301,663 L 1311,673 L 1326,683 L 1342,689 L 1354,690 L 1355,691 L 1386,691 L 1387,692 L 1491,695 L 1513,700 L 1524,705 L 1535,713 L 1518,680 L 1508,665 L 1500,658 L 1487,652 L 1481,652 L 1480,651 Z"
+              fill="url(#avg1)"
+            ></path>
+            <path
+              d="M 1322,705 L 1334,719 L 1344,727 L 1359,735 L 1369,738 L 1374,738 L 1375,739 L 1402,739 L 1403,740 L 1450,740 L 1451,741 L 1461,741 L 1449,720 L 1441,712 L 1428,706 L 1423,705 Z"
+              fill="url(#avg1)"
+            ></path>
+          </svg>
+        </div>
+        <figcaption class="ulabel">Primary · gradient</figcaption>
+      </figure>
+      <figure class="rv lift">
+        <div class="logo-t" style="background-color: #061B45">
+          <svg viewBox="1285 515 360 265" width="52%" role="img" aria-label="AviateReady logo, reversed on navy">
+            <path
+              d="M 1488,523 L 1483,528 L 1411,637 L 1482,637 L 1483,638 L 1493,639 L 1506,645 L 1514,652 L 1522,663 L 1572,754 L 1582,764 L 1595,771 L 1607,774 L 1639,774 L 1506,530 L 1500,523 L 1496,521 L 1492,521 Z"
+              fill="#FFFFFF"
+            ></path>
+            <path
+              d="M 1292,651 L 1301,663 L 1311,673 L 1326,683 L 1342,689 L 1354,690 L 1355,691 L 1386,691 L 1387,692 L 1491,695 L 1513,700 L 1524,705 L 1535,713 L 1518,680 L 1508,665 L 1500,658 L 1487,652 L 1481,652 L 1480,651 Z"
+              fill="#FFFFFF"
+            ></path>
+            <path
+              d="M 1322,705 L 1334,719 L 1344,727 L 1359,735 L 1369,738 L 1374,738 L 1375,739 L 1402,739 L 1403,740 L 1450,740 L 1451,741 L 1461,741 L 1449,720 L 1441,712 L 1428,706 L 1423,705 Z"
+              fill="#FFFFFF"
+            ></path>
+          </svg>
+        </div>
+        <figcaption class="ulabel">Reversed · on navy</figcaption>
+      </figure>
+      <figure class="rv lift">
+        <div class="logo-t" style="background-color: #F5F7FB; border: 1px solid #D9DEE8">
+          <svg viewBox="1285 515 360 265" width="52%" role="img" aria-label="AviateReady logo, mono">
+            <path
+              d="M 1488,523 L 1483,528 L 1411,637 L 1482,637 L 1483,638 L 1493,639 L 1506,645 L 1514,652 L 1522,663 L 1572,754 L 1582,764 L 1595,771 L 1607,774 L 1639,774 L 1506,530 L 1500,523 L 1496,521 L 1492,521 Z"
+              fill="#080B12"
+            ></path>
+            <path
+              d="M 1292,651 L 1301,663 L 1311,673 L 1326,683 L 1342,689 L 1354,690 L 1355,691 L 1386,691 L 1387,692 L 1491,695 L 1513,700 L 1524,705 L 1535,713 L 1518,680 L 1508,665 L 1500,658 L 1487,652 L 1481,652 L 1480,651 Z"
+              fill="#080B12"
+            ></path>
+            <path
+              d="M 1322,705 L 1334,719 L 1344,727 L 1359,735 L 1369,738 L 1374,738 L 1375,739 L 1402,739 L 1403,740 L 1450,740 L 1451,741 L 1461,741 L 1449,720 L 1441,712 L 1428,706 L 1423,705 Z"
+              fill="#080B12"
+            ></path>
+          </svg>
+        </div>
+        <figcaption class="ulabel">Mono · ink</figcaption>
+      </figure>
+      <figure class="rv lift">
+        <div class="logo-t" style="background-color: #EAF3FF; border: 1px solid #D9DEE8">
+          <div style="display: grid; place-items: center; width: 34%; aspect-ratio: 1 / 1; border-radius: 22%; background-color: #0679F7">
+            <svg viewBox="1285 515 360 265" width="66%" aria-hidden="true">
+              <path
+                d="M 1488,523 L 1483,528 L 1411,637 L 1482,637 L 1483,638 L 1493,639 L 1506,645 L 1514,652 L 1522,663 L 1572,754 L 1582,764 L 1595,771 L 1607,774 L 1639,774 L 1506,530 L 1500,523 L 1496,521 L 1492,521 Z"
+                fill="#FFFFFF"
+              ></path>
+              <path
+                d="M 1292,651 L 1301,663 L 1311,673 L 1326,683 L 1342,689 L 1354,690 L 1355,691 L 1386,691 L 1387,692 L 1491,695 L 1513,700 L 1524,705 L 1535,713 L 1518,680 L 1508,665 L 1500,658 L 1487,652 L 1481,652 L 1480,651 Z"
+                fill="#FFFFFF"
+              ></path>
+              <path
+                d="M 1322,705 L 1334,719 L 1344,727 L 1359,735 L 1369,738 L 1374,738 L 1375,739 L 1402,739 L 1403,740 L 1450,740 L 1451,741 L 1461,741 L 1449,720 L 1441,712 L 1428,706 L 1423,705 Z"
+                fill="#FFFFFF"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <figcaption class="ulabel">App icon</figcaption>
+      </figure>
+    </div>
+    <div class="sws rv">
+      <div class="sw" style="background-color: #061B45; color: #FFFFFF">
+        <b>Navy 900</b>
+        <span>#061B45</span>
+      </div>
+      <div class="sw" style="background-color: #0149CE; color: #FFFFFF">
+        <b>Cobalt 700</b>
+        <span>#0149CE</span>
+      </div>
+      <div class="sw" style="background-color: #0679F7; color: #FFFFFF">
+        <b>Aviate 500</b>
+        <span>#0679F7</span>
+      </div>
+      <div class="sw" style="background-color: #169FFF; color: #061B45">
+        <b>Sky 400</b>
+        <span>#169FFF</span>
+      </div>
+      <div class="sw" style="background-color: #CFE4FF; color: #061B45">
+        <b>Tint 100</b>
+        <span>#CFE4FF</span>
+      </div>
+      <div class="sw" style="background-color: #080B12; color: #FFFFFF">
+        <b>Ink 950</b>
+        <span>#080B12</span>
+      </div>
+      <div class="sw" style="background-color: #55607A; color: #FFFFFF">
+        <b>Slate 600</b>
+        <span>#55607A</span>
+      </div>
+      <div class="sw" style="background-color: #F5F7FB; color: #061B45; border: 1px solid #D9DEE8">
+        <b>Mist 50</b>
+        <span>#F5F7FB</span>
+      </div>
+      <div class="sw" style="background-color: #0F9D58; color: #FFFFFF">
+        <b>Correct</b>
+        <span>#0F9D58</span>
+      </div>
+      <div class="sw" style="background-color: #F2A100; color: #061B45">
+        <b>Caution</b>
+        <span>#F2A100</span>
+      </div>
+      <div class="sw" style="background-color: #E5484D; color: #FFFFFF">
+        <b>Error</b>
+        <span>#E5484D</span>
+      </div>
+    </div>
+    <div class="type rv">
+      <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: clamp(96px, 10vw, 156px); line-height: 0.9; font-weight: 700; letter-spacing: -0.05em; color: #0679F7">
+          Aa
+        </span>
+        <span style="font-size: 26px; font-weight: 700; letter-spacing: -0.02em">Inter</span>
+        <span style="font-size: 15px; line-height: 1.55; color: #55607A; max-width: 34ch">
+          One family from large titles to captions, clear for long question text on small screens.
+        </span>
+      </div>
+      <dl style="flex: 2 1 420px; margin: 0; display: flex; flex-direction: column">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px solid #EDF1F7">
+          <dt style="font-size: 13px; color: #55607A">Large title · 34 Bold</dt>
+          <dd style="margin: 0; font-size: 34px; font-weight: 700; letter-spacing: -0.03em">Practice</dd>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px solid #EDF1F7">
+          <dt style="font-size: 13px; color: #55607A">Title · 30 Bold</dt>
+          <dd style="margin: 0; font-size: 30px; font-weight: 700; letter-spacing: -0.03em">Session complete</dd>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px solid #EDF1F7">
+          <dt style="font-size: 13px; color: #55607A">Headline · 20 Bold</dt>
+          <dd style="margin: 0; font-size: 20px; font-weight: 700">Other applications</dd>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px solid #EDF1F7">
+          <dt style="font-size: 13px; color: #55607A">Body · 16 Medium</dt>
+          <dd style="margin: 0; font-size: 16px; font-weight: 500">Qatar Airways · First Officer</dd>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0">
+          <dt style="font-size: 13px; color: #55607A">Caption · 12 Semibold</dt>
+          <dd style="margin: 0; font-size: 12px; font-weight: 600">Refills at midnight</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="sec" id="s-store" data-sec aria-labelledby="h-store">
+    <div class="sh">
+      <h2 class="sh-t" id="h-store">
+        App Store
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">A listing in the app’s own voice.</p>
+      <p class="tx">
+        One idea per screenshot, from learning why to getting hired, set on the brand blue and built from real screens.
+      </p>
+    </div>
+    <div class="shots">
+      <figure class="rv">
+        <img
+          class="shot"
+          src="/media/aviateready/store-get-hired.webp"
+          alt="App Store screenshot: Get interview ready. Get hired."
+        />
+      </figure>
+      <figure class="rv">
+        <img
+          class="shot"
+          src="/media/aviateready/store-your-interview.webp"
+          alt="App Store screenshot: Your interview, front and centre"
+        />
+      </figure>
+      <figure class="rv">
+        <img
+          class="shot"
+          src="/media/aviateready/store-every-interview.webp"
+          alt="App Store screenshot: Every interview is a flight"
+        />
+      </figure>
+      <figure class="rv">
+        <img
+          class="shot"
+          src="/media/aviateready/store-learn-why.webp"
+          alt="App Store screenshot: Learn why, not just what"
+        />
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" id="s-social" data-sec aria-labelledby="h-social">
+    <div class="sh">
+      <h2 class="sh-t" id="h-social">
+        Social media
+      </h2>
+      <span class="sh-l" aria-hidden="true"></span>
+      <span class="x sh-x" aria-hidden="true"></span>
+    </div>
+    <div class="stack">
+      <p class="lead">Launch content for Instagram.</p>
+      <p class="tx">
+        A launch kit built from the same brand system and real app screens: a six-slide carousel, single feed posts,
+        daily stories and a short reel.
+      </p>
+    </div>
+    <div class="soc">
+      <figure class="rv">
+        <video
+          src="/media/aviateready/social-carousel.mp4"
+          poster="/media/aviateready/social-carousel-poster.webp"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-label="Instagram carousel mockup swiping through six AviateReady slides"
+          style="background-color: #FFFFFF"
+        ></video>
+        <figcaption>
+          <span class="fc-t">Carousel</span>
+          <span class="fc-d">Six slides: the app in four steps.</span>
+        </figcaption>
+      </figure>
+      <figure class="rv">
+        <video
+          src="/media/aviateready/social-feed.mp4"
+          poster="/media/aviateready/social-feed-poster.webp"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-label="Instagram feed mockup scrolling through two AviateReady posts"
+          style="background-color: #FFFFFF"
+        ></video>
+        <figcaption>
+          <span class="fc-t">Feed posts</span>
+          <span class="fc-d">The countdown and the launch post.</span>
+        </figcaption>
+      </figure>
+      <figure class="rv">
+        <video
+          src="/media/aviateready/social-stories.mp4"
+          poster="/media/aviateready/social-stories-poster.webp"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-label="Instagram stories mockup playing two AviateReady stories"
+          style="background-color: #000000"
+        ></video>
+        <figcaption>
+          <span class="fc-t">Stories</span>
+          <span class="fc-d">The 12-minute habit and a daily question.</span>
+        </figcaption>
+      </figure>
+      <figure class="rv">
+        <video
+          src="/media/aviateready/social-reel.mp4"
+          poster="/media/aviateready/social-reel-poster.webp"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-label="Instagram reel mockup playing the AviateReady launch reel"
+          style="background-color: #000000"
+        ></video>
+        <figcaption>
+          <span class="fc-t">Reel</span>
+          <span class="fc-d">A 17-second launch reel.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+</ProjectLayout>

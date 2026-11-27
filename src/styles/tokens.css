@@ -1,0 +1,12 @@
+/* Design tokens: colours and the type stack shared by every page.
+   Change a value here and it updates everywhere. */
+
+:root {
+  --paper: #f8f7f4;
+  --ink: #2e2d2b;
+  --mute: #706c66;
+  --body: #46433e;
+  --line: #d3d0ca;
+  --dot: #8c8881;
+  --font: 'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif;
+}
